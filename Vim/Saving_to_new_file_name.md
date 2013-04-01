@@ -1,7 +1,4 @@
-Vim
-===
-
-Saving to new file name {.unnumbered}
+Saving to new file name
 -----------------------
 
 Assume original file named `original.txt`
