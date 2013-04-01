@@ -14,6 +14,3 @@ Terminology
     jargon on Twitter).
 
 5.  ​20130326. “state”: essentially, non-static content.
-1. **20130401**. "staged": In Git, already tracked and now prepared for committing. The `add` command both begins tracking a file and stages a tracked file.
-
-[end]
