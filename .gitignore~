@@ -1,0 +1,14 @@
+# Mac OS junk
+*.DS_Store
+
+# Vim jink
+*~
+
+# self
+.gitignore
+
+# LaTeX matter
+*.aux
+*.log
+*.synctex.gz
+*.pdf

@@ -50,4 +50,7 @@ Organization
 6.  `.git/HEAD` keeps track of which commit is the current one at which
     we are located.
 
+7. **20130331**. Renaming a file so that only capitalization changes is not reflected in repo. Following [http://stackoverflow.com/a/10523903/621762], first rename to a temporary name and then back to the newly capitalized form.
+
 [end]
+
