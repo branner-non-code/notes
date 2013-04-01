@@ -1,4 +1,4 @@
-python
+Ipython
 =======
 
 1.  ​20130221. For deep reloading of modules, use
