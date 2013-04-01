@@ -54,7 +54,7 @@ Organization
 
     git config core.ignorecase false
 
-to ensure that Git recognizes case changes.
+to ensure that Git recognizes case changes. But this alone is not enough to ensure that the earlier name is deleted from the repo!
 
 [end]
 
