@@ -5,7 +5,7 @@
 *~
 
 # self
-*.gitignore
+.gitignore
 
 # LaTeX matter
 *.aux
