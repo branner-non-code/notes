@@ -1,5 +1,5 @@
-GitHub
-======
+GitHub-flavored Markdown (GFMD)
+===============================
 
 1.  ​20130225. GitHub has its own version of Markdown, called “GitHub
     Flavored Markdown” (GFM,
@@ -18,3 +18,5 @@ GitHub
     > have it all polished up before committing your change. In fact,
     > that’s exactly what I do when writing and updating READMEs and
     > other non-code files here at GitHub.
+
+3.  ​20130402. Python and other support for rednering GFMD: [http://stackoverflow.com/questions/7694887/]
