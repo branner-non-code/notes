@@ -13,4 +13,6 @@ In [91]: print(*a_list)
 
 Note: "can use starred expression only as assignment target", i.e., a function argument, unpacking a tuple, or calling a function.
 
+See discussion at http://www.python.org/dev/peps/pep-3132/.
+
 [end]
