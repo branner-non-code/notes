@@ -4,15 +4,17 @@ Git
 Commands
 --------
 
-1.  ​20130214. `git add -A` is comparable to `hg addr`~~, but one seems
+1.  ​`git add -A` is comparable to `hg addr`, but one seems
     to need to add `-r *` in order to cover everything. Needs more
-    research~~.
+    research.
 
-2.  ​20130214. `git stash` discards current contents and allows next
+2.  ​`git stash` discards current contents and allows next
     pull to replace current contents.
 
-3.  ​20130311. `git pull <url>`: adds someone else’s pulled version of
+3.  ​`git pull <url>`: adds someone else’s pulled version of
     my repo to my own repo.
+
+4.   `git add -u`: add only updated files that are already tracked.
 
 Useful adjunct programs
 -----------------------
