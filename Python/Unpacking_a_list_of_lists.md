@@ -8,7 +8,7 @@ a_list = []
 b_list = [[1, 2], [3, 4], [5, 6], [7, 8]]
 for item in b_list:
     for subitem in item:
-        a_list.append(j)
+        a_list.append(subitem)
 print(a_list)
 : [1, 2, 3, 4, 5, 6, 7, 8]
 ~~~
@@ -19,7 +19,7 @@ Better:
 a_list = []
 b_list = [[1, 2], [3, 4], [5, 6], [7, 8]]
 for item in b_list:
-    a_list.extend(i)
+    a_list.extend(item)
 print(a_list)
 : [1, 2, 3, 4, 5, 6, 7, 8]
 ~~~
