@@ -27,6 +27,7 @@ print(a_list)
 With nested comprehensions
 --------------------------
 ~~~
+b_list = [[1, 2], [3, 4], [5, 6], [7, 8]]
 [j for i in b_list
     for j in i]
 : [1, 2, 3, 4, 5, 6, 7, 8]
