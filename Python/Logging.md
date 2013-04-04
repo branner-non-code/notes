@@ -38,6 +38,7 @@ def main(logging_flag):
             '-i': logging.INFO,
             '-e': logging.ERROR,
             '-c': logging.CRITICAL}
+    # WARN is default.
     if logging_flag in log_levels:
         the_level = log_levels[logging_flag]
     else:
@@ -48,7 +49,7 @@ def main(logging_flag):
     logging.basicConfig(
             format='%(asctime)s (' + app_name + '.%(funcName)s:%(lineno)d) '
                 '%(levelname)s: %(message)s',
-            datefmt='%Y%d%m %I:%M:%S %p',
+            datefmt=%Y%d%m_%H:%M:%S_%Z',
             filename=app_name+'.log',
             level=the_level)
     #
@@ -61,6 +62,7 @@ def main(logging_flag):
     logging.critical('couldn\'t be worse')
 
 if __name__ == '__main__':
+    # Only the last flag on the command line is noticed.
     main(sys.argv[-1])
 ~~~
 
