@@ -45,6 +45,7 @@ def main(logging_flag):
         the_level = logging.WARN
     #
     # Set the application name and logger configuration.
+    # We don't want the .py extension.
     app_name = __file__.split('.')[0]
     logging.basicConfig(
             format='%(asctime)s (' + app_name + '.%(funcName)s:%(lineno)d) '
