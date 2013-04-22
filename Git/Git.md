@@ -8,13 +8,14 @@ Commands
     to need to add `-r *` in order to cover everything. Needs more
     research.
 
-2.  ​`git stash` discards current contents and allows next
+1.  ​`git stash` discards current contents and allows next
     pull to replace current contents.
 
-3.  ​`git pull <url>`: adds someone else’s pulled version of
+1.  ​`git pull <url>`: adds someone else’s pulled version of
     my repo to my own repo.
 
 4.   `git add -u`: add only updated files that are already tracked.
+5.   `git rm --cached`: remove from index but leave in working tree.
 
 Useful adjunct programs
 -----------------------
