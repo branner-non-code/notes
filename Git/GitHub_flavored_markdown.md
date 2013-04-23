@@ -1,6 +1,9 @@
 GitHub-flavored Markdown (GFMD)
 ===============================
 
+General
+-------
+
 1.  ​20130225. GitHub has its own version of Markdown, called “GitHub
     Flavored Markdown” (GFM,
     <https://help.github.com/articles/github-flavored-markdown>), which
@@ -20,3 +23,12 @@ GitHub-flavored Markdown (GFMD)
     > other non-code files here at GitHub.
 
 3.  ​20130402. Python and other support for rednering GFMD: [http://stackoverflow.com/questions/7694887/]
+
+Code blocks within lists
+------------------------
+
+2. The original Markdown specification explains this correctly:
+    > To put a code block within a list item, the code block needs to be indented twice — 8 spaces or two tabs. (http://daringfireball.net/projects/markdown/syntax, accessed 20130423)
+
+1. Github's site suggests incorrectly that only four spaces are necessary. (https://help.github.com/articles/github-flavored-markdown#fenced-code-blocks, accessed 20130423)
+
