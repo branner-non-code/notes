@@ -33,8 +33,3 @@ python manage.py runserver
 ```
 and set browser to `http://127.0.0.1:8000/`
 
-Create app
-----------
-```
-python manage.py startapp name_of_app
-```
