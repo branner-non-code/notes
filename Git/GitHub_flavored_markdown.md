@@ -30,5 +30,5 @@ Code blocks within lists
 2. The original Markdown specification explains this correctly:
     > To put a code block within a list item, the code block needs to be indented twice — 8 spaces or two tabs. (http://daringfireball.net/projects/markdown/syntax, accessed 20130423)
 
-1. Github's site suggests incorrectly that only four spaces are necessary. (https://help.github.com/articles/github-flavored-markdown#fenced-code-blocks, accessed 20130423)
+1. Github's site suggests incorrectly that only four spaces are necessary. (https://help.github.com/articles/github-flavored-markdown#fenced-code-blocks, accessed 20130423) But wrapping the code block in <CODE>```</CODE> top and bottom is effective.
 
