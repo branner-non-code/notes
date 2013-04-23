@@ -15,9 +15,11 @@ Django, set up database
             choice_text = models.CharField(max_length=200)
             votes = models.IntegerField(default=0)
 
-1. Add `project_name` to `mysite/settings.py`.
+1. Add `project_name` to `INSTALLED_APPS` in `mysite/settings.py`.
 
 1. Initialize database:
 
         python manage.py sql project_name
+to generate SQL for tables and then 
         python manage.py syncdb
+to create them.
