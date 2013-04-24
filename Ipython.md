@@ -21,7 +21,7 @@ Startup scripts
 Place commands in
 
     .ipython/profile_default/startup/ipython3_startup.ipy
-Note `.ipy` extension. Currently using:
+Note `.ipy` extension. Currently (20130424) using:
 ```
 %load_ext autoreload
 %autoreload 2
