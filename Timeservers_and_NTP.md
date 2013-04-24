@@ -1,4 +1,4 @@
-Timeservers_and_NTP
+Timeservers and NTP
 ===================
 
 DPB's summary
