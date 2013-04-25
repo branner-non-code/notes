@@ -1,9 +1,9 @@
-W3m key bindings
+W3m key-bindings
 ===================
 (The original arrangement of this material comes from http://w3m.sourceforge.net/MANUAL, and is signed Akinori Ito, aito@ei5sun.yz.yamagata-u.ac.jp .)
 
 Page/Cursor motion
------------------------------
+------------------
  * `SPC,C-v`	Forward page
  * `b,ESC v`	Backward page
  * `l,C-f`	Cursor right
@@ -31,7 +31,7 @@ Page/Cursor motion
  * `]`	Move to the last hyperlink
 
 Hyperlink operation
-------------------------------
+-------------------
  * `RET`	Follow hyperlink
  * `a, ESC RET`	Save link to file
  * `u`	Peek link URL
@@ -43,7 +43,7 @@ Hyperlink operation
  * `c`	Peek at current URL
 
 Display information about current document
------------------------------------------------------------------
+------------------------------------------
  * `C-g`	Show current line number
  * `C-h`	View history of URL
  * `F`	Render frame
@@ -51,14 +51,14 @@ Display information about current document
  * `ESC M`	Browse link using external browser (use 2ESC M and 3ESC M to invoke second and third browser)
 
 File/Stream operation
---------------------------------
+---------------------
  * `U`	Open URL
  * `V`	View new file
  * `@`	Execute shell command and load
  * `#`	Execute shell command and browse
 
 Buffer operation
-------------------------
+----------------
  * `B`	Back to the previous buffer
  * `v`	View HTML source
  * `s`	Select buffer
@@ -70,19 +70,19 @@ Buffer operation
  * `ESC e`	Edit buffer image
 
 Buffer selection mode
---------------------------------
+---------------------
  * `k, C-p`	Select previous buffer
  * `j, C-n`	Select next buffer
  * `D`	Delect current buffer
  * `RET`	Go to the selected buffer
 
 Bookmark operation
------------------------------
+------------------
  * `ESC b`	Load bookmark
  * `ESC a`	Add current to bookmark
 
 Search
----------
+------
  * `/,C-s`	Search forward
  * `?,C-r`	Search backward
  * `n`	Search next
@@ -90,14 +90,14 @@ Search
  * `C-w`	Toggle wrap search mode
 
 Mark operation
------------------------
+--------------
  * `C-SPC`	Set/unset mark
  * `ESC p`	Go to previous mark
  * `ESC n`	Go to next mark
  * `"`	Mark by regular expression
 
 Miscellany
----------------
+----------
  * `!`	Execute shell command
  * `H`	Help (load this file)
  * `o`	Set option
@@ -108,7 +108,7 @@ Miscellany
  * `Q`	Quit without confirmation
 
 Line-edit mode
----------------------
+--------------
  * `C-f`	Move cursor forward
  * `C-b`	Move cursor backward
  * `C-h`	Delete previous character
@@ -123,7 +123,7 @@ Line-edit mode
  * `RETURN`	Accept
 
 DPB has noticed
-------------------------
+---------------
 
  * `- (hyphen)`	? Up one screen
 
