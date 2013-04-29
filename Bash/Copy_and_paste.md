@@ -1,7 +1,7 @@
 Copy and paste to clipboard from command line
 =============================================
 
-OS X
+OS_X
 ----
 
 1. copy:
