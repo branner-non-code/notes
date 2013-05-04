@@ -1,4 +1,4 @@
-# Nesting_tuples
+# Nesting tuples
 
 Normally adding tuples together merges them:
 ```
