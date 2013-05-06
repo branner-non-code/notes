@@ -1,7 +1,7 @@
 Notes
 =====
 
-(http://htmlpreview.github.io/?https://github.com/brannerchinese/notes/blob/master/tester.html "Search page here")
+[Search markdown files here](http://htmlpreview.github.io/?https://github.com/brannerchinese/notes/blob/master/tester.html)
 
 Assorted notes -- chiefly for my own reference -- having to do with coding. 
 
