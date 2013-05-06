@@ -1,19 +1,16 @@
-function setFocus() {
-  document.getElementById("search").focus();
-}
 
 var currentURL = window.location.href;
-
 if (currentURL.search(/http/) === 0) {
-  alert("http");
   var urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
+  var whereWeAre = "via HTTP.";
 }
 else {
   var urlPrefix = "";
-  alert("file");
+  var whereWeAre = "from the filesystem.";
 }
+document.getElementById("whereRunning").innerHTML="This page was read "+whereWeAre+"<br/><br/>Enter your search term below:";
 
-//alert(currentURL)
+document.getElementById("searchTerm").focus();
 
 function getSought() {
   var sought = document.getElementById("searchTerm").value;
