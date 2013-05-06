@@ -6,7 +6,7 @@ var currentURL = window.location.href;
 
 if (currentURL.search(/http/) === 0) {
   alert("http");
-  var urlPrefix = "http://htmlpreview.github.io/?https://github.com/brannerchinese/notes/blob/master/";
+  var urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
 }
 else {
   var urlPrefix = "";
