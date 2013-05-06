@@ -3,10 +3,10 @@ Notes
 
 [Search markdown files here](http://htmlpreview.github.io/?https://github.com/brannerchinese/notes/blob/master/tester.html)
 
-Assorted notes -- chiefly for my own reference -- having to do with coding. 
+Assorted notes -- chiefly for my own reference -- having to do with coding. Most involve either syntax or solutions to problems.
 
-Most involve either syntax or solutions to problems.
+The are indexed with `index_git.py`, which runs on Python v. 2.7 (in order to make use of the NLTK library). The index is stored as two large JavaScript objects in the `JS/` directory.
 
-The original material was composed in LaTeX but converted to Markdown using [PanDoc](http://johnmacfarlane.net/pandoc).
+The initial material was composed in LaTeX but converted to Markdown using [PanDoc](http://johnmacfarlane.net/pandoc).
 
 [end]
