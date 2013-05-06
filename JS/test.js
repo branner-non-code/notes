@@ -1,4 +1,3 @@
-
 var currentURL = window.location.href;
 if (currentURL.search(/http/) === 0) {
   var urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
@@ -25,7 +24,10 @@ function getSought() {
     for (var i = 0; i < tupleIndexes.length; i++) {
       var pathHash = tupleIndexes[indexNum++];
       var pathTuple = TupleStorage[String(pathHash)];
-      document.write('<li><a href="'  + urlPrefix + pathTuple[1] + 
+      document.write('<form><input type="text" name="sought" id="searchTerm"/>
+          + '<input type="button" onclick="getSought()" value="Enter search term">'
+          + '</form>'
+          + '<li><a href="'  + urlPrefix + pathTuple[1] + 
           '" target="_blank">' + pathTuple[2]+ '</a> (<strong>' + 
         pathTuple[0] + '</strong>: ' + pathTuple[1] + ')</li>');
     } 
