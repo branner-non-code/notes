@@ -16,7 +16,6 @@ function getSought() {
   if (sought === null || typeof IndexEntries[sought] === "undefined") {
     location.reload()
   }
-  document.getElementById("heading").innerHTML="searching for: "+sought;
   if (sought !== null) {
     var tupleIndexes = IndexEntries[sought];
     var indexNum = 0;
@@ -26,7 +25,9 @@ function getSought() {
     document.write("<form><input type=\"text\" name=\"sought\"" +
           "id=\"searchTerm\"/>" +
           "<input type=\"button\" onclick=\"getSought()\" " +
-          "value=\"Enter search term.\"></form>\n <ul>");
+          "value=\"Enter search term.\"></form>\n <hr>");
+    document.getElementById("heading").innerHTML="searching for: "+sought;
+    document.write("<ul>");
     for (var i = 0; i < tupleIndexes.length; i++) {
       var pathHash = tupleIndexes[indexNum++];
       var pathTuple = TupleStorage[String(pathHash)];
