@@ -11,22 +11,32 @@ document.getElementById("whereRunning").innerHTML="This page was read "+whereWeA
 
 document.getElementById("searchTerm").focus();
 
+if (IndexEntries === null) {
+  alert("IndexEntries is null");
+}
+else if (TupleStorage === null) {
+  alert("TupleStorage is null");
+}
+
 function getSought() {
-  var sought = document.getElementById("searchTerm").value;
+  var sought = document.getElementById("searchTerm").value.toLowerCase();
   if (sought === null || typeof IndexEntries[sought] === "undefined") {
+    alert("Nothing found.");
     location.reload()
   }
-  if (sought !== null) {
+//  if (sought !== null) {
+  else {
+    document.close();
     var tupleIndexes = IndexEntries[sought];
     var indexNum = 0;
-    document.getElementById("whereRunning").innerHTML="This page was read "+
-      whereWeAre+"<br/><br/>Enter your search term below:";
-    document.getElementById("searchTerm").focus();
-    document.write("<form><input type=\"text\" name=\"sought\"" +
-          "id=\"searchTerm\"/>" +
-          "<input type=\"button\" onclick=\"getSought()\" " +
+    document.getElementById("whereRunning").innerHTML="Enter your next search term below:";
+    document.write(
+        "<p id=\"whereRunning\"> </p>" +
+        "<form><input type=\"text\" name=\"sought\" id=\"searchTerm\"/>" +
+        "<input type=\"button\" onclick=\"getSought()\" " +
           "value=\"Enter search term.\"></form>\n <hr>");
-    document.getElementById("heading").innerHTML="searching for: "+sought;
+    document.getElementById("searchTerm").focus();
+    document.write("<p>Searching for: "+sought+"</p>");
     document.write("<ul>");
     for (var i = 0; i < tupleIndexes.length; i++) {
       var pathHash = tupleIndexes[indexNum++];
@@ -37,7 +47,7 @@ function getSought() {
     } 
     document.write('</ul>');
   }
-  else {
-    document.location.reload()
-  }
+//  else {
+//    document.location.reload()
+//  }
 }
