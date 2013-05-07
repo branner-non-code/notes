@@ -1,6 +1,6 @@
 var currentURL = window.location.href;
 if (currentURL.search(/http/) === 0) {
-  var urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
+  var urlPrefix = "http://htmlpreview.github.io/?https://github.com/brannerchinese/notes/blob/master/";
   var whereWeAre = "via HTTP.";
 }
 else {
@@ -34,7 +34,7 @@ function getSought() {
         "<p id=\"whereRunning\"> </p>" +
         "<form><input type=\"text\" name=\"sought\" id=\"searchTerm\"/>" +
         "<input type=\"button\" onclick=\"getSought()\" " +
-          "value=\"Enter search term.\"></form>\n <hr>");
+          "value=\"Submit search term\"></form>\n <hr>");
     document.getElementById("searchTerm").focus();
     document.write("<p>Searching for: "+sought+"</p>");
     document.write("<ul>");
@@ -47,7 +47,4 @@ function getSought() {
     } 
     document.write('</ul>');
   }
-//  else {
-//    document.location.reload()
-//  }
 }
