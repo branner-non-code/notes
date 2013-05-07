@@ -42,7 +42,7 @@ function getSought() {
       var pathHash = tupleIndexes[indexNum++];
       var pathTuple = TupleStorage[String(pathHash)];
       document.write("<li><a href=\""  + urlPrefix + pathTuple[1] + 
-          "\" target=\"_blanki\">" + pathTuple[2]+ "</a> (<strong>" + 
+          "\" target=\"_blank\">" + pathTuple[2]+ "</a> (<strong>" + 
         pathTuple[0] + "</strong>: " + pathTuple[1] + ")</li>");
     } 
     document.write('</ul>');
