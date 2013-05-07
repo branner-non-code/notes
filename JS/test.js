@@ -32,7 +32,7 @@ function getSought() {
     document.getElementById("whereRunning").innerHTML="Enter your next search term below:";
     document.write(
         "<p id=\"whereRunning\"> </p>" +
-        "<form><input type=\"text\" name=\"sought\" id=\"searchTerm\"/>" +
+        "<form><input type=\"text\" name=\"sought\" id=\"searchTerm\" />" +
         "<input type=\"button\" onclick=\"getSought()\" " +
           "value=\"Submit search term\"></form>\n <hr>");
     document.getElementById("searchTerm").focus();
