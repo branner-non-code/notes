@@ -1,0 +1,6 @@
+PyYAML==3.10
+ipython==0.13.2
+nltk==2.0.4
+numpy==1.7.1
+readline==6.2.4.1
+wsgiref==0.1.2
