@@ -1,5 +1,7 @@
+// Different settings if running locally or on web.
 var currentURL = window.location.href;
 if (currentURL.search(/http/) === 0) {
+  // Don't use htmlpreview.github.io here; displays markdown, not HTML.
   var urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
   var whereWeAre = "via HTTP.";
 }
@@ -9,8 +11,10 @@ else {
 }
 document.getElementById("whereRunning").innerHTML="This page was read "+whereWeAre+"<br/><br/>Enter your search term below:";
 
+// Set focus.
 document.getElementById("searchTerm").focus();
 
+// Errors.
 if (IndexEntries === null) {
   alert("IndexEntries is null");
 }
@@ -24,7 +28,6 @@ function getSought() {
     alert("Nothing found.");
     location.reload()
   }
-//  if (sought !== null) {
   else {
     document.close();
     var tupleIndexes = IndexEntries[sought];
