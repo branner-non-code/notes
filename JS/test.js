@@ -20,6 +20,9 @@ function getSought() {
   if (sought !== null) {
     var tupleIndexes = IndexEntries[sought];
     var indexNum = 0;
+    document.getElementById("whereRunning").innerHTML="This page was read "+
+      whereWeAre+"<br/><br/>Enter your search term below:";
+    document.getElementById("searchTerm").focus();
     document.write("<form><input type=\"text\" name=\"sought\"" +
           "id=\"searchTerm\"/>" +
           "<input type=\"button\" onclick=\"getSought()\" " +
@@ -32,5 +35,8 @@ function getSought() {
         pathTuple[0] + "</strong>: " + pathTuple[1] + ")</li>");
     } 
     document.write('</ul>');
+  }
+  else {
+    document.location.reload()
   }
 }
