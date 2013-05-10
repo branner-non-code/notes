@@ -1,4 +1,4 @@
-## Graphing flowcharts and automata in LaTeX
+## Graphing flowcharts and automata with Dot in LaTeX
 
 The language Dot describes graphs in plain text. It is used with the Graphviz graphic application; both were originally developed at Bell Labs.
 
@@ -7,11 +7,11 @@ Below are a few notes on surprises I had when working with .dot and .svg (“Sca
  * For viewing .svg files, desktop installations of Ubuntu use the Gnome viewer “Eye of GNOME” (eog) by default.
  * Ubuntu’s (Lucid) server installation of graphviz does not include a viewer by default. You can display .svg files using Firefox; set the browser to about:config and confirm that you have the setting svg.smil.enabled;true and place an entry in your ~/.mailcap file:
 
-```
+ ```
 image/svg+xml; firefox
 ```
 
- Of course, you can also install eog on your server.
+ Of course, you can also install `eog` on your server.
  * The current Mac version of Graphviz (v. 2.28) has no trouble opening a .dot file, but apparently it cannot open .svg files.
 
 For use within LaTeX documents, it is possible to do everything native packages or (more interestingly) to incorporate Graphviz output by converting it to a native format:
