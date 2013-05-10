@@ -81,4 +81,16 @@ brew install gcc47 gfortran eigen
 brew link gfortran
 ```
 
- 1. 
+ 1. `virtualenv` (20130510). Normally involves installation with `pip`, but we install `pip` only within `virtualenv` environments!
+ 
+ ```
+curl -O https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.9.1.tar.gz
+tar xvfz virtualenv-1.9.1.tar.gz
+cd virtualenv-1.9.1
+sudo python setup.py install
+```
+  * Create alias:
+
+  ```
+alias virtualenv='/usr/local/bin/virtualenv'
+```
