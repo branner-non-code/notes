@@ -1,5 +1,5 @@
 # index_git.py
-# 20130502, works
+# 20130510, works
 # David Prager Branner
 '''Creates simple index of .md file-names and headers within those files, in a
 Git repository. Exports two .js files to be read by JS look-up script.'''
@@ -82,7 +82,8 @@ def normalize_words(strings, wnl_obj):
                 word = word.replace('`', '')
                 words_not_to_divide.append([word, hash_of_whole_string])
             else:
-                words_to_divide.append([word, treebank_POS, hash_of_whole_string])
+                words_to_divide.append([word, treebank_POS, 
+                    hash_of_whole_string])
         for item in words_to_divide:
             word = item[0]
             treebank_POS = item[1]
