@@ -56,6 +56,20 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
  >     LDFLAGS:  -L/usr/local/opt/openssl/lib
  >     CPPFLAGS: -I/usr/local/opt/openssl/include 
   * `brew doctor` now reports problems with PATH; fixed. All earlier changes to `~/.bash_profile` from MacPorts removed.
+ 
+ 1. `tarsnap` (previous installation)
+
+ ```
+wget --no-check-certificate https://www.tarsnap.com/download/tarsnap-autoconf-1.0.33.tgz
+```
+  * OS X automatically untars.
+  * Confirm SHA 256 signature (following https://www.tarsnap.com/download.html)
+  * CD into new directory
+ 
+  ```
+sudo ./configure
+sudo make all install clean
+```
 
  1. `gcc47` `gfortran` `eigen` (20130510) Needed for `numpy` and `scipy`. 
   * Note: `gcc-4.7` works with gfortran as of 20130331.
