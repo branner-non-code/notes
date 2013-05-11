@@ -97,29 +97,32 @@ alias virtualenv='/usr/local/bin/virtualenv'
 
  1. `python3` (20130510). The following caveat was generated:
  
- > Homebrew's Python3 framework
- >   /usr/local/Cellar/python3/3.3.1/Frameworks/Python.framework
- > 
- > Distribute and Pip have been installed. To update them
- >   pip3 install --upgrade distribute
- >   pip3 install --upgrade pip
- > 
- > To symlink "Idle 3" and the "Python Launcher 3" to ~/Applications
- >   `brew linkapps`
- > 
- > You can install Python packages with
- >   `pip3 install <your_favorite_package>`
- > 
- > They will install into the site-package directory
- >   /usr/local/lib/python3.3/site-packages
- > Executable python scripts will be put in:
- >   /usr/local/share/python3
- > so you may want to put "/usr/local/share/python3" in your PATH, too.
- > 
- > See: https://github.com/mxcl/homebrew/wiki/Homebrew-and-Python
- > 
- > Apple's Tcl/Tk is not recommended for use with Python on Mac OS X 10.6.
- > For more information see: http://www.python.org/download/mac/tcltk/
+  > Homebrew's Python3 framework
+  >   /usr/local/Cellar/python3/3.3.1/Frameworks/Python.framework
+  > 
+  > Distribute and Pip have been installed. To update them
+  >   pip3 install --upgrade distribute
+  >   pip3 install --upgrade pip
+  > 
+  > To symlink "Idle 3" and the "Python Launcher 3" to ~/Applications
+  >   `brew linkapps`
+  > 
+  > You can install Python packages with
+  >   `pip3 install <your_favorite_package>`
+  > 
+  > They will install into the site-package directory
+  >   /usr/local/lib/python3.3/site-packages
+  > Executable python scripts will be put in:
+  >   /usr/local/share/python3
+  > so you may want to put "/usr/local/share/python3" in your PATH, too.
+  > 
+  > See: https://github.com/mxcl/homebrew/wiki/Homebrew-and-Python
+  > 
+  > Apple's Tcl/Tk is not recommended for use with Python on Mac OS X 10.6.
+  > For more information see: http://www.python.org/download/mac/tcltk/
 
+ 1. `python` v. 2.7. (20130510). Using `brew install python`. This makes `pip` (not `pip3`) available.
+ 
+ 1. `mercurial` for Python27. (20130510). Using `pip install --upgrade Mercurial`.
 
 [end]
