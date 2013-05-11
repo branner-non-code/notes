@@ -5,5 +5,11 @@ Virtualenv
 
 1. To ensure Python3 support, use
 ```
+virtualenv v_env3 --python=python3
+```
+
+or 
+
+```
 virtualenv v_env3 --python=python3.3
 ```
