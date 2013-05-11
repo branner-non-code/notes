@@ -123,6 +123,6 @@ alias virtualenv='/usr/local/bin/virtualenv'
 
  1. `python` v. 2.7. (20130510). Using `brew install python`. This makes `pip` (not `pip3`) available.
  
- 1. `mercurial` for Python27. (20130510). Using `pip install --upgrade Mercurial`.
+ 1. `mercurial` for Python27. (20130510). Using `pip install --upgrade Mercurial`. Alias to `/usr/local/share/python/hg` placed in `~/.bash_profile`.
 
 [end]
