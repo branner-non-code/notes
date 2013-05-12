@@ -1,4 +1,4 @@
-# Site-wide .gitignore file
+## .gitignore file
 
 Use 
 ```
@@ -15,3 +15,13 @@ Currently (20130506) using:
 **.DS_Store
 **.swp
 ```
+
+## User and email
+
+Use
+```
+git config --global user.name "User Name"
+git config --global user.email "email@email.com"
+```
+
+[end]
