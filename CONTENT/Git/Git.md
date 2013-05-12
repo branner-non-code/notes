@@ -20,11 +20,9 @@ Commands
 Useful adjunct programs
 -----------------------
 
-1.  ​20130219. `tig` or other commit browser to examine current
-    repository.
+1.  `tig` or other commit browser to examine current repository.
 
-2.  ​20130219. `tree`: Command-line program to show directory structure;
-    useful for `.git`.
+2.  `tree`: Command-line program to show directory structure; useful for `.git`.
 
 Organization
 ------------
@@ -57,7 +55,7 @@ Organization
 
     git config core.ignorecase false
 
-to ensure that Git recognizes case changes. But this alone is not enough to ensure that the earlier name is deleted from the repo!
+   to ensure that Git recognizes case changes. But this alone is not enough to ensure that the earlier name is deleted from the repo!
 
 [end]
 
