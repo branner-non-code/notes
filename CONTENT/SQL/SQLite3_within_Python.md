@@ -1,4 +1,4 @@
-## SQLite within Python
+## SQLite3 within Python
 
 ### Closing connections explicitly
 
@@ -41,7 +41,7 @@ Even though connections are supposedly closed automatically, doing so explicitly
     conn = sqlite3.connect('hl.db')
     c = conn.cursor()
     o = c.execute('''SELECT ticker,headline FROM headlines''')
-    o.fetchall() # o is then populated with an index of tuples --- one tuple per record
+    o.fetchall() # o is then populated with a list of tuples --- one tuple per record
 
 `fetchall()`:
 
