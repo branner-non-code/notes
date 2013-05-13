@@ -4,38 +4,36 @@
 
 Even though connections are supposedly closed automatically, doing so explicitly with
 
-        object.connection.commit()
-        object.cursor.close()
-        object.connection.close()
+    object.connection.commit()
+    object.cursor.close()
+    object.connection.close()
 
  is safer.
 
 ### Basic instructions used
 
-        import sqlite3
-        con = sqlite3.connect('test.db')
-        # use con = sqlite3.connect(":memory:") to create the db in RAM!
-        curs = con.cursor()
-        con.close()
+    import sqlite3
+    con = sqlite3.connect('test.db')
+    # use con = sqlite3.connect(":memory:") to create the db in RAM!
+    curs = con.cursor()
+    con.close()
 
 ### Short program to find version number
 
-        #!/usr/bin/python
-        # -*- coding: utf-8 -*-
-
-        import sqlite3 as lite
-        import sys
-
-        con = lite.connect('test.db')
-
-        with con:
+    #!/usr/bin/python
+    # -*- coding: utf-8 -*-
+    
+    import sqlite3
+    import sys
+    
+    con = sqlite3.connect('test.db')
+    
+    with con:
             
-            cur = con.cursor()    
-            cur.execute('SELECT SQLITE_VERSION()')
-            
-            data = cur.fetchone()
-            
-            print("SQLite version: {}".format(data[0]))
+        cur = con.cursor()    
+        cur.execute('SELECT SQLITE_VERSION()')
+        data = cur.fetchone()
+        print("SQLite version: {}".format(data[0]))
 
 ## Examples
 
