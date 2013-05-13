@@ -12,9 +12,9 @@ Even though connections are supposedly closed automatically, doing so explicitly
 
 ### Basic instructions used
 
-        import sqlite3 as Q
-        con = Q.connect('test.db')
-        # use con = Q.connect(":memory:") to create the db in RAM!
+        import sqlite3
+        con = sqlite3.connect('test.db')
+        # use con = sqlite3.connect(":memory:") to create the db in RAM!
         curs = con.cursor()
         con.close()
 
