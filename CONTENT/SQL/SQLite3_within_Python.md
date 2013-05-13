@@ -62,7 +62,7 @@ Even though connections are supposedly closed automatically, doing so explicitly
 
 ### Other facts
 
-#### Cannot reset cursor! From <>:
+#### Cannot reset cursor!
 
     > The SQLite interface in Python 3.1 is based on PEP 249, which only
     > specifies that cursors have to support sequential access to the
@@ -75,8 +75,7 @@ Even though connections are supposedly closed automatically, doing so explicitly
     > The idea behind the design of the DB API is to support efficient
     > execution of code where you only need to process each row once.
 
-    So one must make the database do as much selection as possible
-    before beginning manipulation within Python.
+ So one must make the database do as much selection as possible before beginning manipulation within Python.
 
 
 [end]
