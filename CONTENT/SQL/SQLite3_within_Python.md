@@ -1,16 +1,16 @@
-SQLite within Python
---------------------
+## SQLite within Python
 
-1.  ​20130326. Even though connections are supposedly closed
-    automatically, doing so explicitly with
+### Closing connections explicitly
+
+Even though connections are supposedly closed automatically, doing so explicitly with
 
         object.connection.commit()
         object.cursor.close()
         object.connection.close()
 
-    is safer.
+ is safer.
 
-2.  ​20130221. Basic instructions used
+### Basic instructions used
 
         import sqlite3 as Q
         con = Q.connect('test.db')
@@ -18,7 +18,7 @@ SQLite within Python
         curs = con.cursor()
         con.close()
 
-3.  ​20130221. Short program to find version number
+### Short program to find version number
 
         #!/usr/bin/python
         # -*- coding: utf-8 -*-
@@ -37,10 +37,9 @@ SQLite within Python
             
             print("SQLite version: {}".format(data[0]))
 
-Examples
---------
+## Examples
 
-20130227.
+### `fetchall` and `fetchone`
 
     import sqlite3
     conn = sqlite3.connect('hl.db')
@@ -61,9 +60,9 @@ Examples
     In [31]: o.fetchone()
     Out[31]: ('TLLP', 'junk TLLP headline')
 
-​20130227. Other facts:
+### Other facts
 
-1.  Cannot reset cursor! From <>:
+#### Cannot reset cursor! From <>:
 
     > The SQLite interface in Python 3.1 is based on PEP 249, which only
     > specifies that cursors have to support sequential access to the
