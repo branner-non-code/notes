@@ -27,9 +27,7 @@ Even though connections are supposedly closed automatically, doing so explicitly
     import sys
     
     con = sqlite3.connect('test.db')
-    
     with con:
-            
         cur = con.cursor()    
         cur.execute('SELECT SQLITE_VERSION()')
         data = cur.fetchone()
