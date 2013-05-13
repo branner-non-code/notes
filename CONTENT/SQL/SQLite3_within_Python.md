@@ -71,7 +71,7 @@ Even though connections are supposedly closed automatically, doing so explicitly
     > The idea behind the design of the DB API is to support efficient
     > execution of code where you only need to process each row once.
     
-    (http://stackoverflow.com/a/2796571/621762)
+ (http://stackoverflow.com/a/2796571/621762)
 
  So one must make the database do as much selection as possible before beginning manipulation within Python.
 
