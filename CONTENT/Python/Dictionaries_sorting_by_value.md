@@ -5,6 +5,7 @@
 Use `operator.itemgetter`:
 
 ~~~
+import operator
 sorted(the_dictionary.items(), key=operator.itemgetter(1), reverse=True)
 ~~~
 
