@@ -1,6 +1,6 @@
 ## Using the Hanji site at Academia Sinica
 
-Basic instructions
+### Basic instructions
 
  1. Go to http://hanji.sinica.edu.tw/
  1. Click 瀚典全文檢索系統 2.0 版 [mega-corpus full-text search system v. 2.0]. That will bring you to 資料庫 [database]
