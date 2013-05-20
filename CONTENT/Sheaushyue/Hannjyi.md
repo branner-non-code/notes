@@ -11,6 +11,6 @@
   * 子 [scholars] 
   * 集 [collections]
  The Classics (standard 13 Classics) and Histories are the most fully populated at this point. 
- 1. Go back and try 古漢語語料庫; that is the best place to find major Classical Chinese texts like Juangtzyy.
+ 1. Go back and try 古漢語語料庫 => ; that is the best place to find major Classical Chinese texts like Juangtzyy.
 
 [end]
