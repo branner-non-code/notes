@@ -1,5 +1,15 @@
 ## Sort Python dictionary by value
 
+### Syntax
+
+Use `operator.itemgetter`:
+
+~~~
+sorted(the_dictionary.items(), key=operator.itemgetter(1), reverse=True)
+~~~
+
+Reverse in order to report high values first.
+
 ### Program to count the Chinese characters (only) in a file and return their overall percentages
 
 ~~~
