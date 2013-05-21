@@ -24,7 +24,7 @@ Go to `Option => Reveal Codes` in This Window
 
 This enables you to see, edit, and add XML tags to effect some basic formatting:
 
- * `<u>X</u>` will underline X
+ * `<u>X</u>` will underline X (so will `<i>X</i>` and `<b>X</b>`)
  * `<center>XYZ</center>` will center XYZ
  * `<font color="red">X</font>` will color X red. The recognized color names are:
   * `aqua`
