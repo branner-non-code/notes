@@ -15,6 +15,23 @@ Commands
     my repo to my own repo.
 
 4.   `git add -u`: add only updated files that are already tracked.
+ * Note: this appeared on 20130521:
+
+ > warning: The behavior of 'git add --update (or -u)' with no path argument from a
+subdirectory of the tree will change in Git 2.0 and should not be used anymore.
+ > To add content for the whole tree, run:
+ > 
+ >   git add --update :/
+ >   (or git add -u :/)
+ > 
+ > To restrict the command to the current directory, run:
+ > 
+ >   git add --update .
+ >   (or git add -u .)
+ > 
+ > With the current Git version, the command is restricted to the current directory.
+
+
 5.   `git rm --cached`: remove from index but leave in working tree.
 
 Useful adjunct programs
