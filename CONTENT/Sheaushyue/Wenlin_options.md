@@ -47,6 +47,6 @@ This enables you to see, edit, and add XML tags to effect some basic formatting:
  
  The formatting won't be visible until you set `Option => Reveal Code` to OFF again; at that point, you must be careful not to inadvertently delete part of the tag, otherwise it will "break" and the remainder of it will become visible, whlie the formatting will no longer work.
 
-Images, links, and other common things can be produced using `<img>`, `<a>`, and so forth. See http://guide.wenlininstitute.org/wenlin4.1/Editing_Documents; the same content is installed within your Wenlin 4 installation — look for `/WenlinTushuguan/Help/html/editing_documents.html` on your hard drive.
+Images, links, and other common things can be produced using `<img>`, `<a>`, and so forth. See http://guide.wenlininstitute.org/wenlin4.1/Editing_Documents; the same content is installed within your Wenlin 4 installation — look for a subpath `/WenlinTushuguan/Help/html/editing_documents.html` on your hard drive.
 
 [end]
