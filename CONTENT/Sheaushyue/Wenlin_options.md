@@ -45,8 +45,12 @@ This enables you to see, edit, and add XML tags to effect some basic formatting:
 
  For finer gradations you can also use the standard six-digit hexadecimal RGB numbers (`<font color="ff0000">` for red, etc.).
  
- The formatting won't be visible until you set `Option => Reveal Code` to OFF again; at that point, you must be careful not to inadvertently delete part of the tag, otherwise it will "break" and the remainder of it will become visible, whlie the formatting will no longer work.
+ The formatting won't be visible until you set `Option => Reveal Code` to OFF again; at that point, you must be careful not to inadvertently delete part of the tag, otherwise it will "break" and the remainder of it will become visible, whlie the formatting will no longer work. You may wish to go to `Options => Advanced Options` and set `Reveal codes when editing is enabled` to ON in order to avoid such accidental deletions.
 
 Images, links, and other common things can be produced using `<img>`, `<a>`, and so forth. See http://guide.wenlininstitute.org/wenlin4.1/Editing_Documents; the same content is installed within your Wenlin 4 installation — look for a subpath `/WenlinTushuguan/Help/html/editing_documents.html` on your hard drive.
+
+### Other interesting configuration options
+
+`Options => Advanced Options` is worth exploring at some length.
 
 [end]
