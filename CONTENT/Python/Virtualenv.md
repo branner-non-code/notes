@@ -13,3 +13,11 @@ virtualenv v_env3 --python=python3
  ```
 virtualenv v_env3 --python=python3.3
 ```
+
+1. To determine the path of the original virtualenv directory, use
+
+ ```
+echo $VIRTUAL_ENV
+```
+
+[end]
