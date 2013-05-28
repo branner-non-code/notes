@@ -4,7 +4,7 @@
 
 A simple indexer for Markdown files stored in a GitHub repository. No server-side support or database is needed, although an index must be generated using Python (not on GitHub).
 
-V. 0.1, 20130506
+V. 0.2, 20130528
 
 
 ## To Use
@@ -22,16 +22,23 @@ The earliest material in this collection was composed in LaTeX but converted to 
 
 ## Browser support
 Works on 
- * Chrome (tested on v. 26.0.1410.65, 20130507)
- * Safari (tested on v. 6.0.4 [8536.29.13], 20130507)
+ * Safari (tested on v. 6.0.4 [8536.29.13], 20130528)
+ * Firefox (tested on v. 21.0, 20130528)
 
-Works imperfectly on 
- * Firefox (tested on v. 20.0, 20130507)
-
+No longer works on
+ * Chrome (tested on v. 27.0.1453.93, 20130528; GitHub now serving JS from `raw.github.com` using MIME type `text/plain`. (see https://plus.google.com/+MikeWest/posts/28f8HS2M7cb)
 
 ## Future tasks
 1. Names beginning with a dot should be indexed both with and without the dot.
-1. Second search does not work on Firefox; page never finishes reloading. Why?
-2. `document.write()` is deprecated; can you translate to `innerHTML`?
+1. Search results should be better organized.
+1. Also search for left-substrings of search string.
+1. Ought also to be searching for individual words in pages.
+
+## New this version
+1. Second search now works on Firefox.
+2. Replaced all `document.write()` with `innerHTML`.
+
+## Previous versions
+V. 0.1, 20130506
 
 [end]
