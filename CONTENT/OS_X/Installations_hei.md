@@ -71,7 +71,7 @@ sudo ./configure
 sudo make all install clean
 ```
 
- 1. `gcc47` `gfortran` `eigen` (20130510) Needed for `numpy` and `scipy`. 
+ 1. `gcc47` `gfortran` `eigen` (20130510). Multi-hour installation. Needed for `numpy` and `scipy`. 
   * Note: `gcc-4.7` works with gfortran as of 20130331.
   * `gcc47` is not normally supplied, but is available through `brew tap`, which adds formula repositories.
 
