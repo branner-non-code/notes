@@ -201,7 +201,7 @@ alias virtualenv='/usr/local/bin/virtualenv'
  1. `python3` (20130527). The following caveat was generated:
  
   > Homebrew's Python3 framework
-  >   /usr/local/Cellar/python3/3.3.1/Frameworks/Python.framework
+  >   /usr/local/Cellar/python3/3.3.2/Frameworks/Python.framework
   > 
   > Distribute and Pip have been installed. To update them
   >   pip3 install --upgrade distribute
@@ -223,6 +223,8 @@ alias virtualenv='/usr/local/bin/virtualenv'
   > 
   > Apple's Tcl/Tk is not recommended for use with Python on Mac OS X 10.6.
   > For more information see: http://www.python.org/download/mac/tcltk/
+
+ 1. `brew linkapps`
 
  1. `python` v. 2.7. (20130510). Using `brew install python`. This makes `pip` (not `pip3`) available.
  
