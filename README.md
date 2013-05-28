@@ -26,7 +26,7 @@ Works on
  * Firefox (tested on v. 21.0, 20130528)
 
 No longer works on
- * Chrome (tested on v. 27.0.1453.93, 20130528; GitHub now serving JS from `raw.github.com` using MIME type `text/plain`. (see https://plus.google.com/+MikeWest/posts/28f8HS2M7cb)
+ * Chrome (tested on v. 27.0.1453.93, 20130528; GitHub now serving JS from `raw.github.com` using MIME type `text/plain`. (see https://plus.google.com/+MikeWest/posts/28f8HS2M7cb). Consider solution discussed at https://github.com/mrdoob/three.js/issues/3292: explicitly call `.js` scripts from `rawgithub.com` so they aren't served from `raw.github.com`.
 
 ## Future tasks
 1. Names beginning with a dot should be indexed both with and without the dot.
