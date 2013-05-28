@@ -1,4 +1,4 @@
-## Installations 15
+## Installations 11
 
 OS 10.8.3
 
@@ -106,7 +106,7 @@ sudo make all install clean
 ```
  1. `curl-ca-bundle` 
 
- 1. `gcc47` `gfortran` `eigen` (20130510) Needed for `numpy` and `scipy`. 
+ 1. `gcc47` `gfortran` `eigen` (20130527). Multi-hour installation. Needed for `numpy` and `scipy`. 
   * Note: `gcc-4.7` works with gfortran as of 20130331.
   * `gcc47` is not normally supplied, but is available through `brew tap`, which adds formula repositories.
 
@@ -115,8 +115,76 @@ brew tap homebrew/versions
 brew install gcc47 gfortran eigen
 brew link gfortran
 ```
+ 
+ Caveat for dependencies:
+ 
+ > This formula is keg-only: so it was not symlinked into /usr/local.
+ > 
+ > Conflicts with gmp in main repository.
+ > 
+ > Generally there are no consequences of this for you. If you build your
+ > own software and it requires this formula, you'll need to add to your
+ > build variables:
+ > 
+ >     LDFLAGS:  -L/usr/local/opt/gmp4/lib
+ >     CPPFLAGS: -I/usr/local/opt/gmp4/include
+ >
+ > This formula is keg-only: so it was not symlinked into /usr/local.
+ > 
+ > Conflicts with mpfr in main repository.
+ > 
+ > Generally there are no consequences of this for you. If you build your
+ > own software and it requires this formula, you'll need to add to your
+ > build variables:
+ > 
+ >     LDFLAGS:  -L/usr/local/opt/mpfr2/lib
+ >     CPPFLAGS: -I/usr/local/opt/mpfr2/include
+ > 
+ > This formula is keg-only: so it was not symlinked into /usr/local.
+ > 
+ > Conflicts with libmpc in main repository.
+ > 
+ > Generally there are no consequences of this for you. If you build your
+ > own software and it requires this formula, you'll need to add to your
+ > build variables:
+ > 
+ >     LDFLAGS:  -L/usr/local/opt/libmpc08/lib
+ >     CPPFLAGS: -I/usr/local/opt/libmpc08/include
+ >
+ >  This formula is keg-only: so it was not symlinked into /usr/local.
+ > 
+ > Conflicts with ppl in main repository.
+ > 
+ > Generally there are no consequences of this for you. If you build your
+ > own software and it requires this formula, you'll need to add to your
+ > build variables:
+ > 
+ >     LDFLAGS:  -L/usr/local/opt/ppl011/lib
+ >     CPPFLAGS: -I/usr/local/opt/ppl011/include
+ > 
+ > This formula is keg-only: so it was not symlinked into /usr/local.
+ > 
+ > Conflicts with cloog in main repository.
+ > 
+ > Generally there are no consequences of this for you. If you build your
+ > own software and it requires this formula, you'll need to add to your
+ > build variables:
+ > 
+ >     LDFLAGS:  -L/usr/local/opt/cloog-ppl015/lib
+ >     CPPFLAGS: -I/usr/local/opt/cloog-ppl015/include
+ >
+ > Brews that require a Fortran compiler should not use:
+ >   depends_on 'gfortran'
+ > 
+ > The preferred method of declaring Fortran support is to use:
+ >   def install
+ >     ...
+ >     ENV.fortran
+ >     ...
+ >   end
 
- 1. `virtualenv` (20130510). Normally involves installation with `pip`, but we install `pip` only within `virtualenv` environments!
+
+ 1. `virtualenv` (20130527). Normally involves installation with `pip`, but we install `pip` only within `virtualenv` environments!
  
  ```
 curl -O https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.9.1.tar.gz
@@ -130,7 +198,7 @@ sudo python setup.py install
 alias virtualenv='/usr/local/bin/virtualenv'
 ```
 
- 1. `python3` (20130510). The following caveat was generated:
+ 1. `python3` (20130527). The following caveat was generated:
  
   > Homebrew's Python3 framework
   >   /usr/local/Cellar/python3/3.3.1/Frameworks/Python.framework
