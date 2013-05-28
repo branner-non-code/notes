@@ -5,25 +5,28 @@
  2. Following http://www.tug.org/texlive/quickinstall.html:
 
   1. Download install-tl-unx.tar.gz:
-    
-    wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-    tar -xf install-tl-unx.tar.gz
-    cd install-tl-20130207
-    sudo ./install-tl
+  ~~~
+wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+tar -xf install-tl-unx.tar.gz
+cd install-tl-20130207
+sudo ./install-tl
+~~~
 
   1. Choose letter paper and install.
 
   1. tlmgr won't run if texlive belongs to root, so change to owner to user:
-
-    sudo chown -R dpb /usr/local/texlive
+  ~~~
+sudo chown -R dpb /usr/local/texlive
+~~~
 
   1. Changes to PATH added to .bashrc /etc/profile.d/zzz-texlive.sh
-
-    PATH=/usr/local/texlive/2012/bin/x86_64-linux:$PATH
-    MANPATH=/usr/local/texlive/2012/texmf/doc/man:$MANPATH
-    INFOPATH=:/usr/local/texlive/2012/texmf/doc/info$INFOPATH
-    unset TEXINPUTS
-    unset TEXMFCONFIG
+  ~~~
+PATH=/usr/local/texlive/2012/bin/x86_64-linux:$PATH
+MANPATH=/usr/local/texlive/2012/texmf/doc/man:$MANPATH
+INFOPATH=:/usr/local/texlive/2012/texmf/doc/info$INFOPATH
+unset TEXINPUTS
+unset TEXMFCONFIG
+~~~
 
   1. Note docs:
   > See
