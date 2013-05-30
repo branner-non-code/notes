@@ -12,4 +12,6 @@ https://github.com/jeremyckahn/three.js/commit/c22b7784c09fbba03bf96e7c70b06e121
  > fails.  This patch changes the requested URL to make the sample code 
  > run correctly in all browsers.
 
+I tried this on 20130529, without success. Even though the HTML explicitly states `type="text/javascript"`, even with `rawgithub.com`, it is not working on Firefox. It may be necessary to move everything to `gh-pages`.
+
 [end]
