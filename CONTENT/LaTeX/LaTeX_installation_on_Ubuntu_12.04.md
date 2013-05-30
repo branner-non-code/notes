@@ -19,6 +19,9 @@ sudo ./install-tl
   ~~~
 sudo chown -R dpb /usr/local/texlive
 ~~~
+
+ But perhaps it is not necessary to run `./install-tl` as root in the first place.
+
   * Changes to PATH added to .bashrc /etc/profile.d/zzz-texlive.sh
 
   ~~~
