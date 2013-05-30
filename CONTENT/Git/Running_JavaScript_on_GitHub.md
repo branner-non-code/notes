@@ -1,6 +1,6 @@
 ## Running JavaScript on GitHub
 
-20130528 There is a problem with GitHub forcing `text/plain` in order to prevent scripts from being run from their site, and in Chrome this does indeed prevent them from running (not in Firefox or Safari). 
+20130528 There is a problem with GitHub forcing `type="text/plain"` in order to prevent scripts from being run from their site, and in Chrome this does indeed prevent them from running (not in Firefox or Safari). 
 
 ### Workaround: use `rawgithub.com` instead of `raw.github.com`
 
