@@ -6,8 +6,8 @@
 
 https://github.com/jeremyckahn/three.js/commit/c22b7784c09fbba03bf96e7c70b06e1217d2cff0 (accessed 20130529)
 
- > rawgithub.com and raw.github.com serve files with different MIME types.  
- > Chrome doesn't treat the MIME type served from raw.github.com as 
+ > rawgithub.com and raw.github.com serve files with different MIME types. 
+ > Chrome doesn't treat the MIME type served from raw.github.com as  
  > executable JavaScript, so the sample code provided in Creating-a-scene.html 
  > fails.  This patch changes the requested URL to make the sample code 
  > run correctly in all browsers.
