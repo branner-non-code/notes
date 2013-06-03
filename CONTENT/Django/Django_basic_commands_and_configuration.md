@@ -58,9 +58,14 @@ python <sitename>/manage.py sqlall <appname> # displays all relevant SQL stateme
 ```
 class Name(django.db.models.Model):
     field_instance = django.db.models.<FieldName>(args)
+    
+    def __str__(self):
+        return self.<field_instance>
 ```
  * Fields:
   * `CharField`: requires `max_length` argument
   * `DateTimeField`
   * `IntegerField`: optional `default` argument
  * first positional argument is optionally a human-readable name
+
+[end]
