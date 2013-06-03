@@ -1,6 +1,8 @@
 ## Customize admin site
 
- Create a model admin object and pass it as second argument to `admin.site.register()`; do this in `<sitename>/admin.py` by changingg:
+### Create new class for admin
+
+ Create a model admin object and pass it as second argument to `admin.site.register()`; do this in `<sitename>/admin.py` by changing:
 
 ~~~
 from django.contrib import admin
@@ -27,8 +29,8 @@ admin.site.register(<ClassName>, <ClassNameAdmin>)
 ~~~
 class <ClassNameAdmin>(admin.ModelAdmin):
     fieldsets = [
-        (None,               {'fields': ['field1']}),
-        ('<title_of_fieldset>', {'fields': ['field2']}),
+        (None,               {'fields': ['<field1>']}),
+        ('<title_of_fieldset>', {'fields': ['<field2>']}),
     ]
 
 admin.site.register(<ClassName>, <ClassNameAdmin>)
@@ -39,8 +41,8 @@ admin.site.register(<ClassName>, <ClassNameAdmin>)
 ~~~
 class <ClassNameAdmin>(admin.ModelAdmin):
     fieldsets = [
-        (None,               {'fields': ['field1']}),
-        ('<title_of_fieldset>', {'fields': ['field2'], 'classes': ['collapse']}),
+        (None,               {'fields': ['<field1>']}),
+        ('<title_of_fieldset>', {'fields': ['<field2>'], 'classes': ['collapse']}),
     ]
 
 admin.site.register(<ClassName>, <ClassNameAdmin>)
@@ -48,7 +50,7 @@ admin.site.register(<ClassName>, <ClassNameAdmin>)
 
 ### Multiple choices
 
-
+ Template for `<sitename>/admin.py`:
 
 ~~~
 from django.contrib import admin
@@ -60,12 +62,22 @@ class ChoiceInline(admin.StackedInline):  # or admin.TabularInline
 
 class <ClassNameAdmin>(admin.ModelAdmin):
     fieldsets = [
-        (None,               {'fields': ['field1']}),
-        ('<title_of_fieldset>', {'fields': ['field2'], 'classes': ['collapse']}),
+        (None,               {'fields': ['<field1>']}),
+        ('<title_of_fieldset>', {'fields': ['<field2>'], 'classes': ['collapse']}),
     ]
     inlines = [ChoiceInline]
 
 admin.site.register(<ClassName>, <ClassNameAdmin>)
 ~~~
+
+### Other features
+
+ Add to  `<sitename>/admin.py`:
+ 
+ ~~~
+ list_filter = ['<field1>'] # filters
+ search_fields = ['<field2>'] # searching
+ date_hierarchy = '<field3>' # date drill-down (for objects that have dates)
+ ~~~
 
 [end]
