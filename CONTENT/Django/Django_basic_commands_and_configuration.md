@@ -34,7 +34,7 @@ DATABASES = {
 python <sitename>/manage.py startapp <appname>
 ```
     
- * add `<appname>` to the `INSTALLED_APPS` dictionary in <sitename>/settings.py
+ * add `<appname>` to the `INSTALLED_APPS` dictionary in `<sitename>/settings.py`
 
 ### Display SQL statements and use them create database model tables
 
