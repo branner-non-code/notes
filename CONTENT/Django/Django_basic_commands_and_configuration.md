@@ -1,4 +1,4 @@
-## Basic commdands and configuration
+## Basic commands and configuration
 
 ### Start project
 
