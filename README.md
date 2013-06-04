@@ -1,8 +1,10 @@
 # Notes
 
-## [Search markdown files here — note: GitHub no longer serving .js from regular (non-ghpages) repos, 20130601](http://htmlpreview.github.io/?https://github.com/brannerchinese/notes/blob/master/searchPage.html)
+## [Search markdown files here](http://htmlpreview.github.io/?https://github.com/brannerchinese/notes/blob/master/searchPage.html)
 
 A simple indexer for Markdown files stored in a GitHub repository. No server-side support or database is needed, although an index must be generated using Python (not on GitHub).
+
+Note: GitHub intermittently no longer serving .js from regular (non-ghpages) repos, 20130601.
 
 V. 0.2, 20130528
 
