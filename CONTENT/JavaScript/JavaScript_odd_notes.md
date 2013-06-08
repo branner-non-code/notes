@@ -12,4 +12,7 @@
  
         <body onload="initialize()"> // assumes script already loaded in head
 
+ 1. Declare global variables:
+  *  Declare them on default object by prepending `this.` to each of them.
+
 [end]
