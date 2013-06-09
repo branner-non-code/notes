@@ -4,7 +4,10 @@
 
 ### STATUS 20130609: Chrome (Version 27.0.1453.110) reports:
 
-        Refused to execute script from 'https://raw.github.com/brannerchinese/JsPlay/master/JS/rotate_table.js' because its MIME type ('text/plain') is not executable, and strict MIME type checking is enabled. 
+        Refused to execute script from 
+        'https://raw.github.com/brannerchinese/JsPlay/master/JS/rotate_table.js' 
+        because its MIME type ('text/plain') is not executable, and 
+        strict MIME type checking is enabled. 
 
  But in fact Chrome then does execute the script. On this date I have not trouble running the script on Firefox (v. 21.0) or Safari (Version 6.0.5 [8536.30.1]).
 
