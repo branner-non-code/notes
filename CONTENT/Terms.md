@@ -1,5 +1,4 @@
-Terminology
-===========
+### Words and jargon heard
 
 1.  ​20130227. “strftime” = “string from time”. This originates in C.
     But what about the corresponding function `strptime`? Perhaps
@@ -15,5 +14,11 @@ Terminology
 
 5.  ​20130326. “state”: essentially, non-static content.
 1. **20130401**. "staged": In Git, already tracked and now prepared for committing. The `add` command both begins tracking a file and stages a tracked file.
+
+1. **20130604**. "Documentation communicates intent." Heard at Python Study Group.
+
+1. **20130604**. "corner cases" — rarefied edge cases. Heard at Python Study Group.
+
+
 
 [end]
