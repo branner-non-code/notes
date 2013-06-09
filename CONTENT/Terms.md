@@ -19,6 +19,13 @@
 
 1. **20130604**. "corner cases" — rarefied edge cases. Heard at Python Study Group.
 
-
+1. trampoline
+1. thunk
+1. tail-recursion
+1. lazy sequence
+1. "var" (pronunciation)
+1. "char" (pronunciation)
+1. incantation
+1. stack smashing
 
 [end]
