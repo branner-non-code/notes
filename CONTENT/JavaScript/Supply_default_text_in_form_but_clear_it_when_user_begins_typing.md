@@ -1,6 +1,6 @@
 ### Supply default text in form but clear it when user begins typing
 
-Use this code:
+Works, 20130610:
 
     function clearField(){
       if (this.defaultValue === this.value) {
