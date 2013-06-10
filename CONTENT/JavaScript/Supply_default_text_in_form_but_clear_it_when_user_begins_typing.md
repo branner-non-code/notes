@@ -9,6 +9,7 @@ Use this code:
     }
     var searchBox = document.createElement('textArea');
     searchBox.defaultValue='Enter text here.';
-    searchBox.onkeydown=clearField;
+    searchBox.onkeydown=clearField; // better than onfocus(), since we want focus here by default
+    searchBox.focus();
 
 [end]
