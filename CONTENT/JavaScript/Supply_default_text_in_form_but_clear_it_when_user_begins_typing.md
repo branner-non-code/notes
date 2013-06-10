@@ -1,0 +1,14 @@
+### Supply default text in form but clear it when user begins typing
+
+Use this code:
+
+    function clearField(){
+      if (this.defaultValue === this.value) {
+        this.value = '';
+      }
+    }
+    var searchBox = document.createElement('textArea');
+    searchBox.defaultValue='Enter text here.';
+    searchBox.onkeydown=clearField;
+
+[end]
