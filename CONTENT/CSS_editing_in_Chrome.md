@@ -7,3 +7,6 @@
          element.style {
          
          }
+ 1. Toward the top right of that area you should see a plus-sign. Click it, and you can (temporarily) add CSS rules.
+ 
+[end]
