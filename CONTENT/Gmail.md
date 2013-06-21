@@ -10,8 +10,9 @@
  
 ### Low-demand versions, without heavy JavaScript burden
 
- * [https://mail.google.com/mail/?ui=mobile](http://htmlpreview.github.io/?https://mail.google.com/mail/?ui=mobile)
+ * [https://mail.google.com/mail/?ui=mobile](http://htmlpreview.github.io/?https://mail.google.com/mail/?ui=mobile) or 
  * [https://mail.google.com/mail/?ui=html](http://htmlpreview.github.io/?https://mail.google.com/mail/?ui=html)
 
+ (20130621)
 
 [end]
