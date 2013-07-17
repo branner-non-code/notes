@@ -33,6 +33,16 @@ Even though connections are supposedly closed automatically, doing so explicitly
         data = cur.fetchone()
         print("SQLite version: {}".format(data[0]))
 
+## Running SQL script within Python
+
+
+    con = sqlite3.connect('database.db')
+    with con:
+        curs = con.cursor()
+        query = open('script.sql', 'r').read()
+        curs.executescript(query)
+
+
 ## Examples
 
 ### `fetchall` and `fetchone`
