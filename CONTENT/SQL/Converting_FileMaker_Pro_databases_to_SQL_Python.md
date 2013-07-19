@@ -4,7 +4,7 @@
 
 ### Starting point and goals
 
-1. **Starting point**. Initially, I had three mostly flat FileMaker ("FMP") tables, each of which had a great many fields per record.
+1. **Starting point**. Initially, I had three mostly flat FileMaker ("FMP") tables, each of which had a great many fields per record. In all, there are perhaps 1.7 million discrete fields, though there is much repeated content among them. I have been curating them manually since about 2004.
 
 1. **End goal**. My end goal was to move permanently to SQL, with Python functions to manipulate all the data. Later I would add a web-based front-end. 
 
