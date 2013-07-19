@@ -71,9 +71,19 @@ Some join tables also have a "precedence" field (e.g., `xref_categories.categ_to
 
 1. The `CREATE` codeblock for each table is preceded by a `DROP TABLE IF EXISTS` expression for the same table, so that the script can be run repeatedly without risk of corruption.
 2. The script ends with the line 
+
         SELECT * FROM sqlite_master WHERE type='table';
+
    so that if it is run from the SQLite3 prompt its success or failure can be determined by eye.
-3. 
+3. The SQL script is normally being called from within the Python script that populates the db from the FMP dump files, using:
+
+        con = sqlite3.connect('database.db')
+        with con:
+            curs = con.cursor()
+            query = open('script.sql', 'r').read()
+            curs.executescript(query)
+
+   so that the Python script can be run repeatedly without having to deal with a second REPL.
 
 #### Schema for backup database
 
