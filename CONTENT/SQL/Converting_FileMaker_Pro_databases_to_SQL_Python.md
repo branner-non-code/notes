@@ -28,17 +28,17 @@
 
 ###  FMP script to export the three tables
  1. character data (expressions in Chinese script) — one dump file:
-  * *characters*: corresponding traditional and simplified forms
-  * *sources*: records about which major dictionaries contain which expressions
+  * **characters**: corresponding traditional and simplified forms
+  * **sources**: records about which major dictionaries contain which expressions
  1. category data (categories to which definitions may be assigned) — one dump file:
   * individual categories themselves
   * various cross-references among categories
   * text description of the meaning of certain categories
  1. definition data — four dump files:
-  * *gloss*: definitions with part-of-speech ("POS") tags, fields for syntax notes, measure words (for nouns), notes on coverbs and direct-object behavior in the case of verbal expressions, and important collocations;
-  * *literal*: literal meaning and information about the origin of the expression;
-  * *Pīnyīn*: whole Pīnyīn 拼音 renderings of whole expressions, with up to two variants per expression;
-  * *entry*: for each record, one field from each of "gloss", "literal", and "Pīnyīn", above, for constructing join tables; also, boolean metadata indicating whether a given entry or field was expected to appear in the first printing of the book.
+  * **gloss**: definitions with part-of-speech ("POS") tags, fields for syntax notes, measure words (for nouns), notes on coverbs and direct-object behavior in the case of verbal expressions, and important collocations;
+  * **literal**: literal meaning and information about the origin of the expression;
+  * **Pīnyīn**: whole Pīnyīn 拼音 renderings of whole expressions, with up to two variants per expression;
+  * **entry**: for each record, one field from each of "gloss", "literal", and "Pīnyīn", above, for constructing join tables; also, boolean metadata indicating whether a given entry or field was expected to appear in the first printing of the book.
 
 ### New schema for main database
 
