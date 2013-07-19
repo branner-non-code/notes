@@ -40,7 +40,9 @@
   * **Pīnyīn**: whole Pīnyīn 拼音 renderings of whole expressions, with up to two variants per expression;
   * **entry**: for each record, one field from each of "gloss", "literal", and "Pīnyīn", above, for constructing join tables; also, boolean metadata indicating whether a given entry or field was expected to appear in the first printing of the book.
 
-### New schema for main database
+### Schemata
+
+#### New schema for main database
 
 In all, eleven (11) tables:
 
@@ -64,5 +66,20 @@ In all, eleven (11) tables:
 Every table also has a unique integer primary key and a `time_of_commit` field, important for the backup database.
 
 Some join tables also have a "precedence" field (e.g., `xref_categories.categ_to_categ_precedence`, `xref_entry_to_categories.entry_to_categ_precedence`, `xref_pinyin_variants.py2_label_precedence`), in order to rank the multiple possible outcomes of joins.
+
+#### Script for constructing the main database.
+
+1. The `CREATE` codeblock for each table is preceded by a `DROP TABLE IF EXISTS` expression for the same table, so that the script can be run repeatedly without risk of corruption.
+2. The script ends with the line 
+        SELECT * FROM sqlite_master WHERE type='table';
+   so that if it is run from the SQLite3 prompt its success or failure can be determined by eye.
+3. 
+
+#### Schema for backup database
+
+The script that populates the backup database is the same as the one for the main database, with these two important exceptions:
+
+1. Each table has a `main_db_id` that corresponds to the `id` field (the primary key) of the corresponding table in the main database; it would not do to use the same `id` value as a primary key in the backup db, since there might be multiple backed-up records with the same `id` value in the main database.
+2. Each table has a `deleted_from_main` boolean field, to indicate whether the corresponding record in the main db was actually deleted or not. Changes other than outright deletion of a record can be ascertained by running a `diff` function on any two corresponding records.
 
 [end]
