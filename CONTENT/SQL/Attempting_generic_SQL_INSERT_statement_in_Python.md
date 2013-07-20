@@ -80,13 +80,13 @@ def insert(cursor, table_name, field_ordereddict, raise_error_or_not=True):
 
 ### Results
 
-1. *Virtues*. Chiefly modularity and readability. This design worked, and I was able to replace a number of long, messy inline INSERT statements with neat `insert()` calls. 
+1. **Virtues**. Chiefly modularity and readability. This design worked, and I was able to replace a number of long, messy inline INSERT statements with neat `insert()` calls. 
 
    A second benefit was that my herding of field-names and their contents was made more readable through use of the `OrderedDict` data structure.
 
-2. *Drawbacks*. However, The time required increased by a factor of 3.2, which I judge fatal to my project. 
+2. **Drawbacks**. However, The time required increased by a factor of 3.2, which I judge fatal to my project. 
 
-3. *Going forward*. Using `OrderedDict` to keep field-names and their contents organized improved readability:
+3. **Going forward**. Using `OrderedDict` to keep field-names and their contents organized improved readability:
 
         kanji_fields = OrderedDict((
                 ('kanji_traditional', kanji_traditional),
@@ -121,3 +121,20 @@ def insert(cursor, table_name, field_ordereddict, raise_error_or_not=True):
         $ python -m timeit -s "from collections import OrderedDict" "s = [('a', 1), ('b', 'ship'), ('c', 5.11)]"
         10000000 loops, best of 3: 0.117 usec per loop
 
+    Replacing `OrderedDict`s with lists of tuples was much faster — only 1.4 times the running time of explicit in-line SQL:
+    
+        kanji_fields = [
+                ('kanji_traditional', kanji_traditional),
+                ('kanji_simplified', kanji_simplified),
+                ('time_of_commit', timestamp)
+                ]
+        try:
+            cursor.execute('''
+                    INSERT INTO kanji ({0},{1},{2}) VALUES (?,?,?)'''.
+                    format(*tuple(i[0] for i in kanji_fields)),
+                    tuple(i[1] for i in kanji_fields))
+        except sqlite3.IntegrityError as e:
+            print(e, '\n  with {0} and {1}'.format(kanji_traditional, kanji_simplified))
+            raise CustomException()
+
+   This may prove to be the ideal mixture of modular neatness and speed (definition adjusted for the Python environment).
