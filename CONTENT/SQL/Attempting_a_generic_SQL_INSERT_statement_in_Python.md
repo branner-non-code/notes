@@ -57,7 +57,7 @@ def insert(cursor, table_name, field_ordereddict, raise_error_or_not=True):
     "raise_error_or_not" is used to decide whether or not to log details about 
     a sqlite3.IntegrityError and then raise a CustomException or not.
     '''
-    # field_ordereddict is ordered dictionary of 'fieldname':fieldname
+
     the_string = [str(i) for i in range(1, len(field_ordereddict)+1)]
     # prepare replacement fields for SQL field names
     the_string = '{' + '},{'.join(the_string) + '}'
