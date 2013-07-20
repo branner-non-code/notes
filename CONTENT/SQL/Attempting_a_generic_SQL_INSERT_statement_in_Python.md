@@ -1,6 +1,6 @@
-## Attempting generic SQL INSERT statement in Python
+## Attempting a generic SQL INSERT statement in Python
 
-I am working with SQLite3 in Python but am not yet at the stage of using an ORM such as SQLAlchemy. But I had the idea that I could save trouble by writing a function to produce INSERT statement generically — without having to write them out manually.
+I am working with SQLite3 in Python but am not yet at the stage of using an ORM such as SQLAlchemy. But I had the idea that I could save trouble by writing a function to produce INSERT statements generically — without having to write them out manually.
 
 Below is what I came up with.
 
