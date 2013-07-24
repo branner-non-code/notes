@@ -2,28 +2,20 @@
 
 Rendering a matrix as a linear array is a procedure common in generations of programming languages predating Python. How do I convert between the index of the linear array and the coordinates row and column of the corresponding matrix?
 
-Matrix showing linear array-indices of matrix-cells:
+### Matrix showing linear array-indices of matrix-cells:
 
-~~~
-row_number: +—————————————————+
+| row_number:   |   |   |    |    |                  |
+|:-------------:|:-:|:-:|:--:|:--:|:---------------- |
+|     2         | 8 | 9 | 10 | 11 |                  |
+|     1         | 4 | 5 |  6 |  7 |                  |
+|     0         | 0 | 1 |  2 |  3 |                  |
+|               |   |   |    |    |                  |
+|               | 0 | 1 |  2 |  3 | <= column_number |
 
-    2       | 8 | 9 | 10 | 11 |
+Here total_rows  = 3; total_columns = 4
 
-            +———+———+————+————+
 
-    1       | 4 | 5 |  6 |  7 |
-
-            +———+———+————+————+
-
-    0       | 0 | 1 |  2 |  3 |
-
-            +—————————————————+
-
-              0 | 1 |  2 |  3    <= column_number
-
-  total_rows  = 3
-  total_columns = 4
-~~~
+### Calculating index or row and column-numbers
 
 Three small calculations are needed to convert between an index and the corresponding row_number and column_number:
 
