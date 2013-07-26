@@ -16,7 +16,8 @@ Demo video at www.youtube.com/watch?v=Qc40YDFA4Bg
 
 > famo.us is a front end framework that solves performance for HTML5 apps
 
-http://famo.us
+ * http://famo.us
+ * Some demos at http://famo.us/c/r/uEgr
 
 ### Asm.js
 
