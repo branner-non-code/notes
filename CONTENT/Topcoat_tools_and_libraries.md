@@ -10,10 +10,14 @@ https://github.com/h5bp/Effeckt.css
 
 ### Famo.us
 
-"famo.us is a front end framework that solves performance for HTML5 apps"
+> famo.us is a front end framework that solves performance for HTML5 apps
+
+http://famo.us
 
 ### Asm.js
 
-an extraordinarily optimizable, low-level subset of JavaScript: http://asmjs.org/
+> an extraordinarily optimizable, low-level subset of JavaScript
+
+http://asmjs.org/
 
 [end]
