@@ -2,7 +2,11 @@
 
 ### Topcoat effeckt
 
+Collection of superb CSS effects.
+
 https://github.com/h5bp/Effeckt.css
+
+Demo video at www.youtube.com/watch?v=Qc40YDFA4Bg
 
 ### topcoat-phonegap
 
