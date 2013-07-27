@@ -70,7 +70,7 @@ Some join tables also have a "precedence" field (e.g., `xref_categories.categ_to
 
 Any table, even one with only a single significant (non-date) field, cannot retain `UNIQUE` in the backup db, since changes to it can lead to multiple copies of it in the backup.
 
-Initially, the database had a table of traditional-simplified character expression pairs. By giving the corresponding table in the new database just a single character expression field and adding a join table to link traditional to simplified, I've reduced the number of total fields by about 12%, with a running-time increase of about 30%. (20130727)
+Initially, the SQL database had a table of traditional-simplified character expression pairs, as did the corresponding FMP table. By giving the corresponding table in the new database just a single character expression field and adding a join table to link traditional to simplified, I've reduced the number of total fields by about 12%, with an increase in running-time of about 30% for the import script. (20130727)
 
 #### Script for constructing the main database.
 
