@@ -44,10 +44,11 @@
 
 #### New schema for main database
 
-In all, eleven (11) tables:
+In all, fourteen (14) tables (20130727):
 
-1. character data => 3 tables: 
+1. character data => 4 tables: 
  * `kanji`
+ * `xref_kanji_trad_simp` (joins simplified and traditional forms, when they differ)
  * `kanji_sources`
  * `kanji_and_source_xref` (the last is a join table to link `kanji` and `kanji_sources`);
 2. category data => 2 tables: 
@@ -55,7 +56,7 @@ In all, eleven (11) tables:
  * `xref_categories` (join table for `category`)
 3. definition data => 4 tables:
  1. gloss => 1 table `gloss`
- 2. literal => 1 table `literal`
+ 2. literal => 3 tables `literal`, `origin`, `xref_literal_origin` (join table to connect `literal` and `origin`)
  3. Pīnyīn => 2 tables:
   * `pinyin`
   * `xref_pinyin_variants` (join table for `pinyin`)
@@ -66,6 +67,10 @@ In all, eleven (11) tables:
 Every table also has a unique integer primary key and a `time_of_commit` field, important for the backup database.
 
 Some join tables also have a "precedence" field (e.g., `xref_categories.categ_to_categ_precedence`, `xref_entry_to_categories.entry_to_categ_precedence`, `xref_pinyin_variants.py2_label_precedence`), in order to rank the multiple possible outcomes of joins.
+
+Any table, even one with only a single significant (non-date) field, cannot retain `UNIQUE` in the backup db, since changes to it can lead to multiple copies of it in the backup.
+
+Initially, the database had a table of traditional-simplified character expression pairs. By giving the corresponding table in the new database just a single character expression field and adding a join table to link traditional to simplified, I've reduced the number of total fields by about 12%, with a running-time increase of about 30%. (20130727)
 
 #### Script for constructing the main database.
 
