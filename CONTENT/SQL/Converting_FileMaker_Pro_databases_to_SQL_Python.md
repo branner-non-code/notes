@@ -44,25 +44,32 @@
 
 #### New schema for main database
 
-In all, fourteen (14) tables (20130727):
+In all, fourteen (16) tables (20130729):
 
 1. character data => 4 tables: 
  * `kanji`
  * `xref_kanji_trad_simp` (joins simplified and traditional forms, when they differ)
  * `kanji_sources`
  * `kanji_and_source_xref` (the last is a join table to link `kanji` and `kanji_sources`);
-2. category data => 2 tables: 
+2. category data => 3 tables: 
  * `category`
- * `xref_categories` (join table for `category`)
-3. definition data => 4 tables:
+ * `xref_categories_close` (join table for `category`; note that this and `xref_categories_antonyms` allow for the cross-reference of categories, while `xref_entry_to_categories` and `xref_entry_to_antonyms` link individual entries to categories)
+ * `xref_categories_antonyms` (second join table for `category`)
+3. definition data => 6 tables:
  1. gloss => 1 table `gloss`
- 2. literal => 3 tables `literal`, `origin`, `xref_literal_origin` (join table to connect `literal` and `origin`)
+ 2. literal => 3 tables 
+  * `literal`
+  * `origin`
+  * `xref_literal_origin` (join table to connect `literal` and `origin`)
  3. Pīnyīn => 2 tables:
   * `pinyin`
   * `xref_pinyin_variants` (join table for `pinyin`)
-4. entry => 2 tables:
+4. entry => 3 tables:
   * `entry` (join table for `kanji`, `pinyin`, `gloss`, `literal`; `kanji_sources` is normally excluded)
-  * `xref_entry_to_categories` (join table for `entry`, `category`)
+  * `xref_entry_to_categories` (join table for `entry`, `category`; note that this and `xref_entry_to_antonyms` link individual entries to categories, while `xref_categories_close` and `xref_categories_antonyms` allow for the cross-reference of categories)
+  * `xref_entry_to_antonyms` (second join table for `entry`, `category`)
+  
+We should have a separate set of tables controlling English lemmata, distinct from the categories. The categories, then, would be reduced in number. (20130729)
 
 Every table also has a unique integer primary key and a `time_of_commit` field, important for the backup database.
 
