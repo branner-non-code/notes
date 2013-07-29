@@ -44,7 +44,7 @@
 
 #### New schema for main database
 
-In all, fourteen (16) tables (20130729):
+In all, sixteen (16) tables (20130729):
 
 1. character data => 4 tables: 
  * `kanji`
