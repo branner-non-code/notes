@@ -1,6 +1,7 @@
 ## Self-publishing venues
 
 ### Sites
+ * https://leanpub.com/authors: mentioned by Norm Kabir.
  * http://www.smashwords.com
  * https://www.createspace.com/
  * http://www.bookbaby.com/
