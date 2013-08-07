@@ -20,4 +20,20 @@ git rm -f --cached <file>
 git diff --cached <file>
 ~~~
 
+### Removal or moving of already tracked files
+
+~~~
+git add -u <path>
+~~~
+
+will note the disappearance of those files from their original path, and
+
+~~~
+git add <path>
+~~~
+
+will note their appearance somewhere else.
+
+But there doesn't seem to be a one-step equivalent to Mercurial's `addr` command.
+
 [end]
