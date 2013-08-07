@@ -53,6 +53,8 @@ def generic_get_id(table_name, list_of_field_value_tuples, cursor):
 
 (as of 20130729)
 
+Apparently SQLite3 allows field names to be inserted using `format()`, just not values. That permits the use of generic `INSERT` and `SELECT` statements, in which the field names are added dynamically.
+
 ### An example of my original inline INSERT statements
 
 ~~~
