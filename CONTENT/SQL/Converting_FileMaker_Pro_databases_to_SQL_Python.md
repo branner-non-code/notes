@@ -24,7 +24,7 @@
 
 1. Python scripts to populate the SQL db. Progressive manual testing of these in Ipython, as well as manual correction of the data; no unit testing done but exceptions are implemented for expected edge cases. Initially, the Python SQLite3 module is being used but I may turn to SQLAlchemy later. 
 
-1. Python functions to use the SQL database.
+1. Python functions to use the SQL database. (This needs to be updated; 20130809.)
 
 ###  FMP script to export the three tables
  1. character data (expressions in Chinese script) — one dump file:
