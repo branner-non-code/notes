@@ -4,54 +4,64 @@ I am working with SQLite3 in Python but am not yet at the stage of using an ORM 
 
 Below is what I came up with.
 
-### Most current version
+### Most current version (as of 20130809)
 
 See later sections for evolution of what I have built.
 
 ~~~
-def generic_insert(table_name, list_of_fields, cursor, timestamp):                
-    '''Inserts into a given table                                                 
-                                                                                  
-     * a list of tuples (field, value; not a plain list!) and
-     * a timestamp.   
-                      
-    The timestamp is added to the list of tuples with field-name "time_of_commit".
-    '''                                                                           
-    list_of_fields.append(('time_of_commit', timestamp))                          
-    keys = [i[0] for i in list_of_fields]                                         
-    values = [i[1] for i in list_of_fields]                                       
-    the_string = [str(i) for i in range(1, len(list_of_fields)+1)]                
-    # prepare replacement fields for SQL field names                              
-    the_string = '{' + '},{'.join(the_string) + '}'                               
+def generic_insert(table_name, list_of_fields, cursor, timestamp_id):          
+    '''Inserts into a given table      
+     * a list of tuples (field, value; not a plain list!) and                  
+     * a timestamp.            
+    The timestamp is added to the list of tuples with field-name "timestamp_id".
+    '''                        
+    list_of_fields.append(('timestamp_id', timestamp_id))                      
+    keys = [i[0] for i in list_of_fields]                                      
+    values = [i[1] for i in list_of_fields]                                    
+    the_string = [str(i) for i in range(1, len(list_of_fields)+1)]             
+    # prepare replacement fields for SQL field names                           
+    the_string = '{' + '},{'.join(the_string) + '}'                            
     # prepare question marks for VALUES
-    question_marks = '?' + ',?' * (len(list_of_fields) - 1)                       
-    # construct string                                                            
-    the_string = ('''INSERT INTO {0} (''' + the_string + ''') VALUES (''' +       
-            question_marks + ''');''')
-    the_string = the_string.format(table_name, *tuple(keys))                      
-    try:                                                                          
-        cursor.execute(the_string, tuple(values))
-    except sqlite3.IntegrityError as e:                                           
-        # This error means duplicate entry; no need for action.                   
-        pass          
-                                                                                  
-def get_row_count(table_name, cursor):
-    row_count = cursor.execute( '''SELECT max(rowid) FROM {};'''.                 
+    question_marks = '?' + ',?' * (len(list_of_fields) - 1)                    
+    # construct string         
+    field_names = ','.join(keys)       
+    # Note that it is not time-efficient to construct the INSERT statement     
+    # without the use of format(); a limited run of 72K records was slower this
+    # way by 0.8 second; a limited run of 72K records was slower this way by   
+    # 10%.                     
+    #    the_string = ('''INSERT INTO ''' + table_name + ''' (''' +            
+    #    field_names + ''') VALUES (''' + question_marks + ''');''')           
+    the_string = ('''INSERT INTO {0} (''' + the_string + ''') VALUES (''' +    
+            question_marks + ''');''') 
+    the_string = the_string.format(table_name, *tuple(keys))                   
+    try:                       
+        cursor.execute(the_string, tuple(values))                              
+    except sqlite3.IntegrityError as e:
+        # This error normally means duplicate entry, which can be ignored.     
+        # There is normally no need for action unless other unexplained        
+        # problems occur. Below, errors are reported selectively depending on
+        # what table is being worked on.
+        if table_name in set(['entry_xref_table']):
+            print(table_name, e)
+        pass                   
+                               
+def get_row_count(table_name, cursor): 
+    '''Generic function to return row count for a given table.'''              
+    row_count = cursor.execute( '''SELECT max(rowid) FROM {};'''.              
             format(table_name))
-    return row_count.fetchall()[0][0]
-                      
-def generic_get_id(table_name, list_of_field_value_tuples, cursor):               
-    keys = [i[0] for i in list_of_field_value_tuples]                             
+    return row_count.fetchall()[0][0]  
+                               
+def generic_get_id(table_name, list_of_field_value_tuples, cursor):            
+    '''Returns the ID of a given record in a given table.'''                   
+    keys = [i[0] for i in list_of_field_value_tuples]
     values = [i[1] for i in list_of_field_value_tuples]
-    the_string = [str(i) for i in range(1, len(list_of_field_value_tuples)+1)]    
+    the_string = [str(i) for i in range(1, len(list_of_field_value_tuples)+1)] 
     the_string = '{' + '}=? AND {'.join(the_string) + '}=?'
-    the_string = ('''SELECT id FROM {0} WHERE ''' + the_string + ';')                                                                                                
-    the_string = the_string.format(table_name, *tuple(keys))                      
-    id = cursor.execute(the_string, tuple(values))                                
-    return id.fetchall()[0][0]
+    the_string = ('''SELECT id FROM {0} WHERE ''' + the_string + ';')          
+    the_string = the_string.format(table_name, *tuple(keys))                   
+    id = cursor.execute(the_string, tuple(values))                             
+    return id.fetchall()[0][0] 
 ~~~
-
-(as of 20130729)
 
 Apparently SQLite3 allows field names to be inserted using `format()`, just not values. That permits the use of generic `INSERT` and `SELECT` statements, in which the field names are added dynamically.
 
