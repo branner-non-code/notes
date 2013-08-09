@@ -44,7 +44,7 @@
 
 #### New schema for main database
 
-In all, sixteen (16) tables (20130729):
+In all, sixteen (16) tables (20130729): (This needs to be updated; 20130809.)
 
 1. character data => 4 tables: 
  * `kanji`
@@ -107,9 +107,9 @@ The script that populates the backup database is the same as the one for the mai
 #### Changes made to Malediction project as of 20130809
 
  1. Wrote UML diagram in OmniGraffle; led to finding a number of inefficiencies and errors
- 2. Divided importing script into two parts: one for "reference" tables, such as those to pair simplified and traditional character-expressions, and another for the population of the contents of the actual dictionary, including various parts of the entry and the categories and Pīnyīn readings to which a given entry may need to be joined.
+ 2. Divided importing script into two parts: one for "reference" tables, such as those to pair simplified and traditional character-expressions, and another for the population of the contents of the actual dictionary, including various parts of the entry and the categories and Pīnyīn readings to which a given entry may need to be joined. Running the latter script alone now takes about 26 seconds; running the whole set of functions used to take around three minutes.
  3. Renamed some functions for clarity.
- 4. Moved some function calls to a single place in `main()` rather than having them appear several times, each in a different subfunction.
- 5. Timestamps are now recorded in a table and the id of a given timestamp record is used in all other tables. That makes it possible to determine quickly when any commits have been made to the database.
+ 4. Moved some function calls to a single place in `main()` rather than having them reappear several times, each in a different subfunction.
+ 5. Timestamps are now recorded in a table and the id of a given timestamp record is used in all other tables. That makes it possible to determine quickly whether any commits have been made to the database within a particular window.
 
 [end]
