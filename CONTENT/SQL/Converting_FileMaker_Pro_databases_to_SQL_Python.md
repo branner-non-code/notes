@@ -24,9 +24,9 @@
 
 1. Python scripts to populate the SQL db. Progressive manual testing of these in Ipython, as well as manual correction of the data; no unit testing done but exceptions are implemented for expected edge cases. Initially, the Python SQLite3 module is being used but I may turn to SQLAlchemy later. 
 
-1. Python functions to use the SQL database. (This needs to be updated; 20130809.)
+1. Python functions to use the SQL database.
 
-###  FMP script to export the three tables
+###  FMP script to export the three tables (This needs to be updated; 20130809.)
  1. character data (expressions in Chinese script) — one dump file:
   * **characters**: corresponding traditional and simplified forms
   * **sources**: records about which major dictionaries contain which expressions
@@ -106,7 +106,7 @@ The script that populates the backup database is the same as the one for the mai
 
 #### Changes made to Malediction project as of 20130809
 
- 1. Wrote UML diagram in OmniGraffle; led to finding a number of inefficiencies and errors
+ 1. Wrote UML diagram in OmniGraffle; led to finding a number of inefficiencies and errors. 
  2. Divided importing script into two parts: one for "reference" tables, such as those to pair simplified and traditional character-expressions, and another for the population of the contents of the actual dictionary, including various parts of the entry and the categories and Pīnyīn readings to which a given entry may need to be joined. Running the latter script alone now takes about 26 seconds; running the whole set of functions used to take around three minutes.
  3. Renamed some functions for clarity.
  4. Moved some function calls to a single place in `main()` rather than having them reappear several times, each in a different subfunction.
