@@ -10,41 +10,49 @@ See later sections for evolution of what I have built.
 
 ~~~
 def generic_insert(table_name, list_of_fields, cursor, timestamp_id):          
-    '''Inserts into a given table      
+    '''Inserts into a given table                                              
      * a list of tuples (field, value; not a plain list!) and                  
-     * a timestamp.            
+     * a timestamp.                                                            
     The timestamp is added to the list of tuples with field-name "timestamp_id".
-    '''                        
-    list_of_fields.append(('timestamp_id', timestamp_id))                      
-    keys = [i[0] for i in list_of_fields]                                      
-    values = [i[1] for i in list_of_fields]                                    
-    the_string = [str(i) for i in range(1, len(list_of_fields)+1)]             
-    # prepare replacement fields for SQL field names                           
-    the_string = '{' + '},{'.join(the_string) + '}'                            
-    # prepare question marks for VALUES
-    question_marks = '?' + ',?' * (len(list_of_fields) - 1)                    
-    # construct string         
-    field_names = ','.join(keys)       
+    '''     
     # Note that it is not time-efficient to construct the INSERT statement     
     # without the use of format(); a limited run of 72K records was slower this
     # way by 0.8 second; a limited run of 72K records was slower this way by   
-    # 10%.                     
+    # 10%.  
     #    the_string = ('''INSERT INTO ''' + table_name + ''' (''' +            
     #    field_names + ''') VALUES (''' + question_marks + ''');''')           
+    list_of_fields.append(('timestamp_id', timestamp_id))                      
+    # Since we are using a list of tuples rather than a dictionary, we need our
+    # own lists of keys and values.                                            
+    keys = [i[0] for i in list_of_fields]                                      
+    values = [i[1] for i in list_of_fields]                                    
+    # Begin constructing the SQL string as a list of integers converted to     
+    # strings. This will become the core of a string.format() element.         
+    the_string = [str(i) for i in range(1, len(list_of_fields)+1)]             
+    # Prepare replacement fields for SQL field names, using the list of        
+    # integers.                                                                
+    the_string = '{' + '},{'.join(the_string) + '}'                            
+    # Prepare question marks for VALUES                                        
+    question_marks = '?' + ',?' * (len(list_of_fields) - 1)                    
+    # Construct string                                                         
+    field_names = ','.join(keys)                                               
     the_string = ('''INSERT INTO {0} (''' + the_string + ''') VALUES (''' +    
-            question_marks + ''');''') 
-    the_string = the_string.format(table_name, *tuple(keys))                   
-    try:                       
-        cursor.execute(the_string, tuple(values))                              
+            question_marks + ''');''')                                         
+    # Populate the finished string with the name of the table and the keys (=
+    # fields).
+    the_string = the_string.format(table_name, *tuple(keys))
+    # Populate the SQL statement with the values (replacing question-marks).   
+    try:
+        cursor.execute(the_string, tuple(values))        
     except sqlite3.IntegrityError as e:
         # This error normally means duplicate entry, which can be ignored.     
-        # There is normally no need for action unless other unexplained        
-        # problems occur. Below, errors are reported selectively depending on
+        # There is normally no need for action unless other unexplained
+        # problems occur. Below, errors are reported selectively depending on  
         # what table is being worked on.
         if table_name in set(['entry_xref_table']):
             print(table_name, e)
-        pass                   
-                               
+        pass
+                           
 def get_row_count(table_name, cursor): 
     '''Generic function to return row count for a given table.'''              
     row_count = cursor.execute( '''SELECT max(rowid) FROM {};'''.              
