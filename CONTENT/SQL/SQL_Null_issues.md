@@ -12,4 +12,13 @@ http://programmers.stackexchange.com/questions/32578/sql-empty-string-vs-null-va
 
 http://www.sqlite.org/nulls.html
 
+### C. J. Date's opposition
+
+See discussion at 
+http
+
+### Another overview:
+
+https://en.wikipedia.org/wiki/Null_%28SQL%29#Controversy
+
 [end]
