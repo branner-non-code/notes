@@ -104,4 +104,12 @@ The script that populates the backup database is the same as the one for the mai
 1. Each table has a `main_db_id` that corresponds to the `id` field (the primary key) of the corresponding table in the main database; it would not do to use the same `id` value as a primary key in the backup db, since there might be multiple backed-up records with the same `id` value in the main database.
 2. Each table has a `deleted_from_main` boolean field, to indicate whether the corresponding record in the main db was actually deleted or not. Changes other than outright deletion of a record can be ascertained by running a `diff` function on any two corresponding records.
 
+#### Changes made to Malediction project as of 20130809
+
+ 1. Wrote UML diagram in OmniGraffle; led to finding a number of inefficiencies and errors
+ 2. Divided importing script into two parts: one for "reference" tables, such as those to pair simplified and traditional character-expressions, and another for the population of the contents of the actual dictionary, including various parts of the entry and the categories and Pīnyīn readings to which a given entry may need to be joined.
+ 3. Renamed some functions for clarity.
+ 4. Moved some function calls to a single place in `main()` rather than having them appear several times, each in a different subfunction.
+ 5. Timestamps are now recorded in a table and the id of a given timestamp record is used in all other tables. That makes it possible to determine quickly when any commits have been made to the database.
+
 [end]
