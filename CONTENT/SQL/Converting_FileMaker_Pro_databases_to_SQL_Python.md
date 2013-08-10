@@ -81,9 +81,20 @@ Initially, the SQL database had a table of traditional-simplified character expr
 
 #### Script for constructing the main database.
 
-1. The `CREATE` codeblock for each table is preceded by a `DROP TABLE IF EXISTS` expression for the same table, so that the script can be run repeatedly without risk of corruption.
-2. The script ends with the line 
+1. During initial work and testing, the `CREATE` codeblock for each table is preceded by a `DROP TABLE IF EXISTS` expression for the same table, so that the script can be run repeatedly without risk of corruption.
+2. Once all the problems seemed to have been fixed, I altered `main()` so as to allow only new content to be added:
 
+        def main(anything=''):                                     
+            con = sqlite3.connect('malediction.db')                
+            with con:                                              
+                cursor = con.cursor()                              
+                # If there was any argument to main(), reinitialize the tables in
+                # question here; otherwise, merely supplement them.                                                                                                         
+                if anything:                                       
+                    query = open('malediction_sql_database.sql', 'r').read()           
+                    cursor.executescript(query)                    
+
+2. The script ends with the line 
         SELECT * FROM sqlite_master WHERE type='table';
 
    so that if it is run from the SQLite3 prompt its success or failure can be determined by eye.
