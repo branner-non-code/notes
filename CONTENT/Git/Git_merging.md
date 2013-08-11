@@ -8,4 +8,6 @@
  6. `git push origin :dev`: deletes `dev` at the origin
  7. `git push`: pushes all commits from the `merge` to the origin
  
+ 8. If a new branch is created locally, push to the remote repo with `git push -u origin dev`
+
 [end]
