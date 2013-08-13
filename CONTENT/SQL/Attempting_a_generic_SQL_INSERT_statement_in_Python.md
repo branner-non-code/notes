@@ -4,7 +4,7 @@ I am working with SQLite3 in Python but am not yet at the stage of using an ORM 
 
 Below is what I came up with.
 
-### Most current version (as of 20130809)
+### Most current version (as of 20130813)
 
 See later sections for evolution of what I have built.
 
@@ -43,15 +43,14 @@ def generic_insert(table_name, list_of_fields, cursor, timestamp_id):
     the_string = the_string.format(table_name, *tuple(keys))
     # Populate the SQL statement with the values (replacing question-marks).   
     try:
-        cursor.execute(the_string, tuple(values))        
+        cursor.execute(the_string, tuple(values))
+        return cursor.lastrowid
     except sqlite3.IntegrityError as e:
-        # This error normally means duplicate entry, which can be ignored.     
+        # This error normally means duplicate entry, which can be ignored.
         # There is normally no need for action unless other unexplained
-        # problems occur. Below, errors are reported selectively depending on  
-        # what table is being worked on.
-        if table_name in set(['entry_xref_table']):
-            print(table_name, e)
-        pass
+        # problems occur.
+        # So instead we manually look up the desired ID number and return it.
+        return generic_get_id(table_name, list_of_fields, cursor)
                            
 def get_row_count(table_name, cursor): 
     '''Generic function to return row count for a given table.'''              
