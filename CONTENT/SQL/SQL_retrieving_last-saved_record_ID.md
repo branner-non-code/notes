@@ -33,6 +33,13 @@ $ python -m timeit -s "\
 $ 
 ~~~
 
+#### Notes about `cursor.lastrowid`
+
+ 1. Its type is either `int` or `NoneType` — not a function.
+ 2. Does not "reset" after being used once, unlike `cursor.fetchall()`.
+ 3. Does not reset if `execute` fails; retains prior value.
+ 3. Is set to `None` if any SQL other than `INSERT` is used.
+
 ### In SQL
 
 Is there a solution? A join, perhaps?
