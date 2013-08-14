@@ -4,8 +4,8 @@ How read
 
 Alternate names
 ---------------
- * __symmetric difference__ (set theory): http://mathworld.wolfram.com/SymmetricDifference.html,accessed 20110327.
- * __exclusive disjunction___
+ * __symmetric difference__ (set theory): http://mathworld.wolfram.com/SymmetricDifference.html 20110327.
+ * __exclusive disjunction__
 
 Symbols
 -------

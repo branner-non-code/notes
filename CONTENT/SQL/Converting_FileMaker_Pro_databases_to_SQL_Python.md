@@ -26,7 +26,7 @@
 
 1. Python functions to use the SQL database.
 
-###  FMP script to export the three tables
+###  FMP script to export the three tables (This needs to be updated; 20130809.)
  1. character data (expressions in Chinese script) — one dump file:
   * **characters**: corresponding traditional and simplified forms
   * **sources**: records about which major dictionaries contain which expressions
@@ -44,7 +44,7 @@
 
 #### New schema for main database
 
-In all, sixteen (16) tables (20130729):
+In all, sixteen (16) tables (20130729): (This needs to be updated; 20130809.)
 
 1. character data => 4 tables: 
  * `kanji`
@@ -81,9 +81,21 @@ Initially, the SQL database had a table of traditional-simplified character expr
 
 #### Script for constructing the main database.
 
-1. The `CREATE` codeblock for each table is preceded by a `DROP TABLE IF EXISTS` expression for the same table, so that the script can be run repeatedly without risk of corruption.
-2. The script ends with the line 
+1. During initial work and testing, the `CREATE` codeblock for each table is preceded by a `DROP TABLE IF EXISTS` expression for the same table, so that the script can be run repeatedly without risk of corruption.
+2. Once all the problems seemed to have been fixed, I altered `main()` so as to allow only new content to be added:
 
+        def main(anything=''):
+            con = sqlite3.connect('malediction.db')
+            with con:
+                cursor = con.cursor()
+                # If there was any argument to main(), reinitialize the tables in
+                # question here; otherwise, merely supplement them.
+                if anything:
+                    query = open('malediction_sql_database.sql', 'r').read()
+                    cursor.executescript(query)
+
+  This is working as of 20130809.
+2. The script ends with the line 
         SELECT * FROM sqlite_master WHERE type='table';
 
    so that if it is run from the SQLite3 prompt its success or failure can be determined by eye.
@@ -103,5 +115,13 @@ The script that populates the backup database is the same as the one for the mai
 
 1. Each table has a `main_db_id` that corresponds to the `id` field (the primary key) of the corresponding table in the main database; it would not do to use the same `id` value as a primary key in the backup db, since there might be multiple backed-up records with the same `id` value in the main database.
 2. Each table has a `deleted_from_main` boolean field, to indicate whether the corresponding record in the main db was actually deleted or not. Changes other than outright deletion of a record can be ascertained by running a `diff` function on any two corresponding records.
+
+#### Changes made to Malediction project as of 20130809
+
+ 1. Wrote UML diagram in OmniGraffle; led to finding a number of inefficiencies and errors. 
+ 2. Divided importing script into two parts: one for "reference" tables, such as those to pair simplified and traditional character-expressions, and another for the population of the contents of the actual dictionary, including various parts of the entry and the categories and Pīnyīn readings to which a given entry may need to be joined. Running the latter script alone now takes about 7 seconds; running the whole set of functions used to take around three minutes.
+ 3. Renamed some functions for clarity.
+ 4. Moved some function calls to a single place in `main()` rather than having them reappear several times, each in a different subfunction.
+ 5. Timestamps are now recorded in a table and the id of a given timestamp record is used in all other tables. That makes it possible to determine quickly whether any commits have been made to the database within a particular window.
 
 [end]

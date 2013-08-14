@@ -1,20 +1,17 @@
-edirect incoming http to https
-===============================
+## Redirect incoming http to https
 
-Via Python
-----------
+### Via Python
 
 http://www.elifulkerson.com/projects/http-https-redirect.php
 
-Did not try.
+Did not try this.
 
-Via Apache
-----------
+### Via Apache
 
 Norm Kabir recommends doing it this way, rather than with Python.
 
-Procedure for single site
--------------------------
+### Procedure for single site
+
 20100916. Turned on rewrite_module:
 
         sudo a2enmod rewrite
@@ -38,8 +35,7 @@ Finally, restarted apache2 , no error and pointing browser to http://www.sinolex
 
 WORKS. 20100916.
 
-Procedure for multiple domains on a single server with UCC certificate
-----------------------------------------------------------------------
+### Procedure for multiple domains on a single server with UCC certificate
 
 20120212. As above, but in file `/etc/apache2/sites-enabled/default-ssl` use 
 
