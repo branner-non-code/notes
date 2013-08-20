@@ -1,4 +1,4 @@
-## Suppress creation of __pycache__
+## Suppress creation of `__pycache__`
 
 ### With environment variable
 
