@@ -1,5 +1,7 @@
 ## Deep reloading of Ipython modules
 
+### In startup script
+
 Use
 ```
 %load_ext autoreload
@@ -13,6 +15,9 @@ Place commands in startup script:
 
 Note `.ipy` extension. 
 
-**20130507**. However, although this works under Python 3.2 and 3.3, it seems to cause problems under Python 2.7. I am using IPython 0.13.2, installed with pip in separate virtualenv environments for Python 2.7 and Python 3.3. With Python 2.7, I frequently get errors having to do with `autoreload`, almost always leading back to `superreload(m, reload, self.old_objects)`. When `ipython3_startup.ipy` is disabled, the problem goes away. How can I maintain the startup instructions without getting this error in Ipython for Python 2.7?
+### To check what is being reloaded
+~~~
+%aimport
+~~~
 
 [end]
