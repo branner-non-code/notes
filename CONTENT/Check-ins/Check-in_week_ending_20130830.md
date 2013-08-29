@@ -17,7 +17,7 @@
  
    1. Sinology
 
-     1. Sketched out simple POS-tagging and mark-up system for Classical Chinese and began applying it to two late fifth-century texts (one *piánwén* by Ren Faang, one *fuh*). I will try to do a little of this every day. Created new private repo for the prosody project.
+     1. Sketched out simple POS-tagging and mark-up system for Classical Chinese and began applying it to two late fifth-century texts (one *pyanwen* by Ren Faang, one *fuh*). I will try to do a little of this every day. Created new private repo for the prosody project.
      1. Collected material for other Ren Faang, Lii Sy, Tzou Yang works, convenient for tagging manually on subway.
      1. Doing a little of character-structure dictionary every day. No repo yet; need to get existing FMP database rationalized as SQL; waiting till tools are ripe for Mandarin dictionary project, clone afterwards. 
      1. [Neglected to mention last week: Prepared _Yuhlaan shy_ content (initially collated in May, right after Hacker School) for incorporation into database. Created new private repo for this project.]
