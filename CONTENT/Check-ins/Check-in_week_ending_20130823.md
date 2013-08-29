@@ -8,8 +8,9 @@
  2. [Neglected to mention at the time: Prepared Yuhlaan shy content (initially collated in May, right after Hacker School) for incorporation into database. Created new private repo for this project.]
  3. [Neglected to mention at the time: Answered question about missing rime-names for student who is collating rhyming records for me.]
 
-### TO-DO
+### TO DO
 
  1. Must start `add_record` function for Mandarin dictionary.
+ 2. Look into use of `namedtuple` for representing database records.
  
 [end]
