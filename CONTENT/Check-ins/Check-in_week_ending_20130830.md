@@ -27,6 +27,11 @@
 
      1. Contacted undergraduate student; he has not yet made any commits to the private repo I set up for his thesis content, so I don't know what use he may have made of the LaTeX template I constructed for him or the 20 comment-files I pushed. He is promising commits soon, however.
      1. Gave the Undergraduate Directors read-only access to the repo; to date they have not signed in.
+     
+   1. Math
+   
+     1. Vectors: Two hours reviewing Calc III vector material from 2012; had been thinking of registering for a course, but would be insanity this term.
+     2. Linear Algebra: Began Philip Klein's Coursera course "Coding the Matrix- Linear Algebra through Computer Science Applications" (Coursera 2013 July). Late, but still of interest and useful for exercise. Began flashcards on `functions` unit and posted one question to discussion group.
 
  1. **TO DO**
 
