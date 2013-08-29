@@ -1,6 +1,6 @@
 ## Check-in week ending 20130830
 
- 1. **DONE**
+### **DONE**
 
    1. Mandarin dictionary project
 
@@ -33,7 +33,7 @@
      1. Vectors: Two hours reviewing Calc III vector material from 2012; had been thinking of registering for a course, but would be insanity this term.
      2. Linear Algebra: Began Philip Klein's Coursera course "Coding the Matrix- Linear Algebra through Computer Science Applications" (Coursera 2013 July). Late, but still of interest and useful for exercise. Began flashcards on `functions` unit and posted one question to discussion group.
 
- 1. **TO DO**
+### **TO DO**
 
    1. Need to write new script to generate LaTeX version for collaborator. Pīnyīn-separator tool will be useful for Pīnyīn index for this.
    1. Need to write `update_record` function for dictionary — this is the most important and complicated remaining task.
