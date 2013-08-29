@@ -2,7 +2,7 @@
 
  1. **DONE**
 
-   1. Dictionary project
+   1. Mandarin dictionary project
 
      1. Converted record-modeling in the `Lookup` tools for my dictionary to `namedtuple` from unrelated variables. The field-names are contained in a list as a class attribute and the namedtuple is also instantiated as a class attribute.
      1. Began `add_entry` function, to be used at the command line.
@@ -19,7 +19,7 @@
 
      1. Sketched out simple POS-tagging and mark-up system for Classical Chinese and began applying it to two late fifth-century texts (one *piánwén* by Ren Faang, one *fuh*). I will try to do a little of this every day. Created new private repo for the prosody project.
      1. Collected material for other Ren Faang, Lii Sy, Tzou Yang works, convenient for tagging manually on subway.
-     1. Doing a little of character-structure dictionary every day. No repo yet; need to get existing FMP database rationalized as SQL; waiting till tools are ripe for first dictionary project, clone afterwards. 
+     1. Doing a little of character-structure dictionary every day. No repo yet; need to get existing FMP database rationalized as SQL; waiting till tools are ripe for Mandarin dictionary project, clone afterwards. 
      1. [Neglected to mention last week: Prepared _Yuhlaan shy_ content (initially collated in May, right after Hacker School) for incorporation into database. Created new private repo for this project.]
      1. [Neglected to mention last week: Answered question about missing rime-names for student who is collating rhyming records for me.]
 
