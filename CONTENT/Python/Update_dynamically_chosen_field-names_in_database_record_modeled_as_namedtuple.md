@@ -21,3 +21,33 @@ while True:
         record = record._replace(**field_to_change)                             
 print('\nFinished. We have:', record)       
 ~~~
+
+**Output**
+
+~~~
+In [1]: run test_setattr_namedtuple
+Editing... done. Executing edited code...
+ 0: quit
+ 1: one: empty
+ 2: two: empty
+ 3: three: empty
+Field to change: 2
+New content: qwer
+Setting {'two': 'qwer'}
+ 0: quit
+ 1: one: empty
+ 2: two: qwer
+ 3: three: empty
+Field to change: 3
+New content: sjkfdgj;fdgs
+Setting {'three': 'sjkfdgj;fdgs'}
+ 0: quit
+ 1: one: empty
+ 2: two: qwer
+ 3: three: sjkfdgj;fdgs
+Field to change: 0
+
+Finished. We have: Record(one='empty', two='qwer', three='sjkfdgj;fdgs')
+
+In [2]: 
+~~~
