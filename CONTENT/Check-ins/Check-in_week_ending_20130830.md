@@ -36,6 +36,7 @@
 
 ### **TO DO**
 
+   1. Finish `add_entry` — more small details than expected.
    1. Need to write new script to generate LaTeX version for collaborator. Pīnyīn-separator tool will be useful for Pīnyīn index for this.
    1. Need to write `update_record` function for dictionary — this is the most important and complicated remaining task.
    1. Need to get started with Kivy, pronto.
