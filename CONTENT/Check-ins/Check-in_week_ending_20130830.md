@@ -31,7 +31,7 @@
    1. Math
    
      1. Vectors: Two hours reviewing Calc III vector material from 2012; had been thinking of registering for a course, but would be insanity this term.
-     2. Linear Algebra: Began Philip Klein's Coursera course "Coding the Matrix- Linear Algebra through Computer Science Applications" (Coursera 2013 July). Late, but still of interest and useful for exercise. Began flashcards on `functions` unit and posted one question to discussion group.
+     2. Linear Algebra: Began Philip Klein's Coursera course "Coding the Matrix- Linear Algebra through Computer Science Applications" (Coursera 2013 July). Late, but still of interest and useful for exercise. Finished the `functions` unit on 20130829. Began flashcards on `functions` unit and posted one question to discussion group.
 
 ### **TO DO**
 
