@@ -7,6 +7,7 @@
      1. Converted record-modeling in the `Lookup` tools for my dictionary to `namedtuple` from unrelated variables. The field-names are contained in a list as a class attribute and the namedtuple is also instantiated as a class attribute.
      1. Began `add_entry` function, to be used at the command line.
      1. For `add_entry` function, found a way to update fields dynamically: https://github.com/brannerchinese/notes/blob/master/CONTENT/Python/Update_dynamically_chosen_field-names_in_database_record_modeled_as_namedtuple.md
+     1. For `add_entry` function, found a way to farm object methods out to an external module, as a way of not having to retype code: https://github.com/brannerchinese/notes/blob/master/CONTENT/Python/Import_functions_on_object.md
      1. Added another Kivy tutorial video (Ben Rousch, looks very good) to list at https://github.com/brannerchinese/notes/blob/master/CONTENT/Kivy/Kivy_tutorials.md; have not yet watched.
 
    1. Ipython
