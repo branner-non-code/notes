@@ -4,6 +4,14 @@
 
    1. Mandarin dictionary project
 
+     1. Continuing to modularize content as much as possible to allow reuse of code. 
+     1. Organized numerous files into directories:
+       * `Lookup`
+       * `OLD_CODE`: containing older material from before the present effort to migrate to SQL
+       * `PopulateDatabase`: FMP-to-SQL migration
+       * `SeparatePinyin`
+       * `tex_for_malediction_new`: old code to generate LaTeX book from FMP.
+       * `Utils`: gradually moving common content there; for now there will be only one module there.
      1. Converted record-modeling in the `Lookup` tools for my dictionary to `namedtuple` from unrelated variables. The field-names are contained in a list as a class attribute and the namedtuple is also instantiated as a class attribute.
      1. Began `add_entry` function, to be used at the command line.
      1. For `add_entry` function, found a way to update fields dynamically: https://github.com/brannerchinese/notes/blob/master/CONTENT/Python/Update_dynamically_chosen_field-names_in_database_record_modeled_as_namedtuple.md
