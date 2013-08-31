@@ -106,7 +106,6 @@ this_case.obj2 = duck
 utils2.compare_weight(this_case)'''
 
 1000000 loops, best of 3: 1 usec per loop
-
 ~~~
 
 [end]
