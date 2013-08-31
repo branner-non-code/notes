@@ -67,4 +67,46 @@
         In [3]: run persecute3.py
         False
 
+### Timing with `timeit`
+
+`Timeit` shows only a small speed hit.
+
+~~~
+utils2.py
+def compare_weight(self):
+    return self.obj1 == self.obj2
+
+python -m timeit -s '''\
+import utils2
+class Cases(object):
+    def __init__(self):
+        self.obj1 = 1
+        self.obj2 = 2
+    def compare_weight(self):
+        return self.obj1 == self.obj2;''' '''\
+witch, duck = 1, 2
+this_case = Cases()
+this_case.obj1 = witch
+this_case.obj2 = duck
+this_case.compare_weight()'''
+
+1000000 loops, best of 3: 0.948 usec per loop
+
+
+python -m timeit -s '''\
+import utils2
+class Cases(object):
+    def __init__(self):
+        self.obj1 = 1
+        self.obj2 = 2''' '''\
+witch, duck = 1, 2
+this_case = Cases()
+this_case.obj1 = witch
+this_case.obj2 = duck
+utils2.compare_weight(this_case)'''
+
+1000000 loops, best of 3: 1 usec per loop
+
+~~~
+
 [end]
