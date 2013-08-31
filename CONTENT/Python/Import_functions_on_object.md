@@ -71,6 +71,15 @@
 
 `Timeit` shows only a small speed hit.
 
+First, saved `utils2.py`:
+
+~~~
+def compare_weight(self):
+    return self.obj1 == self.obj2
+~~~
+
+Actual timing:
+
 ~~~
 utils2.py
 def compare_weight(self):
