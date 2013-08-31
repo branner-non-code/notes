@@ -78,10 +78,18 @@ def compare_weight(self):
     return self.obj1 == self.obj2
 ~~~
 
-Actual timing:
+Actual timing — importing the module increases the time required for a single call by around 500%:
 
 ~~~
-utils2.py
+python -m timeit '''\
+def compare_weight(obj1, obj2):
+    return obj1 == obj2
+witch, duck = 1, 2
+_ = compare_weight(witch, duck)'''
+
+10000000 loops, best of 3: 0.195 usec per loop
+
+#utils2.py
 def compare_weight(self):
     return self.obj1 == self.obj2
 
@@ -115,6 +123,91 @@ this_case.obj2 = duck
 utils2.compare_weight(this_case)'''
 
 1000000 loops, best of 3: 1 usec per loop
+~~~
+
+Or, if the function call is (more realistically) in a class method:
+
+~~~
+python -m timeit -s '''\
+import utils2
+class Cases(object):
+    def __init__(self):
+        self.obj1 = 1
+        self.obj2 = 2
+    def do_it(self):
+        utils2.compare_weight(self)
+        ''' '''\
+witch, duck = 1, 2
+this_case = Cases()
+this_case.obj1 = witch
+this_case.obj2 = duck
+this_case.do_it()'''
+
+1000000 loops, best of 3: 1.09 usec per loop
+~~~
+
+But these timing differences drop to an increase of about 220-230% when there are large numbers of function calls:
+
+~~~
+python -m timeit '''\
+def compare_weight(obj1, obj2):
+    return obj1 == obj2
+witch, duck = 1, 2
+for i in range(1000000):
+    _ = compare_weight(witch, duck)'''
+
+10 loops, best of 3: 128 msec per loop
+
+
+python -m timeit -s '''\
+import utils2
+class Cases(object):
+    def __init__(self):
+        self.obj1 = 1
+        self.obj2 = 2
+    def compare_weight(self):
+        return self.obj1 == self.obj2;''' '''\
+witch, duck = 1, 2
+this_case = Cases()
+this_case.obj1 = witch
+this_case.obj2 = duck
+for i in range(1000000):
+    _ = this_case.compare_weight()'''
+    
+10 loops, best of 3: 278 msec per loop
+
+python -m timeit -s '''\
+import utils2
+class Cases(object):
+    def __init__(self):
+        self.obj1 = 1
+        self.obj2 = 2''' '''\
+witch, duck = 1, 2
+this_case = Cases()
+this_case.obj1 = witch
+this_case.obj2 = duck
+for i in range(1000000):
+    _ = utils2.compare_weight(this_case)'''
+
+10 loops, best of 3: 289 msec per loop
+
+python -m timeit -s '''\
+import utils2
+class Cases(object):
+    def __init__(self):
+        self.obj1 = 1
+        self.obj2 = 2
+    def do_it(self):
+        for i in range(1000000):
+            _ = utils2.compare_weight(self)''' '''\
+witch, duck = 1, 2
+this_case = Cases()
+this_case.obj1 = witch
+this_case.obj2 = duck
+this_case.do_it()'''
+
+10 loops, best of 3: 298 msec per loop
+# a 7% increase over  the 
 ~~~
 
 [end]
