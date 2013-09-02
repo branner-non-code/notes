@@ -10,5 +10,6 @@
      * if more than one traditional/simplified pair exists, user gets to choose which is desired;
      * user can set the POS of the entry, which is chosen from a fixed list.
    1. While creating a new entry, those fields that have tentatively been populated are shown with both the relevant record ID number and the actual intended content. On commit, only the former will be used. 
+   2. POS values are now populated from a file, so the list cannot only be shared among programs but also updated programmatically. 
 
 [end]
