@@ -2,7 +2,7 @@
 
 ### **DONE**
 
-   1. Mandarin dictionary project
+#### Mandarin dictionary project
 
      1. Continuing to modularize content as much as possible to allow reuse of code. 
      1. Organized numerous files into directories:
@@ -19,13 +19,13 @@
      1. Have been having a slow time dealing with the complications of traditional-vs.-simplified lookup, in function `add_kanji_for_new_entry`, which is called by `add_entry`.
      1. Added another Kivy tutorial video (Ben Rousch, looks very good) to list at https://github.com/brannerchinese/notes/blob/master/CONTENT/Kivy/Kivy_tutorials.md; have not yet watched.
 
-   1. Ipython
+#### Ipython
 
      1. Had been having problems with Ipython under Python 2.7, and began wondering if they and the Kivy problems might not be related. So I reinstalled the OS, to which the Python 2.7 installation belongs, and now both Ipython and Kivy seem to be working. Now thinking again that Kivy may be a good tool for app-building, after all.
      1. Joined Ipython discussion list and pinned down my `autoreload` problem as deriving from the use of `PYTHONDONTWRITEBYTECODE`. Also found `nose` tests in the `iptest` suite that fail if XCode command-line tools have not been installed. 
      1. Wrote to Ipython maintainer about contributing to open source project; he suggested a fix to the cause of the `PYTHONDONTWRITEBYTECODE` problem. I've printed the `autoreload` code but am not yet sure how to proceed.
  
-   1. Sinology
+#### Sinology
 
      1. Sketched out simple POS-tagging and mark-up system for Classical Chinese and began applying it to two late fifth-century texts (one *pyanwen* by Ren Faang, one *fuh*). I will try to do a little of this every day. Created new private repo for the prosody project.
      1. Collected material for other Ren Faang, Lii Sy, Tzou Yang works, convenient for tagging manually on subway.
@@ -33,12 +33,12 @@
      1. [Neglected to mention last week: Prepared _Yuhlaan shy_ content (initially collated in May, right after Hacker School) for incorporation into database. Created new private repo for this project.]
      1. [Neglected to mention last week: Answered question about missing rime-names for student who is collating rhyming records for me.]
 
-   1. Advising
+#### Advising
 
      1. Contacted undergraduate student; he has not yet made any commits to the private repo I set up for his thesis content, so I don't know what use he may have made of the LaTeX template I constructed for him or the 20 comment-files I pushed. He is promising commits soon, however.
      1. Gave the Undergraduate Directors read-only access to the repo; to date they have not signed in.
      
-   1. Math
+#### Math
    
      1. Vectors: Two hours reviewing Calc III vector material from 2012; had been thinking of registering for a course, but would be insanity this term.
      2. Linear Algebra: Began Philip Klein's Coursera course "Coding the Matrix- Linear Algebra through Computer Science Applications" (Coursera 2013 July). Late, but still of interest and useful for exercise. Finished the `functions` unit on 20130829. Began flashcards on `functions` unit and posted one question to discussion group.
