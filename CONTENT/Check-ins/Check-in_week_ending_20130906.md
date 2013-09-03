@@ -14,10 +14,15 @@
   3. From the command line, new functionality when adding an entry:
      * program retrieves the traditional and simplified forms of the desired character-expression;
      * if more than one traditional/simplified pair exists, user gets to choose which is desired;
-     * user can set the POS of the entry, which is chosen from a fixed list.
+     * user can set the POS of the entry, which is chosen from a fixed list;
+     * user can add a new POS to the list of legal POS and simultaneously to the database, while assigning it to an about-to-be-added word.
   1. While creating a new entry, those fields that have tentatively been populated are shown with both the relevant record ID number and the actual intended content. On commit, only the former will be used. 
 
 ### TO DO
+
+#### Mandarin Dictionary
+
+  1. Adding characters for new entry not yet working.
 
 #### LaTeX output
 
