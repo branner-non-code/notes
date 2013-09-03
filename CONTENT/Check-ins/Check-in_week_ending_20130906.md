@@ -23,6 +23,7 @@
 #### Mandarin Dictionary
 
   1. Adding characters for new entry not yet working.
+  2. Adding an entry for characters not in the all-kanji table does not work.
 
 #### LaTeX output
 
