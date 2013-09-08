@@ -18,6 +18,8 @@ tornado==3.1.1
 $
 ~~~
 
+(With this output to `requirements.txt`, use `pip install -Ur requirements.txt` to upgrade.)
+
 ### To start
 
 ~~~
