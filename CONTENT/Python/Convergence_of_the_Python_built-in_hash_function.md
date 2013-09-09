@@ -6,9 +6,7 @@ I tested it by successively concatenating strings of 'a' and taking the `hash()`
 
 ~~~
 import numpy
-import sys  
-import random
-import string                                                                   
+import sys
             
 def main(s='', hashes = []):
     while True:
