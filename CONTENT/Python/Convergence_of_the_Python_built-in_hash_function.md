@@ -66,7 +66,7 @@ In [1]: HC.main()
 
 ~~~
 
-Even though the built-in hash function hashes strings to both positive and negative integers, the mean in this case varies around a large positive number, rather than 0.
+Even though the built-in hash function hashes strings to both positive and negative integers, the mean in this case varies around a large positive number, rather than 0, which I think is the midpoint of the range of hashes.
 
 For comparison, here are the same procedures carried out on MD5:
 
