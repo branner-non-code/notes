@@ -17,4 +17,11 @@
   1. Adding characters for new entry not yet working.
   2. Adding an entry for characters not in the all-kanji table does not work.
 
+#### Undergraduate student's thesis
+
+  1. Found syntax error preventing compilation.
+  2. Cleaned up repo.
+  3. Added student's Proposal into the repo and added my own comments.
+  4. Looked up standard rules on Git commit message style.
+
 [end]
