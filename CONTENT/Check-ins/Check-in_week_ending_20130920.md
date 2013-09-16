@@ -1,12 +1,20 @@
 ## Check-in week ending 20130920
 
+### Review of technical matter
+
+ 1. Hash tables working: using chaining with lists — abandoned plan to chain with nested hash tables, because in order to avoid collisions at every level I would either need to use a different modulus on each level (could add one to previous level's modulus) or a different hash function. Too much bother. Optional resizing added. Test suite written, all working, posted to public repo.
+
+### Undergraduate student's thesis
+
+  1. Found syntax error preventing compilation.
+  2. Cleaned up repo.
+  3. Added student's Proposal into the repo and added my own comments.
+  4. Looked up standard rules on Git commit message style.
+
 ### To Do
 
 #### Review of technical matter
 
-  1. Hash tables — both direct and chained models. 
-    2. Chained: Must decide when to resize array, and by how much. Perhaps keep track of how many slots contain chains. 
-    3. Direct: Place collision-entry in an empty slot?
   1. Heaps.
   1. Binary search tree.
 
@@ -16,12 +24,5 @@
   1. Refactor genertic SQL commands — some can be combined as joins.
   1. Adding characters for new entry not yet working.
   2. Adding an entry for characters not in the all-kanji table does not work.
-
-#### Undergraduate student's thesis
-
-  1. Found syntax error preventing compilation.
-  2. Cleaned up repo.
-  3. Added student's Proposal into the repo and added my own comments.
-  4. Looked up standard rules on Git commit message style.
 
 [end]
