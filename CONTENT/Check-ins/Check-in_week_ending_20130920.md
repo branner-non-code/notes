@@ -2,7 +2,12 @@
 
 ### Review of technical matter
 
- 1. Hash tables working: using chaining with lists — abandoned plan to chain with nested hash tables, because in order to avoid collisions at every level I would either need to use a different modulus on each level (could add one to previous level's modulus) or a different hash function. Too much bother. Optional resizing added. Test suite written, all working, posted to public repo.
+  1. Hash tables working: using chaining with lists — abandoned plan to chain with nested hash tables, because in order to avoid collisions at every level I would either need to use a different modulus on each level (could add one to previous level's modulus) or a different hash function. Too much bother. Optional resizing added. Test suite written, all working, posted to public repo.
+  1. Did timings for hash table code, showing the great improvement in speed if resizing and amortization is used.
+
+### Mandarin dictionary
+
+  1. Began work to refactor output to screen.
 
 ### Undergraduate student's thesis
 
