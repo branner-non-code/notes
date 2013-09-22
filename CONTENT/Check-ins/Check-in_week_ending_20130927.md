@@ -2,7 +2,7 @@
 
 ### Character dictionary
 
-  1. Initial work on 78 characters: 昊𠗊永汗汙汍沆沄沋沍汩泳泫河泂洨洴洹洪洧洿洄洽洚浣浤涆涀浻浛浩涬淈涵混涸淆淮溈港湖減湋渭渱湝湲渝湟滚滆滋𣹢滋滉滑溳溷滎滬潢漶澐澒潓澅潰潿潙澣澴澥澩濠濫濩瀤瀚瀣灝.
+  1. Initial work on 79 characters: 昊𠗊永汗汙汍沆沄沋沍汩泳泫河泂洨洴洹洪洧洿洄洽洚浣浤涆涀浻浛浩涬淈涵混涸淆淮溈港湖減湋渭渱湝湲渝湟滚滆滋𣹢滋滉滑溳溷滎滬潢漶澐澒潓澅潰潿潙澣澴澥澩濠濫濩瀤瀚瀣灝.
 
 ### Mandarin dictionary
 
