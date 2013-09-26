@@ -7,10 +7,11 @@
   3. Initial work on 33 characters: 瑕瑋瑗瑀瑩瑰璜璏璪環瓛瓠缻甃畦畫𤴯疣痃痏痕瘈瘣𤺄癇皇皖皓皜㿥皞蘤翍.
   4. Initial work on 75 characters: 盂盉盒盻盷真睆鿃睍睅睺瞯矔矸砎硎硏硍硤确䃔磒礐礥䃺祜祐祫禊禖禍禡禜禹禾秣稆稞稛穊稹穈穆穫窐竑竽笐笄䇘𥫽笢筊筏筕筠筨篃篎篁篌篔篾簧簢䉑䉋𥶽籰米籺糊糇𥻩糜.
   5. Initial work on 61 characters: 糸系紅紇紈紊紋紜𥾝紘紕䋃䋐絜絯絓絨絙絎綄絻絣綿緳緜緷緬緯緡縕緩縠縣縜縻繆縵繐繢繡繯繪繳纈纋纆缸缿缾罄网罠罣罫罭罵羃羋美䍺羽.
+  6. Initial work on 82 characters: 𦑚翮翰耄耘耾聞肴肮肬肣胡胃胘脉脄胻脈脛脕脢腁腄腜膃㬻膎膜臽舌舝舞航舷艋艒艎艦艨艵䒌芒芋芐芄苀芸芼芴苛茂茅苜苗茫茭荁茻茗茷荇莞莽莁莕莖莫莧莓荷荓荊菋菡萌菵菂葓蒍葦萭葒.
 
 ### Mandarin dictionary
 
-  1. 26 items done with MYY. 
+  1. 26 items done 20130921. 
   2. `Try`-`except` placed around category-import steps in `fmp_output_to_sql.py`, to aid debugging in case of `IndexError` when looking for category-names that have been removed.
 
 ### Prosody
