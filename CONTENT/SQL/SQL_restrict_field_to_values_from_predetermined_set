@@ -1,0 +1,15 @@
+## SQL restrict field to values from predetermined set
+
+### Using a join table
+
+Have a separate table of all permitted values and use a join table to populate the field in question.
+
+### Using `CHECK`
+
+~~~
+CREATE TABLE table (
+    field TEXT CHECK(field IN ('item1', 'item2', 'item3'))
+);
+~~~
+
+[end]

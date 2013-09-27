@@ -1,52 +1,57 @@
-SQLite within Python
---------------------
+## SQLite3 within Python
 
-1.  ​20130326. Even though connections are supposedly closed
-    automatically, doing so explicitly with
+### Closing connections explicitly
 
-        object.connection.commit()
-        object.cursor.close()
-        object.connection.close()
+Even though connections are supposedly closed automatically, doing so explicitly with
 
-    is safer.
+    object.connection.commit()
+    object.cursor.close()
+    object.connection.close()
 
-2.  ​20130221. Basic instructions used
+ is safer.
 
-        import sqlite3 as Q
-        con = Q.connect('test.db')
-        # use con = Q.connect(":memory:") to create the db in RAM!
+### Basic instructions used
+
+    import sqlite3
+    con = sqlite3.connect('test.db')
+    # use con = sqlite3.connect(":memory:") to create the db in RAM!
+    curs = con.cursor()
+    con.close()
+
+### Short program to find version number
+
+    #!/usr/bin/python
+    # -*- coding: utf-8 -*-
+    
+    import sqlite3
+    import sys
+    
+    con = sqlite3.connect('test.db')
+    with con:
+        cur = con.cursor()    
+        cur.execute('SELECT SQLITE_VERSION()')
+        data = cur.fetchone()
+        print("SQLite version: {}".format(data[0]))
+
+## Running SQL script within Python
+
+
+    con = sqlite3.connect('database.db')
+    with con:
         curs = con.cursor()
-        con.close()
+        query = open('script.sql', 'r').read()
+        curs.executescript(query)
 
-3.  ​20130221. Short program to find version number
 
-        #!/usr/bin/python
-        # -*- coding: utf-8 -*-
+## Examples
 
-        import sqlite3 as lite
-        import sys
-
-        con = lite.connect('test.db')
-
-        with con:
-            
-            cur = con.cursor()    
-            cur.execute('SELECT SQLITE_VERSION()')
-            
-            data = cur.fetchone()
-            
-            print("SQLite version: {}".format(data[0]))
-
-Examples
---------
-
-20130227.
+### `fetchall` and `fetchone`
 
     import sqlite3
     conn = sqlite3.connect('hl.db')
     c = conn.cursor()
     o = c.execute('''SELECT ticker,headline FROM headlines''')
-    o.fetchall() # o is then populated with an index of tuples --- one tuple per record
+    o.fetchall() # o is then populated with a list of tuples --- one tuple per record
 
 `fetchall()`:
 
@@ -61,9 +66,9 @@ Examples
     In [31]: o.fetchone()
     Out[31]: ('TLLP', 'junk TLLP headline')
 
-​20130227. Other facts:
+### Other facts
 
-1.  Cannot reset cursor! From <>:
+#### Cannot reset cursor!
 
     > The SQLite interface in Python 3.1 is based on PEP 249, which only
     > specifies that cursors have to support sequential access to the
@@ -75,9 +80,10 @@ Examples
     >
     > The idea behind the design of the DB API is to support efficient
     > execution of code where you only need to process each row once.
+    
+ (http://stackoverflow.com/a/2796571/621762)
 
-    So one must make the database do as much selection as possible
-    before beginning manipulation within Python.
+ So one must make the database do as much selection as possible before beginning manipulation within Python.
 
 
 [end]

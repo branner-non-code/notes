@@ -1,13 +1,13 @@
 Comprehensions
 --------------
 
-1.  ​20130220. Discussion with Zach: As for why comprehensions are
+1.  20130220. Discussion with Zach: As for why comprehensions are
     favored, he says they are more declarative — closer to abstract
     statements than to procedural “constructions”. He agrees with my
     prediction that the ability to read them fluently will come with
     practice writing them.
 
-2.  ​20130220. General format. Original:
+2.  20130220. General format. Original:
 
         for item in container:
             list.append(object) # or
@@ -70,10 +70,23 @@ Comprehensions
                 one_row_dict = {list_item: row_item.strip('"')        
                         for list_item, row_item in zip(list_items, one_row)}
 
-5.  ​20130313. Tuple by comprehension: make tuple of list comprehension:
+5.  20130313. Tuple by comprehension: make tuple of list comprehension:
 
         In [39]: listy = [i for i in range(10)]
         In [40]: tuple([i for i in listy])
         Out[40]: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+6.  20130614. Speed of tuple comprehensions
+
+For large lists, it is considerably faster to convert a list to a tuple with a comprehension than with a loop:
+
+```
+$ python -m timeit -s 'from random import random as R; a_list = [[R(), R()] for i in range(1000)]' 'new_tuple = ()' 'tuple(tuple(b_list) for b_list in a_list)'
+1000 loops, best of 3: 224 usec per loop
+$ python -m timeit -s 'from random import random as R; a_list = [[R(), R()] for i in range(1000)]' 'new_tuple = ()' 'for i in a_list:' '    new_tuple += (tuple(i),)'
+1000 loops, best of 3: 1.82 msec per loop
+```
+
+[end]
 
 [end]
