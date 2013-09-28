@@ -5,6 +5,7 @@
 
 ### Mandarin dictionary
 
+  1. 20130928. 20 items.
 
 ### Prosody
 
