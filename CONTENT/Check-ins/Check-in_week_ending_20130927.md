@@ -11,6 +11,7 @@
   7. 20130927. 
     8. Initial work on 20 characters: 䓳蓂蓋蓩䔇蒵蒦蓨豞蔤蔓蔑蔛薀蕓蕙蕒蕪薃蕻.
     9. Initial work on 44 characters: 薳薤薇薶藐藙藖蘊蘉蘅蘪蘤䕸蘼虋䖑號甝虻虷虹蚢蚊蚘蚞䖢蚏蚚蛀蚿蛝蛔蛧蛑蛖蜜蛢蜮蜬蜢蜭蝱蝥蝒蝦.
+    10. Initial work on 32 characters: 蝞蝟蝎蝔蝯蝗䗔螢螜螒螟䗡螖螇螝蟊蟁蟒蟃䗣蟪蟥蟔蟹𧓍蠑蠓蠠蠛䘃蠻𧖅.
 
 ### Mandarin dictionary
 
