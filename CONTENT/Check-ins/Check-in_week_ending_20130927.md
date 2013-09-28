@@ -22,6 +22,7 @@
 ### Prosody
 
   1. Grammar mark-up begun for `Yuhlaan shy`.
+  2. Preliminary work on Jī Kāng's 四言贈兄秀才入軍詩.
 
 ### To Do
 
