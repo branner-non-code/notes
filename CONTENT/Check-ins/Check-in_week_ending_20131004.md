@@ -11,6 +11,8 @@
 
 ### Prosody
 
+  1. Preparation of Jī Kāng "四言贈兄秀才入軍詩" for syntactic mark-up.
+
 
 ### To Do
 
