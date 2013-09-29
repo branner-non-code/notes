@@ -13,6 +13,9 @@
 
   1. Preparation of Jī Kāng "四言贈兄秀才入軍詩" for syntactic mark-up.
 
+### Other coding
+
+  1. Issue #13 of Blaggregator code fixed. (https://github.com/sursh/blaggregator/issues/13) Problem (HTML entities appearing where original blog titles have Unicode) seems to have been on the deployment system, not the feed parsing module.
 
 ### To Do
 
