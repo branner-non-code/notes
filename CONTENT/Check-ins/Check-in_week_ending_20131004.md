@@ -2,7 +2,8 @@
 
 ### Character dictionary
 
-  1. 20130928, initial work done, 32 characters: 衇𧖴衊行衖衡袂袁袤袨袜袘褐褑䙈褱褢𧜀褫𧝒襘襭襪覈見覓覛覡覭觟解.
+  1. 20130928, initial work done on 32 characters: 衇𧖴衊行衖衡袂袁袤袨袜袘褐褑䙈褱褢𧜀褫𧝒襘襭襪覈見覓覛覡覭觟解.
+  2. 20130929, initial work done on 46 characters: 觳觷訌訧詠詿詤話詺誣誷謎謀諴謂諧謐謣謨謬謾譓䜋譕譹護譿讆讔讘𧮯豢豥豪𧱓豲豯䝔豻貊貉貈貌貓貕貘.
 
 
 ### Mandarin dictionary
