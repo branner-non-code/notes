@@ -12,7 +12,9 @@
 
 ### Prosody
 
-  1. Syntactic mark-up of Jī Kāng "四言贈兄秀才入軍詩" mostly complete.
+  1. Jī Kāng "四言贈兄秀才入軍詩"
+    2. Syntactic mark-up mostly complete.
+    2. Chose *Guǎngyùn* readings for foot-syllables.
 
 ### Other coding
 
