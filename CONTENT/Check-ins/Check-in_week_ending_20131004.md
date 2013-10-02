@@ -21,7 +21,8 @@
     4. topic-comment notation, using `\underbracket{}_{}`
     5. adjunct-head notation, using `\overset{}{}`
     6. grouped words, using `\overbracket{}^{}`
-  4. However, problems remain with the readability of nested forms. (20131002)
+    7. change of POS, using `>`
+  4. Problems remain with the readability of nested forms. Trouble is saved if only heads and first-level adjuncts are marked with POS. (20131002)
 
 ### Prosody
 
