@@ -19,7 +19,7 @@
   2. Linear version: draft of rules document under way. 
   3. LaTeX version: progress made on 
     4. topic-comment notation, using `\underbracket{}_{}`
-    5. adjunct-head notation, using `\overset{}{}`
+    5. adjunct-head notation, using `\overset{}{}` and `(...)`
     6. grouped words, using `\overbracket{}^{}`
     7. change of POS, using `>`
   4. Problems remain with the readability of nested forms. Trouble is saved if only heads and first-level adjuncts are marked with POS. (20131002)
