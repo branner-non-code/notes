@@ -13,7 +13,7 @@
 
   1. 20130928. 20 items.
 
-### Wényán markup system
+### Wényán 文言 markup system
 
   1. Linear vs. LaTeX versions; linear is for by-hand mark-up and automated processing, while LaTeX version is for formal presentation in class lectures and books.
   2. Linear version: draft of rules document under way. 
