@@ -13,11 +13,25 @@
 
   1. 20130928. 20 items.
 
+### Wényán markup system
+
+  1. Linear vs. LaTeX versions; linear is for by-hand mark-up and automated processing, while LaTeX version is for formal presentation in class lectures and books.
+  2. Linear version: draft of rules document under way. 
+  3. LaTeX version: progress made on 
+    4. topic-comment notation, using `\underbracket{}_{}`
+    5. adjunct-head notation, using `\overset{}{}`
+    6. grouped words, using `\overbracket{}^{}`
+  4. However, problems remain with the readability of nested forms. (20131002)
+
 ### Prosody
 
   1. Jī Kāng "四言贈兄秀才入軍詩"
     2. Syntactic mark-up mostly complete.
     2. Chose *Guǎngyùn* readings for foot-syllables.
+    3. Next: quantify shàngwěi behavior.
+  2. "Yùlǎn shī 御覽詩"
+    3. Syntactic mark-up begun.
+  3. Zàn texts: not yet started.
 
 ### Other coding
 
