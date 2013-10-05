@@ -36,7 +36,7 @@
 
 ### Review of technical matter
 
-  1. Substrings. Program `substrings.py` works with diverse edge cases. Code cleaned up and test suite finished; not yet timed and not yet posted.
+  1. Substrings. Program `substrings.py` works with diverse edge cases. Code cleaned up and test suite finished. Timings suggest linear time complexity; not yet examined for superfluous operations or variables, and not yet posted.
 
 ### Other coding
 
