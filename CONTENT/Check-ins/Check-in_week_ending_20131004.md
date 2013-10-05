@@ -34,6 +34,10 @@
     3. Syntactic mark-up begun.
   3. Zàn texts: not yet started.
 
+### Review of technical matter
+
+  1. Substrings. Program `substrings.py` works with diverse edge cases. Code cleaned up and test suite finished; not yet timed and not yet posted.
+
 ### Other coding
 
   1. Issue #13 of Blaggregator code fixed. (https://github.com/sursh/blaggregator/issues/13) Problem (HTML entities appearing where original blog titles have Unicode) seems to have been on the deployment system, not the feed parsing module.
@@ -43,7 +47,6 @@
 
 #### Review of technical matter
 
-  1. Substrings.
   1. Heaps.
   1. Binary search tree.
 
