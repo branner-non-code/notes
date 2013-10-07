@@ -35,8 +35,8 @@
 #### Review of technical matter
 
   1. Refactor substring.py.
-  1. Heaps.
   1. Binary search tree.
+  1. Heaps.
 
 #### Mandarin dictionary
 
