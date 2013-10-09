@@ -27,7 +27,7 @@
 ### Other coding
 
   1. Began migration of blog from WordPress (dissatisfied that much functionality no longer works when Ghostery is enabled) to GitHub pages, with Pelican support. But `pelican-import` had a reproducible error, which I traced to the presence of a formfeed character ("FF", U+000C) in WordPress's export XML file. The formfeed was neither being stripped nor converted to something that printed on WordPress, and I reported this as a bug (http://core.trac.wordpress.org/ticket/25548). 
-  2. I found that Pelican's import function was failing silently, and traced the problem to the use of `LXML`'s "XML" parser in `BeautifulSoup4`; replacing that with the "HTML" parser eliminated the problem. I submitted both an issue (https://github.com/getpelican/pelican/issues/1113) and a pull-request (https://github.com/getpelican/pelican/pull/1114), and it seems the latter has now been accepted.
+  2. I found that Pelican's import function was failing silently, and traced the problem to the use of `LXML`'s XML parser in `BeautifulSoup4`; replacing that with the HTML parser eliminated the problem. I submitted both an issue (https://github.com/getpelican/pelican/issues/1113) and a pull-request (https://github.com/getpelican/pelican/pull/1114), and it seems the latter has now been accepted.
 
 
 ### To Do
