@@ -2,6 +2,12 @@
 
 ### Prosody
 
+### Study of yán 焉
+
+  1. Received deadline for final submission of this paper. Must reduce discussion of locative contraction and add treatment of interrogative.
+  2. Resumed examination of A/B contrast in Goangyunn readings.
+
+
 ### Character dictionary
 
 
@@ -19,6 +25,8 @@
 
 
 ### Other coding
+
+  1. Began migration of blog from WordPress (dissatisfied that much functionality no longer works when Ghostery is enabled) to GitHub pages, with Pelican support. But `pelican-import` had a reproducible error, which I traced to the presence of a formfeed character ("FF", U+000C) in WordPress's export XML file. The formfeed was neither being stripped nor converted to something that printed on WordPress, and I reported this as a bug (http://core.trac.wordpress.org/ticket/25548). 
 
 
 ### To Do
