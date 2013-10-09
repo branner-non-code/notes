@@ -2,10 +2,10 @@
 
 ### Prosody
 
-### Study of yán 焉
+### Study of _yán_ 焉
 
   1. Received deadline for final submission of this paper. Must reduce discussion of locative contraction and add treatment of interrogative.
-  2. Resumed examination of A/B contrast in Goangyunn readings.
+  2. Resumed examination of A/B contrast in _Goangyunn_ readings.
 
 
 ### Character dictionary
@@ -34,9 +34,9 @@
 
 #### Prosody
 
-  1. Zàn matter.
-  2. Yùnlǎn shī matter.
-
+  1. _Zàn_ matter.
+  2. _Yùlǎn shī_ matter.
+ 
 #### Other coding
 
   1. Blaggregator set-up.
