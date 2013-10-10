@@ -6,6 +6,7 @@
 
   1. Received deadline for final submission of this paper. Must reduce discussion of locative contraction and add treatment of interrogative.
   2. Resumed examination of A/B contrast in _Goangyunn_ readings.
+  3. 20131010: Proofreading complete of existing paper; must now add additional section on A/B contrast and track down Starostin material on *-r.
 
 
 ### Character dictionary
