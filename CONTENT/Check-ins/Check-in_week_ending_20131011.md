@@ -5,7 +5,12 @@
 ### Study of _yán_ 焉
 
   1. Received deadline for final submission of this paper. Must reduce discussion of locative contraction and add treatment of interrogative.
-  2. Resumed examination of A/B contrast in _Goangyunn_ readings.
+    1. 20131010: proofreading and *-r content mostly done.
+    1. 20131011: must get citation for Starosin 1989 pages.
+    1. Must get interrogative research done, but perhaps most of this should go into a separate paper.
+  2. Resumed examination of A/B contrast in _Goangyunn_ readings: 
+    1. As of 20131011: Characters 拔卒取受喟歃渴溺祭坺楄扁葐坋菔匐棓菩撣㒔葃翵洹越繁蟠䄶儃襡韣圜湲沄䫟枸句怐溉汽
+    1. 20131011: beginning correspondence tables for rimes and initials.
   3. 20131010: Proofreading complete of existing paper; must now add additional section on A/B contrast and track down Starostin material on *-r.
 
 
