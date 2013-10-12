@@ -15,7 +15,7 @@
 
 ### Mandarin dictionary
 
-  1. 20131012. 
+  1. 20131012. Converted string-concatenation to list-appendings followed by `join()` — savings of about 6%.
 
 ### Wényán 文言 markup system
 
