@@ -4,7 +4,7 @@
 
   1. This project must take priority, since the other sinological tasks all depend on it.
   1. Began SQL conversion of InshyueMaster FMP database. Kanji list thinned of duplicates and malformed entries.
-  2. Since FMP does not seem to recognize 24-format for `CurrentTime` (http://stackoverflow.com/questions/19350419/filemaker-currenttime-conversion-to-24-hour-format), wrote Python function to rename dump files to 24-format and pick the latest one of a given type.
+  2. Since FMP does not seem to recognize 24-hour format for `CurrentTime` (http://stackoverflow.com/questions/19350419/filemaker-currenttime-conversion-to-24-hour-format), wrote Python function to rename dump files to 24-format and pick the latest one of a given type.
 
 ### Prosody
 
