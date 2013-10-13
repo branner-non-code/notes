@@ -30,6 +30,10 @@
 
 
 
+### Administration
+
+  1. YSJ added to collaborator status on `notes` repo.
+
 ### To Do
 
 #### Prosody
