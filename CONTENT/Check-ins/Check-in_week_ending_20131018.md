@@ -12,7 +12,7 @@
 
 ### Character dictionary
 
-
+  1. Began SQL conversion of InshyueMaster FMP database. Kanji list thinned of duplicates and malformed entries.
 
 ### Review of technical matter
 
@@ -32,7 +32,9 @@
 
 ### Administration
 
+  1. Tested use of `Metastore` for retaining file metadata with Git.
   1. YSJ added to collaborator status on `notes` repo.
+  2. Repaired unmerged `.js` file used by http://htmlpreview.github.io/?https://github.com/brannerchinese/notes/blob/master/searchPage.html. Now working.
 
 ### To Do
 
