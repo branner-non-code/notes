@@ -7,7 +7,7 @@
    
 ### Prosody
 
-  2. _Yùlǎn shī_ matter. Decision on abstract by 20131015.
+  2. _Yùlǎn shī_ matter. Decision on abstract by 20131015. AOS: http://www.umich.edu/~aos/2014/Call2014.pdf
   1. _Zàn_ matter. Final slides by 20131031.
   3. Study of _yán_ 焉. Final copy to editor 20131031.
   4. A/B paper. Abstract decision by 20131115. SSEC conference: http://www.dartmouth.edu/~earlychina/docs/2012-2013/ssec_conference_2014_announcement.pdf
