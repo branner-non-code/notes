@@ -40,31 +40,6 @@
   1. Tested use of `Metastore` for retaining file metadata with Git.
   1. YSJ added to collaborator status on `notes` repo.
   2. Repaired unmerged `.js` file used by http://htmlpreview.github.io/?https://github.com/brannerchinese/notes/blob/master/searchPage.html. Now working.
-
-### To Do
-
-#### Prosody
-
-  1. _Zàn_ matter. Final slides by 20131031.
-  2. _Yùlǎn shī_ matter. Abstract decision by 20131015.
-  3. Study of _yán_ 焉. Final copy to editor 20131031.
-  4. A/B paper. Abstract decision by 20131115? (Check!)
-
-#### Other coding
-
-  1. Blaggregator set-up.
-
-#### Review of technical matter
-
-  1. Goodrich et al., Chapter 13, "Text Processing".
-  1. Binary search tree.
-  1. Heaps.
-
-#### Mandarin dictionary
-
-  1. Refactor command-line output.
-  1. Refactor genertic SQL commands — some can be combined as joins.
-  1. Adding characters for new entry not yet working.
-  2. Adding an entry for characters not in the all-kanji table does not work.
+  1. Began "running to-do list" file in this directory; to-do list will be kept separate from check-ins proper and will include expected due-dates.
 
 [end]
