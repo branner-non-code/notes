@@ -19,6 +19,7 @@
 ### Review of technical matter
    
   1. Goodrich et al., Chapter 13, "Text Processing". 20131021?
+  2. Cormen et al., Chapter 32, "String Matching". 20131021?
   1. Binary search tree. 20131021?
   1. Heaps.
    
