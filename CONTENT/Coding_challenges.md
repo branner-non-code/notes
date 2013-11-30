@@ -5,6 +5,7 @@
   1. ACM-IPC Archive: https://icpcarchive.ecs.baylor.edu/
   2. UVA Online Judge: http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8
   3. Spoj: http://www.spoj.com/
+  4. Redit Daily Programmer http://www.reddit.com/r/dailyprogrammer/
 
 ### Apparently for interviews
 
