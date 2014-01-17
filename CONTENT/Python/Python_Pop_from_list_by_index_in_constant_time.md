@@ -4,6 +4,8 @@ Normally, popping a given index from a list is done in linear time, since everyt
 
 But here is a way to do it in constant time (thanks to Leslie Klein): swap the index in question with the list-end, and then use `pop()`. Popping from the end of the list is done in constant time.
 
+(Of course, the list is no longer in the same order after this operation.)
+
 Here are timings (Python 3):
 
 ~~~
