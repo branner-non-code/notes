@@ -1,6 +1,8 @@
 ## Python, Popping by index in constant time
 
-Normally, popping a given index from a list is done in linear time, since everything from that index to list-end has to be moved. But here is a way to do it in constant time (thanks to Leslie Klein): swap the index in question with the list-end, and then use `pop()`. Popping from the end of the list is done in constant time.
+Normally, popping a given index from a list is done in linear time, since everything from that index to list-end has to be moved. 
+
+But here is a way to do it in constant time (thanks to Leslie Klein): swap the index in question with the list-end, and then use `pop()`. Popping from the end of the list is done in constant time.
 
 Here are timings (Python 3):
 
