@@ -6,7 +6,7 @@ But here is a way to do it in constant time (thanks to Leslie Klein): swap the i
 
 (Of course, the list is no longer in the same order after this operation.)
 
-Here are timings (Python 3):
+Here are timings (Python 3). A factor-of-ten increase in the size of the list increases running time ten-fold with this method, meaning constant time; the alternative (`pop(index)`) appears to cost linear time.
 
 ~~~
 def main(upper_bound=100, trials=10):
