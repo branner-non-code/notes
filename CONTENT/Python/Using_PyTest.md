@@ -11,6 +11,7 @@
     PyTest will find and run all properly named tests in `test`. 
 
  1. Tests are reported one per function, even if multiple acts of testing are conducted within a function.
+ 2. Functions must be named beginning with `test_` in order to be "collected" (found) by py.test.
  1. The most basic test is an `assert` statement.
 
 [nd]
