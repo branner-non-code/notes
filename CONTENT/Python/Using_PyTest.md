@@ -6,7 +6,7 @@
  1. In each such program, `import pytest`.
  1. Run at the command line:
  
-        py.test
+        py.test test
 
     PyTest will find and run all properly named tests in `test`. 
 
