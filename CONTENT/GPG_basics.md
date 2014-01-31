@@ -12,7 +12,7 @@
 
  4. Encrypt a document "plain_text" as "cipher_text.gpg" for your friend, whose email is "friend@domain", using
 
-    gpg --output cipher_text.gpg --encrypt --recipient friend@domain plain_text
+        gpg --output cipher_text.gpg --encrypt --recipient friend@domain plain_text
 
    You will not be able to decrypt it since you don't have your friend's private key.
 
