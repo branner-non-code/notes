@@ -4,7 +4,7 @@
 
  1. Given a name, domain, email address, or other identifier of the person you want to connect to, look up associated public keys at http://pool.sks-keyservers.net
 
- 2. Links on the results page will lead to an actual public key, which can be downloaded to disk or copied to a file, say as "friends_key".
+ 2. Links on the results page will lead to an actual public key, which can be downloaded to disk or copied to a file, say as "friends_key". This key is connected to an email address that the friend supplied on creation of the key-pair.
 
  3. Import using
 
