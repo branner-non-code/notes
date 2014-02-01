@@ -2,7 +2,7 @@
 
 I'm able to use GnuPG to encrypt and decrypt Gmail messages when accessing my accounts via SMTP. but within the regular Gmail page on my browser — I use Mozilla for various reasons — I haven't found a way to do so.
 
-20140131: [Mailvelope](https://github.com/toberndo/mailvelope/releases) seems to be working.
+20140131: [Mailvelope](https://github.com/toberndo/mailvelope/releases) seems to be working. The README describes installation from a Git clone of the project — not sure it's advisable to download the `.xpl` file alone and try to install it.
 
 I see that
 
