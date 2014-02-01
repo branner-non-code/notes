@@ -23,7 +23,7 @@ Following http://moser-isi.ethz.ch/gpg.html#howtosetuppineforuseiwthgpg (accesse
  1. Options for encryption and/or signing appear just before a message is sent — use `^-p`
  1. Stefan Moser notes:
 
-        > You will have noticed that the setup of the pine filters is such that every mail is encrypted both with the recipient's key and with your own key. The reason behind this is the following: if you only used the recipient's key then the message that is stored in your "Sent"-folder is encrypted such that you will never be able to decrypt it anymore! So the additional encryption with your own public-key makes sure that you will be able to read your own email also after the encryption process. (Many thanks to Clemens Hofmann for this hint!) 
+    > You will have noticed that the setup of the pine filters is such that every mail is encrypted both with the recipient's key and with your own key. The reason behind this is the following: if you only used the recipient's key then the message that is stored in your "Sent"-folder is encrypted such that you will never be able to decrypt it anymore! So the additional encryption with your own public-key makes sure that you will be able to read your own email also after the encryption process. (Many thanks to Clemens Hofmann for this hint!) 
 
  1. Links:
 
