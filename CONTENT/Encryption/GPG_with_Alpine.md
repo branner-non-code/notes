@@ -1,8 +1,6 @@
-## Using GPG (GnuPG) with Alpine
+## Using GPG (GnuPG) with Alpine (formerly Pine)
 
 Following http://moser-isi.ethz.ch/gpg.html#howtosetuppineforuseiwthgpg (accessed 20140131).
-
-
 
  1. Create links to the active version of `gpg` in home directory. E.g.
 
@@ -19,8 +17,8 @@ Following http://moser-isi.ethz.ch/gpg.html#howtosetuppineforuseiwthgpg (accesse
                         <home_dir>/encrypt -a --encrypt -r _RECIPIENTS_ -r <your_User-ID_email>
                         <home_dir>/gpg -a -s --encrypt -r _RECIPIENTS_ -r <your_User-ID_email>
 
- 1. Recipient's email must match email component of his User-ID. 
- 1. Options for encryption and/or signing appear just before a message is sent — use `^-p`
+ 1. Recipient's email must match email component of recipient's User-ID. 
+ 1. Options for encryption and/or signing appear just before a message is sent — use `^-p` or `^-n` to reach `gpg` or others.
  1. Stefan Moser notes:
 
     > You will have noticed that the setup of the pine filters is such that every mail is encrypted both with the recipient's key and with your own key. The reason behind this is the following: if you only used the recipient's key then the message that is stored in your "Sent"-folder is encrypted such that you will never be able to decrypt it anymore! So the additional encryption with your own public-key makes sure that you will be able to read your own email also after the encryption process. (Many thanks to Clemens Hofmann for this hint!) 
