@@ -1,6 +1,6 @@
 ## Encrypt Gmail on Firefox
 
- 1. **[Mailvelope](https://github.com/toberndo/mailvelope/releases)** (accessed 20140131) is under active development, and where I am it works today for encryption with my public key. Release is reportedly planned for Firefox v. 27 (v. 26 is current today). Until then, the README describes building from a Git clone of the project — not sure it's advisable to download the `.xpl` file alone and try to install it. To install:
+ 1. **[Mailvelope](https://github.com/toberndo/mailvelope/releases)** (accessed 20140131) is under active development, and where I am it works today for encryption with public keys. Release is reportedly planned for Firefox v. 27 (v. 26 is current today). Until then, the README describes building from a Git clone of the project — not sure it's advisable to download the `.xpl` file alone and try to install it. To install:
 
         Tools 
          => Add-ons 
