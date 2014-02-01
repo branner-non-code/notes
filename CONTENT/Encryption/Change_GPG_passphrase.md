@@ -2,7 +2,7 @@
 
 From the command line use
 
-    gpg --edit-key [keyID]
+    gpg --edit-key <keyID_email>
     Command> passwd
 
 [end]
