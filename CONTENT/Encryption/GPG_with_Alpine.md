@@ -1,6 +1,6 @@
 ## Using GPG (GnuPG) with Alpine (formerly Pine)
 
-Following http://moser-isi.ethz.ch/gpg.html#howtosetuppineforuseiwthgpg (accessed 20140131).
+Following http://moser-isi.ethz.ch/gpg.html#howtosetuppineforuseiwthgpg (accessed 20140131). There is also material at http://www.washington.edu/alpine/tech-notes/config-notes.html.
 
  1. Create links to the active version of `gpg` in home directory. E.g.
 
