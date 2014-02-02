@@ -7,25 +7,31 @@
 
    2. Set up Topal configuration file:
 
-        $ topal -default > ~/.topal/config 
+        ~~~
+$ topal -default > ~/.topal/config 
+        ~~~
 
    2. Revise `.pinerc`. 
    
      * Add `enable-topal-hack` to list following `feature-list=`.
      * Add filters:
 
-        display-filters=_BEGINNING("-----BEGIN PGP ")_ /usr/bin/topal -display _TMPFILE_ _RESULTFILE_
-        sending-filters=/usr/bin/topal -send _TMPFILE_ _RESULTFILE_ _RECIPIENTS_,
-                        /usr/bin/topal -sendmime _TMPFILE_ _RESULTFILE_ _MIMETYPE_ _RECIPIENTS_
+        ~~~
+display-filters=_BEGINNING("-----BEGIN PGP ")_ /usr/bin/topal -display _TMPFILE_ _RESULTFILE_
+sending-filters=/usr/bin/topal -send _TMPFILE_ _RESULTFILE_ _RECIPIENTS_,
+                /usr/bin/topal -sendmime _TMPFILE_ _RESULTFILE_ _MIMETYPE_ _RECIPIENTS_
+        ~~~
 
    2. Revise `.mailcap` 
 
-        # cat (default) should not be used, e-mail text would just scroll by
-        text/plain; less '%s'; copiousoutput
-        # Topal GPG integration for Alpine
-        multipart/signed; topal -mime '%s' '%t'; needsterminal
-        multipart/encrypted; topal -mime '%s' '%t'; needsterminal
-        application/pgp; topal -mimeapgp '%s' '%t'; needsterminal
+        ~~~
+# cat (default) should not be used, e-mail text would just scroll by
+text/plain; less '%s'; copiousoutput
+# Topal GPG integration for Alpine
+multipart/signed; topal -mime '%s' '%t'; needsterminal
+multipart/encrypted; topal -mime '%s' '%t'; needsterminal
+application/pgp; topal -mimeapgp '%s' '%t'; needsterminal
+        ~~~
 
  1. The first time you send via Topal, you must set your own signing and decryption keys. This is done using `o` (Configuration) => `m` (Own key). Remember to save the changes before continuing.
  1. Problem: I would like to save outgoing messages in cleartext. How?
