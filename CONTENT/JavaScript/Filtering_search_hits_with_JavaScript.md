@@ -2,9 +2,9 @@
 
 Example by Stuart Sandine, 20140209: 
 
-Steps:
+Steps to filter CraigsList output, displaying only most recent day's posts:
 
- 1. Load CL map in Chrome, e.g http://newyork.craigslist.org/search/roo?useMap=1&zoomToPosting=&catAbb=roo&query=&minAsk=&maxAsk=&excats=
+ 1. Load CraigsList map in Chrome, e.g http://newyork.craigslist.org/search/roo?useMap=1&zoomToPosting=&catAbb=roo&query=&minAsk=&maxAsk=&excats=
 
  2. Crack open dev tools, sources panel, and navigate to the file at www.craigslist.org/js/searchmaps.min.js
 
