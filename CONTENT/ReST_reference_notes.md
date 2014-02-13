@@ -14,7 +14,7 @@ ReST is a "lightweight markup language". This type descends from SGML (ISO stand
 
  1. DPB thinks favorable features of reST are:
 
-   * Subscript `:sub:` and superscript `:sup`.
+   * Subscript `:sub:` and superscript `:sup:`.
    * Cross-referencing arbitrary locations; use `.. _my-reference-label` and `:ref:my-reference-label`:
 
  1. DPB thinks weak features of reST are:
