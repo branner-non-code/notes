@@ -7,7 +7,8 @@ ReST is a "lightweight markup language". This type descends from SGML (ISO stand
  1. [Syntax primer](http://sphinx-doc.org/rest.html) (accessed 20140213).
  1. [On-line reST Editor](http://rst.ninjs.org/) (accessed 20140213).
  1. [Quick reference](http://docutils.sourceforge.net/docs/user/rst/quickref.html) (accessed 20140213).
- 2. [ReST syntax](http://wiki.typo3.org/ReST_Syntax) (accessed 20140213).
+ 1. [Standard syntax reference](http://docutils.sourceforge.net/rst.html) (accessed 20140213).
+ 1. [Another syntax reference](http://wiki.typo3.org/ReST_Syntax) (accessed 20140213).
 
 ### Comparison with Markdown
 
