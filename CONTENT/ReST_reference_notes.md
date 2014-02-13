@@ -1,6 +1,6 @@
 ## Restructured Text reference notes
 
-ReST is a "lightweight markup language". This type descends from SGML (ISO standard dates to 1986) and IBM's GML (1969). Like AWK, GML is an acronym of its inventors' surnames.
+ReST is a "lightweight markup language". This type descends from SGML (ISO standard dates to 1986) and IBM's GML (1969). Like AWK, GML is (or can be seen as) an acronym of its inventors' surnames.
 
 ### Tools for direct study
 
