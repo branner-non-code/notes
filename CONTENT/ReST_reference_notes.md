@@ -12,10 +12,19 @@ ReST is a "lightweight markup language". This type descends from SGML (ISO stand
 
 ### Comparison with Markdown
 
+ 1. DPB thinks favorable features of reST are:
+
+   * Subscript `:sub:` and superscript `:sup`.
+   * Cross-referencing arbitrary locations; use `.. _my-reference-label` and `:ref:my-reference-label`:
+
+ 1. DPB thinks weak features of reST are:
+
+   * Nesting ordered lists works, but once the nest is ended, the numbers in the outer level do not continue.
+
  1. [Pandoc Markdown and ReST syntax compared](http://www.unexpected-vortices.com/doc-notes/markdown-and-rest-compared.html) (accessed 20140213).
  1. [Wikipedia comparison of a few syntactic features (with other lightweight markup languages)](http://en.wikipedia.org/wiki/Lightweight_markup_language#Text.2Ffont-face_formatting) (20140213).
  1. [SO discussion](http://stackoverflow.com/questions/34276/markdown-versus-restructuredtext) (20140213).
- 
+
    * "ReStructured text is more “capable,” in the sense that it allows me to represent many more kinds of semantic constructs, to embed backend code for latex and html and whatever-else (Markdown is HTML-specific in the sense that processors expect to be generating HTML), and it's more mature in that there is a specification and there aren't 50 different “flavors” of ReST out there."
    * "ReST is in some sense a superset of Markdown. … ReST is always notable for being designed with customization in mind. … If you're looking at more advanced needs like structuring whole documents and an extensible system that helps you with kinky stuff, ReST is the preferred choice."
    * "Markdown tends to be used more for things like blogging, discussion postings, and other applications like that. On the other hand, ReStructured Text (IIRC) was made specifically for being easy to insert into source code."
