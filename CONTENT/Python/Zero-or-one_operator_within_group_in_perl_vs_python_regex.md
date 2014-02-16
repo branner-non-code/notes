@@ -1,5 +1,7 @@
 ## Zero-or-one Operator within a Group in Perl vs. Python Regex
 
+[Version of 20130801.]
+
 One feature of Perl-style regular expressions that is not implemented in Python is the use of the zero-or-one operator (metacharacter "question mark", `?`) with a parenthesis-delimited "group" or marked sub-expression. In Python, if such a group is found (below, `(ghi)?`), it can be referred back to with a back-reference (below, `\2`; code below is Python 3.3 in Ipython 0.13.2):
 
 ~~~
@@ -51,6 +53,6 @@ though it’s longer to type and more complex to understand and remember.
 
 I vote for the second work-around.
 
-I’ve just noticed that the replacement version of regex now at PyPi addresses this issue (version ["regex 2013-06-26"](https://pypi.python.org/pypi/regex)):
+I’ve just noticed that the replacement version of regex now at PyPI addresses this issue (version ["regex 2013-06-26"](https://pypi.python.org/pypi/regex)):
 
 [end]
