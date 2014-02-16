@@ -2,6 +2,8 @@
 
 [Version of 20130801.]
 
+### Failure of back-references
+
 One feature of Perl-style regular expressions that is not implemented in Python is the use of the zero-or-one operator (metacharacter "question mark", `?`) with a parenthesis-delimited "group" or marked sub-expression. In Python, if such a group is found (below, `(ghi)?`), it can be referred back to with a back-reference (below, `\2`; code below is Python 3.3 in Ipython 0.13.2):
 
 ~~~
@@ -15,6 +17,8 @@ but if it is not found an error is raised instead of an empty string being retur
 In [2]: re.sub('(abc)\t(ghi)?', r'\2', 'abc\t') 
 ... error: unmatched group
 ~~~
+
+### Work-arounds
 
 I’m aware of two work-arounds for this curious situation.
 
@@ -52,6 +56,8 @@ $
 though it’s longer to type and more complex to understand and remember.
 
 I vote for the second work-around.
+
+### Long-term solution
 
 I’ve just noticed that the replacement version of regex now at PyPI addresses this issue (version ["regex 2013-06-26"](https://pypi.python.org/pypi/regex)):
 
