@@ -55,4 +55,6 @@ I vote for the second work-around.
 
 I’ve just noticed that the replacement version of regex now at PyPI addresses this issue (version ["regex 2013-06-26"](https://pypi.python.org/pypi/regex)):
 
+> Unmatched group in replacement: An unmatched group is treated as an empty string in a replacement template.
+
 [end]
