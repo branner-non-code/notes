@@ -1,4 +1,4 @@
-## VisualHostKey - Visual pattern when using SSH
+## VisualHostKey - ASCII visual pattern when using SSH
 
 Place
 
