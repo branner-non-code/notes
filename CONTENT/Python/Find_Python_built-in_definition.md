@@ -76,11 +76,114 @@ class ObjSpace(object):
         return w_result
 ~~~
 
-Still need to use 
+On using
 
 ~~~
 find -iname '*.py' -print0 | xargs -0 grep -n -w 'immutable_unique_id'
 ~~~
+
+there seem to be several definitions for different types of objects:
+
+~~~
+./pypy/objspace/std/longtype.py:128:    def immutable_unique_id(self, space):
+./pypy/objspace/std/inttype.py:193:    def immutable_unique_id(self, space):
+./pypy/objspace/std/unicodeobject.py:35:    def immutable_unique_id(self, space):
+./pypy/objspace/std/floattype.py:287:    def immutable_unique_id(self, space):
+./pypy/objspace/std/stringobject.py:34:    def immutable_unique_id(self, space):
+./pypy/objspace/std/complexobject.py:36:    def immutable_unique_id(self, space):
+~~~
+
+In `longtype.py`:
+
+~~~
+class W_AbstractLongObject(W_Object):
+    ...
+
+    def immutable_unique_id(self, space):
+        if self.user_overridden_class:
+            return None
+        from pypy.objspace.std.model import IDTAG_LONG as tag
+        b = space.bigint_w(self)
+        b = b.lshift(3).or_(rbigint.fromint(tag))
+        return space.newlong_from_rbigint(b)
+~~~
+
+In `inttype.py`:
+
+~~~
+class W_AbstractIntObject(W_Object):
+    ...
+
+    def immutable_unique_id(self, space):
+        if self.user_overridden_class:
+            return None
+        from pypy.objspace.std.model import IDTAG_INT as tag
+        b = space.bigint_w(self)
+        b = b.lshift(3).or_(rbigint.fromint(tag))
+        return space.newlong_from_rbigint(b)
+~~~
+
+In `unicodeobject.py`:
+
+~~~
+class W_AbstractUnicodeObject(W_Object):
+    ...
+
+    def immutable_unique_id(self, space):
+        if self.user_overridden_class:
+            return None
+        return space.wrap(compute_unique_id(space.unicode_w(self)))
+~~~
+
+In `floattype.py`:
+
+~~~
+class W_AbstractFloatObject(W_Object):
+    ...
+
+    def immutable_unique_id(self, space):
+        if self.user_overridden_class:
+            return None
+        from rpython.rlib.longlong2float import float2longlong
+        from pypy.objspace.std.model import IDTAG_FLOAT as tag
+        val = float2longlong(space.float_w(self))
+        b = rbigint.fromrarith_int(val)
+        b = b.lshift(3).or_(rbigint.fromint(tag))
+        return space.newlong_from_rbigint(b)
+~~~
+
+In `stringobject.py`:
+
+~~~
+class W_AbstractStringObject(W_Object):
+    ...
+
+    def immutable_unique_id(self, space):
+        if self.user_overridden_class:
+            return None
+        return space.wrap(compute_unique_id(space.str_w(self)))
+~~~
+
+In `complexobject.py`:
+
+~~~
+class W_AbstractComplexObject(W_Object):
+    ...
+
+    def immutable_unique_id(self, space):
+        if self.user_overridden_class:
+            return None
+        from rpython.rlib.longlong2float import float2longlong
+        from pypy.objspace.std.model import IDTAG_COMPLEX as tag
+        real = space.float_w(space.getattr(self, space.wrap("real")))
+        imag = space.float_w(space.getattr(self, space.wrap("imag")))
+        real_b = rbigint.fromrarith_int(float2longlong(real))
+        imag_b = rbigint.fromrarith_int(r_ulonglong(float2longlong(imag)))
+        val = real_b.lshift(64).or_(imag_b).lshift(3).or_(rbigint.fromint(tag))
+        return space.newlong_from_rbigint(val)
+~~~
+
+----
 
 But what about `space`?
 
