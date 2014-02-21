@@ -26,9 +26,7 @@
      2. presently on local master branch (indicated by asterisk);
      2. there is also remote master branch belonging to the remote named "origin", which is the "remotes/origin/master" entry. 
 
-1. less .git/config 
-
-   shows local master branch:
+1. Now `less .git/config` shows local master branch:
 
         [remote "origin"]
                 url = git@github.com:brannerchinese/nltk.git
