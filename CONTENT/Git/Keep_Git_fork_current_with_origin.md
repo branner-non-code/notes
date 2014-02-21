@@ -36,7 +36,7 @@
 
         git remote add nltk git@github.com:nltk/nltk.git
 
-   Now less .git/config shows
+   Now less .git/config shows a second remote (in addition to the one above):
 
         [remote "nltk"]
                 url = git@github.com:nltk/nltk.git
