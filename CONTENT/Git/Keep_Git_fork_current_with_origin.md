@@ -6,7 +6,7 @@
 
 1. Clone to my local environment with 
 
-        git clone git@github.com:nltk/nltk.git. 
+        git clone git@github.com:brannerchinese/nltk.git 
 
 1. Inside clone, run 
 
