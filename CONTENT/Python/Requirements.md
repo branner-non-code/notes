@@ -7,3 +7,9 @@
 1. Installing from an existing `requirements` file:
 
         pip install --upgrade -r requirements.txt
+
+or
+
+        pip install -Ur requirements.txt
+
+[end]
