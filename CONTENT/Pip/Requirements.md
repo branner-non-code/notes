@@ -8,7 +8,7 @@
 
         pip install --upgrade -r requirements.txt
 
-or
+  or
 
         pip install -Ur requirements.txt
 
