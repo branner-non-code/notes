@@ -4,6 +4,6 @@ Use
 
     pip install <package>[name]
 
-where `<package>` is the main program. 
+where `<package>` is the main program. The brackets in `[name]` are required.
 
 [end]
