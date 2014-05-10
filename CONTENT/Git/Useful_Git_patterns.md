@@ -34,6 +34,7 @@
         git checkout master
 
  1. To push or pull the commits within a branch to or from repo:
+
         git push -u origin branch_name
         git pull origin branch_name
 
