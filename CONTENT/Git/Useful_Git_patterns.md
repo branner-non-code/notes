@@ -44,7 +44,7 @@
 
  1. To merge only a selected file from another branch into the current branch
 
-        git checkout branch_name -- file_path
+        git checkout branch_name file_name
 
  1. To merge but without automatic commit:
 
@@ -59,5 +59,9 @@
 
         git checkout HEAD file_name
         git checkout branch_name file_name
+
+### Terms
+
+ 1. **detached HEAD**: HEAD refers to a specific commit that is not necessarily the same as **master**.
 
 [end]
