@@ -10,10 +10,6 @@
 
         git gui
 
- 1. To find out, but only as a dry run, what will be staged:
-
-        git add -Avn .
-
  1. To find out what has been changed:
 
         git diff
@@ -21,6 +17,14 @@
  1. To find out what is changed and staged:
 
         git status
+
+ 1. To find out, but only as a dry run, what will be staged:
+
+        git add -Avn .
+
+ 1. To retrieve remote content without automatically merging:
+
+        git fetch
 
 ### Working with branches and merging
 
