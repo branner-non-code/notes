@@ -28,6 +28,18 @@
 
         git branch branch_name
 
+ 1. To list all branches, including remotes:
+
+        git branch -a
+
+ 1. To find out how the current branch differs from the remote master:
+
+        git diff remotes/origin/master
+
+   or
+
+        git diff remotes/origin/master..current_branch
+
  1. To work within an existing branch or to return to the master branch:
 
         git checkout branch_name
