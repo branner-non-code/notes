@@ -25,6 +25,9 @@
  1. To retrieve remote content without automatically merging:
 
         git fetch
+        git fetch --dry-run -v
+
+   The latter is the most explicit.
 
 ### Working with branches and merging
 
