@@ -22,7 +22,7 @@
 
         git status
 
-### Working with branches
+### Working with branches and merging
 
  1. To create a new branch:
 
