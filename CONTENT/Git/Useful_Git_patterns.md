@@ -44,7 +44,7 @@
 
  1. To merge only a selected file from another branch into the current branch
 
-        git checkout branch_name file_name
+        git checkout branch_name -- file_name
 
  1. To merge but without automatic commit:
 
