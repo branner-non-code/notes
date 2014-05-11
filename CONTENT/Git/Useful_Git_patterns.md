@@ -57,6 +57,8 @@
         git push -u origin branch_name
         git pull origin branch_name
 
+   Before pulling for the first time, make sure to create and check out the desired branch.
+
  1. To find out what differs between two branches:
 
         git diff --name-status master..branch_name
