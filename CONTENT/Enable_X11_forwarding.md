@@ -17,6 +17,6 @@ I have used this between Ubuntu v. 14.04 remote and Mac OS 10.9 local machines.
         xclock &
         xmessage 'working' &
  
-   etc.: available in package `x11-apps`.
+   etc.: available in package `x11-apps`. Each of these should produce an effect on the local machine.
 
 [end]
