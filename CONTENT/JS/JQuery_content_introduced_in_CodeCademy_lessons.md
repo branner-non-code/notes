@@ -46,7 +46,6 @@ All code begins with:
  * `keydown(<function>)`
  * `hover(<function1>, <function2>)`
 
-
 ### Miscellaneous
 
  * compound selectors: `$('p, li')`
