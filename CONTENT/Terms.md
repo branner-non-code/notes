@@ -34,5 +34,6 @@
  1. "var"
  1. "char"
  1. "lib"
+ 1. "regex"
 
 [end]
