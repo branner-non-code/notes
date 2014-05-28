@@ -53,6 +53,13 @@
 
  1. An [article about this by Jim MacLeod](http://www.lovemytool.com/blog/2013/08/the-strange-history-of-port-0-by-jim-macleod.html), accessed 20140528):
 
-        > Originally, port 0 was the magic number in a BSD socket call to indicate an ephemeral port. The packets on the wire would use a random high port -- not technically random, just the next available one, but you know what I mean. When the software said “open a connection from port 0,” the OS would create packets with an ephemeral (high) port. There were never supposed to be any packets whose L4 headers actually listed the source or destination port as 0. As time went on, network monitoring apps began to use the port 0 shorthand as a placeholder to indicate that there wasn’t a TCP or UDP port, with the assumption that it would be clear from context that of course ICMP didn’t have a port.
+        > Originally, port 0 was the magic number in a BSD socket call to indicate 
+        > an ephemeral port. The packets on the wire would use a random high port 
+        > -- not technically random, just the next available one, but you know what 
+        > I mean. When the software said “open a connection from port 0,” the OS 
+        > would create packets with an ephemeral (high) port. There were never 
+        > etwork monitoring apps began to use the port 0 shorthand as a placeholder 
+        > to indicate that there wasn’t a TCP or UDP port, with the assumption that 
+        > it would be clear from context that of course ICMP didn’t have a port.
 
 [end]
