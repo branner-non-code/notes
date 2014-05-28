@@ -35,6 +35,10 @@
 
         git branch branch_name
 
+   Push it to remote with
+
+        git push -u origin branch_name
+
  1. To list all branches, including remotes:
 
         git branch -a
