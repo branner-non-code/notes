@@ -18,6 +18,11 @@
 
         git status
 
+ 1. To find out what has been changed upstream:
+
+        git remote update
+        git status
+
  1. To find out, but only as a dry run, what will be staged:
 
         git add -Avn .
