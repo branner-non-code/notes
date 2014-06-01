@@ -8,6 +8,9 @@ Note: GitHub intermittently no longer serving .js from regular (non-ghpages) rep
 
 V. 0.2, 20130528
 
+===
+
+---
 
 ## To Use
 Index markdown files are indexed in your local repo using `index_git.py`, which runs under Python v. 2.7 (in order to make use of the NLTK library). There is no database or server-side support. The index is stored as two large JavaScript objects in the `JS/` directory.
