@@ -15,9 +15,9 @@
 
     On [http://tools.android.com/knownissues](http://tools.android.com/knownissues) found: "Task 'assemble' not found", advising: 
 
-   > The real problem is that previous version of Android Studio misconfigured the IDEA file (e.g. MyProject.iml) -- it added an extra "<component name="FacetManager">" XML element that shouldn't be present. In the case above, the solution is to edit "MyProject.iml" and to remove the "<component name="FacetManager">" part
+   > The real problem is that previous version of Android Studio misconfigured the IDEA file (e.g. MyProject.iml) -- it added an extra "`<component name="FacetManager">`" XML element that shouldn't be present. In the case above, the solution is to edit "MyProject.iml" and to remove the "`<component name="FacetManager">`" part
 
-   Removed `<component ... </component>
+   Removed `<component ... </component>`.
 
  1. New error:
 
