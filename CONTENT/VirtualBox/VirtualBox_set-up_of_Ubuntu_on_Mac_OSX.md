@@ -14,10 +14,23 @@ Below describes using Ubuntu v. 14.04 LTS on VirtualBox v. 4.3.12.
         sudo chmod a-w /etc/ssh/sshd_config.original
         sudo vim /etc/ssh/sshd_config
 
-   and set `PasswordAuthentication no`; then
+
+   and set `Port `... to whatever non-standard port you desire. Then
+   
+        sudo restart ssh
+
+   and make sure you can log in with your password:
+
+        ssh <user>@<IP> -p <port>
+
+ 1. Make sure there is an ssh key on your host computer and use `ssh-copy-id` to register it with the guest. Then 
+
+        sudo vim /etc/ssh/sshd_config
+
+   and only then set `PasswordAuthentication no`, and finally
 
         sudo restart ssh
 
- 1. Make sure there is an ssh key on your host computer and use `ssh-copy-id` to register it with the guest.
+   Password-login is now disabled in favor of ssh-key login on the specified port only.
 
 [end]
