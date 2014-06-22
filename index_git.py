@@ -11,7 +11,7 @@ import pprint
 import json
 import nltk
 
-top_dir_path = os.path.join('', 'CONTENT')
+top_dir_path = os.path.join('', 'content')
 list_of_dirs = []
 list_of_paths = []
 list_of_lines = []
