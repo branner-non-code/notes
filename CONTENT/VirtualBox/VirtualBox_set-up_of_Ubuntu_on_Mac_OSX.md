@@ -35,4 +35,10 @@ Below describes using Ubuntu v. 14.04 LTS on VirtualBox v. 4.3.12.
 
    Password-login is now disabled in favor of ssh-key login, and login is permitted on the specified port only.
 
+ 1. For speed of log-in, it is useful to create aliases on the host:
+
+        alias ustart='vboxheadless -startvm <vm-name> --vrde=off &'
+        alias u='ssh <user>@<IP> -p <port>'
+
+
 [end]
