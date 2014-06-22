@@ -1,17 +1,13 @@
-VirtualBox
-==========
+## Changing VirtualBox Guest from Host command line
 
-1.  Using NAT, with ports configured as 2222 for both guest and host.
+ 1. Numerous functions of `VBoxManage` can be used.
 
-2.  Initially start up VM with
+ 1. To shut down from Host command line:
 
-        vboxheadless -startvm dpb15u --vrde=off &
+        VBoxManage controlvm <name> pause | resume
+        VBoxManage controlvm <name> savestate | poweroff | acpipowerbutton
 
-3.  Log in with
+   and many others.
 
-        ssh 127.0.0.1 -p 2222
-
-    Avoid using `localhost`. This works even when there is no internet
-    connection.
 
 [end]
