@@ -19,7 +19,7 @@ From Rhodes and Goerzen, _Foundations of Python Network Programming_, 2nd ed., 2
    2. loop:
      3. `accept` connection
      3. `close` connection
- 1. Prevent refused connections:
+ 1. Prevent refused connections while client may still be shutting down:
    2. use option `SO_REUSEADDR`
 
 [end]
