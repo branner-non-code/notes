@@ -13,5 +13,7 @@ From Rhodes and Goerzen, _Foundations of Python Network Programming_, 2nd ed., 2
    2. client connects in order to restrict packets accepted to only those from the "peer" (specified server).
  1. "peer" (p. 17):
    2. "programs cooperating with sockets" (embraces "client" and "server")
+ 1. IP address `127.0.0.1` is called (p. 19, 39):
+   2. "localhost’s loopback interface"
 
 [end]
