@@ -7,4 +7,9 @@
  * [Python asyncio, futures and yield from](http://stackoverflow.com/questions/20729104/python-asyncio-futures-and-yield-from)
  * [Python asyncio from the inside out](https://www.buzzcapture.com/2014/05/python-asyncio-inside/)
  * [Mental notes about Asyncio](http://www.metaklass.org/notes-about-asyncio/)
-][end]
+]
+ * [The New asyncio Module in Python 3.4: Event Loops](http://www.drdobbs.com/open-source/the-new-asyncio-module-in-python-34-even/240168401)
+ * [Coding advanced asynchronous I/O with Python's new high-level streams API](http://www.drdobbs.com/open-source/the-new-asyncio-in-python-34-servers-pro/240168408)
+
+
+[end]
