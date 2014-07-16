@@ -6,7 +6,7 @@ Summarizing https://developer.chrome.com/devtools/index, accessed 20140716.
 
  * toggle open dev tools: `cmd-opt-i`
  * toggle open dev tools, focus Console: `cmd-opt-j`
- * Inspect Element: `cmd-opt-c`
+ * Inspect Element: `cmd-shift-c`
  * move between panels: `cmd-]`/`cmd-[`
 
 ### Elements (= DOM elements)
@@ -48,21 +48,25 @@ Summarizing https://developer.chrome.com/devtools/index, accessed 20140716.
  * optimize load-time and responsiveness
  * additional option: PageSpeed
 
-See also:
-https://developer.chrome.com/devtools/docs/dom-and-styles
-https://developer.chrome.com/devtools/docs/console-api
-https://developer.chrome.com/devtools/docs/commandline-api
-https://developer.chrome.com/devtools/docs/console
-https://developer.chrome.com/devtools/docs/javascript-debugging
-https://developer.chrome.com/devtools/docs/network
-https://developer.chrome.com/devtools/docs/timeline
-https://developer.chrome.com/devtools/docs/profiles
-https://developer.chrome.com/devtools/docs/resource-panel
-https://developer.chrome.com/devtools/docs/heap-profiling.html
-https://developer.chrome.com/devtools/docs/cpu-profiling.html
-https://developer.chrome.com/devtools/docs/mobile-emulation.html
-https://developer.chrome.com/devtools/docs/remote-debugging.html
+----
 
-https://developer.chrome.com/devtools/docs/videos.html
-http://www.youtube.com/watch?v=ktwJ-EDiZoU&list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw
+### Links with more detail:
+ * [shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
+ * [dom-and-styles](https://developer.chrome.com/devtools/docs/dom-and-styles)
+ * [console-api](https://developer.chrome.com/devtools/docs/console-api)
+ * [console](https://developer.chrome.com/devtools/docs/console)
+ * [javascript-debugging](https://developer.chrome.com/devtools/docs/javascript-debugging)
+ * [network](https://developer.chrome.com/devtools/docs/network)
+ * [timeline](https://developer.chrome.com/devtools/docs/timeline)
+ * [profiles](https://developer.chrome.com/devtools/docs/profiles)
+ * [resource-panel](https://developer.chrome.com/devtools/docs/resource-panel)
+ * [heap-profiling](https://developer.chrome.com/devtools/docs/heap-profiling.html)
+ * [cpu-profiling](https://developer.chrome.com/devtools/docs/cpu-profiling.html)
+ * [mobile-emulation](https://developer.chrome.com/devtools/docs/mobile-emulation.html)
+ * [remote-debugging](https://developer.chrome.com/devtools/docs/remote-debugging.html)
+
+### Videos
+ * [videos](https://developer.chrome.com/devtools/docs/videos.html)
+ * [watch?v=ktwJ-EDiZoU&list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw](http://www.youtube.com/watch?v=ktwJ-EDiZoU&list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw)
+
 [end]
