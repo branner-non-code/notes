@@ -67,6 +67,6 @@ Summarizing https://developer.chrome.com/devtools/index, accessed 20140716.
 
 ### Videos
  * [videos](https://developer.chrome.com/devtools/docs/videos.html)
- * [watch?v=ktwJ-EDiZoU&list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw](http://www.youtube.com/watch?v=ktwJ-EDiZoU&list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw)
+ * [show: "The Breakpoint"](http://www.youtube.com/watch?v=ktwJ-EDiZoU&list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw)
 
 [end]
