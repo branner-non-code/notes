@@ -9,3 +9,5 @@
 ### indexOf
 
 1. Avoid use of `toString` for reasons of speed. http://jsperf.com/array-tostring-indexof-vs-array-indexof, accessed 20130502.
+
+[end]

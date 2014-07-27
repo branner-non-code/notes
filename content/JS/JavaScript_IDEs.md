@@ -2,9 +2,8 @@
 
 ### Webstorm
 
-Mostly highly recommended
-
-http://www.jetbrains.com/webstorm
+ * Mostly highly recommended. http://www.jetbrains.com/webstorm
+ * Vim emulation available: http://plugins.jetbrains.com/plugin/164 (accessed 20140727).
 
 ### Sublime
 
