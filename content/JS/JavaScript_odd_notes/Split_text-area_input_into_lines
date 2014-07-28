@@ -1,7 +1,0 @@
-### Split text-area input into lines
-
-        var searchBox = document.createElement('textArea');
-        ...
-        lines = searchBox.value.split('\n');
-
-[end]
