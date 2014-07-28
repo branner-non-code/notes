@@ -11,36 +11,39 @@
       pathTuple;
 
   // Main loop.
-  // Different settings if running locally or on web.
-  currentURL = window.location.href;
-  alert(currentURL);
-  if (currentURL.search(/http/) === 0) {
-    // Don't use htmlpreview.github.io here; displays markdown, not HTML.
-    urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
-    whereWeAre = "via HTTP.";
-  }
-  else {
-    urlPrefix = "";
-    whereWeAre = "from the filesystem.";
-  }
+  document.addEventListener('DOMContentLoaded', function(){
+    'use strict';
+    // Different settings if running locally or on web.
+    currentURL = window.location.href;
+    alert(currentURL);
+    if (currentURL.search(/http/) === 0) {
+      // Don't use htmlpreview.github.io here; displays markdown, not HTML.
+      urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
+      whereWeAre = "via HTTP.";
+    }
+    else {
+      urlPrefix = "";
+      whereWeAre = "from the filesystem.";
+    }
 
-  document.getElementById("whereRunning").innerHTML="This page was read " + 
-      whereWeAre + "<br/><br/>Enter your search term below:" + 
-      "<form>" + 
-      "<input type='text' id='searchTerm' />" + 
-      "<input type='button' onclick='getSought()' value='Enter search term'>" +
-      "</form>";
+    document.getElementById("whereRunning").innerHTML="This page was read " + 
+        whereWeAre + "<br/><br/>Enter your search term below:" + 
+        "<form>" + 
+        "<input type='text' id='searchTerm' />" + 
+        "<input type='button' onclick='getSought()' value='Enter search term'>" +
+        "</form>";
 
-  // Set focus.
-  document.getElementById("searchTerm").focus();
+    // Set focus.
+    document.getElementById("searchTerm").focus();
 
-  // Errors.
-  if (IndexEntries === null) {
-    alert("IndexEntries is null");
-  }
-  else if (TupleStorage === null) {
-    alert("TupleStorage is null");
-  }
+    // Errors.
+    if (IndexEntries === null) {
+      alert("IndexEntries is null");
+    }
+    else if (TupleStorage === null) {
+      alert("TupleStorage is null");
+    }
+  });
 })(window, document);
 
 function getSought() {
