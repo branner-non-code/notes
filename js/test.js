@@ -1,3 +1,6 @@
+// David Prager Branner
+// 20140728
+
 ;(function IIFE(window, document, undefined) {
   // Variables
   var currentURL,
