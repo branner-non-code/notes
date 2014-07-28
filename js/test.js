@@ -16,7 +16,7 @@
     
     // Different settings if running locally or on web.
     currentURL = window.location.href;
-    console.log(currentURL);
+    console.log('currentURL: ' + currentURL);
     if (currentURL.search(/http/) === 0) {
       // Don't use htmlpreview.github.io here; displays markdown, not HTML.
       urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
@@ -49,8 +49,11 @@
 })(window, document);
 
 function getSought(urlPrefix) {
+  if (urlPrefix === undefined) {
+    urlPrefix = "";
+  }
   sought = document.getElementById("searchTerm").value.toLowerCase();
-  alert(sought);
+  console.log('sought: ' + sought);
   if (sought === null || typeof IndexEntries[sought] === "undefined") {
     alert("Nothing found.");
     location.reload();
