@@ -21,7 +21,7 @@
     currentURL = window.location.href;
     if (currentURL.search(/http/) === 0) {
       // Don't use htmlpreview.github.io here; displays markdown, not HTML.
-      urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
+      urlPrefix = "https://github.com/brannerchinese/notes/blob/gh-pages/notes/";
       whereWeAre = "via HTTP.";
     }
     else {
