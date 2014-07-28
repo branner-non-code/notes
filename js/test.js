@@ -38,8 +38,6 @@
     // Set focus.
     document.getElementById("searchTerm").focus();
 
-    console.log("here");
-
     // Errors.
     if (IndexEntries === null) {
       alert("IndexEntries is null");
@@ -51,6 +49,7 @@
 })(window, document);
 
 function getSought(urlPrefix) {
+  console.log("here");
   if (urlPrefix === undefined) {
     urlPrefix = "";
   }
