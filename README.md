@@ -1,6 +1,6 @@
 # Notes
 
-## [Search markdown files here](https://branner-non-code.github.io/notes/searchPage.html)
+## [Search markdown files here](https://branner-non-code.github.io/notes/notes/searchPage.html)
 
 A simple indexer for Markdown files stored in a GitHub repository. No server-side support or database is needed, although an index must be generated using Python (not on GitHub).
 
@@ -33,6 +33,7 @@ Works on
  1. JS revised after GitHub changes made `searchPage.html` non-functional in 2014 Spring. Errors fixed and IIFE and main loop added.
  1. Link revised from original [http://htmlpreview.github.io/?](http://htmlpreview.github.io/?) form, which no longer works. Now using `gh-pages`.
  1. Now works on Chrome.
+ 1. Whole project also moved to subdirectory `notes`.
 
 ## Previous versions
 V. 0.2, 20130528
