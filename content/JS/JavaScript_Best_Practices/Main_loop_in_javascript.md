@@ -4,7 +4,7 @@
 
         document.addEventListener('DOMContentLoaded', function(){
           'use strict';
-          /* ... //
+          /* ... */
         });
 
  * This is the fastest of the pure JS methods of ensuring the DOM is ready: http://jsperf.com/onload-vs-domcontentloaded (accessed 20140727).

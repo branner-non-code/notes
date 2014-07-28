@@ -107,4 +107,25 @@
 
        `angular.module('myApp', []).constant('VERSION', 1.1);`
 
+ * 1.3.4.Q1: Explain `$attrs` and `initial-attr-values`. How would you use this in a controller and template, and what's the advantage?
+ 
+   * `$attrs`: container (key-value map) in a controller for initial values set for the controller in the template;
+   * `initial-attr-values`: example of a `initial-dash-spaced-name` declaration made in the template.
+   * These two elements can pass data from the template to the controller.
+
+ * 1.3.4.Q2: How can you share state across controllers in Angular?
+
+   * By use of `$scope.$emit` and `$rootScope.$broadcast`.
+
+ * 1.3.4.Q3: Explain the difference between emitting and broadcasting an event in Angular.
+
+   * `$broadcast` sends data down to children
+   * `$emit` sends data up to parents (until 
+
+        $scope.$on('show', function(event, data) {
+          event.stopPropagation();
+        }
+
+     is encountered)
+
 [end]
