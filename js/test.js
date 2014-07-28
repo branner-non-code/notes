@@ -51,6 +51,7 @@
 
 function getSought(urlPrefix) {
   sought = document.getElementById("searchTerm").value.toLowerCase();
+  alert(sought);
   if (sought === null || typeof IndexEntries[sought] === "undefined") {
     alert("Nothing found.");
     location.reload();
