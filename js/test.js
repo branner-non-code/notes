@@ -62,8 +62,8 @@ function getSought(urlPrefix) {
     document.getElementById("whereRunning").innerHTML="Enter your next search term below:" + 
         "<p id=\"whereRunning\"> </p>" +
         "<form><input type=\"text\" id=\"searchTerm\" />" +
-        "<input type=\"button\" onclick=\"getSought()\" " +
-          "value=\"Submit search term\"></form>";
+        "<input type=\"button\" onclick=\"getSought(" + 
+        urlPrefix + ")\" " + "value=\"Submit search term\"></form>";
     document.getElementById("searchTerm").focus();
     output = "<p>Results for: "+sought+"</p><ul>";
     for (var i = 0; i < tupleIndexes.length; i++) {
