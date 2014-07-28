@@ -16,8 +16,7 @@
     
     // Different settings if running locally or on web.
     currentURL = window.location.href;
-//    console.log(currentURL);
-//    alert(currentURL);
+    console.log(currentURL);
     if (currentURL.search(/http/) === 0) {
       // Don't use htmlpreview.github.io here; displays markdown, not HTML.
       urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
