@@ -31,7 +31,7 @@ Works on
 
 ## New this version
  1. JS revised after GitHub changes made `searchPage.html` non-functional in 2014 Spring. Errors fixed and IIFE and main loop added.
- 1. Link revised from original [http://htmlpreview.github.io/?](http://htmlpreview.github.io/?) form, which no longer works.
+ 1. Link revised from original [http://htmlpreview.github.io/?](http://htmlpreview.github.io/?) form, which no longer works. Now using `gh-pages`.
  1. Now works on Chrome.
 
 ## Previous versions
