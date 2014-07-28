@@ -13,8 +13,10 @@
   // Main loop.
   document.addEventListener('DOMContentLoaded', function(){
     'use strict';
+    
     // Different settings if running locally or on web.
     currentURL = window.location.href;
+    console.log(currentURL);
     alert(currentURL);
     if (currentURL.search(/http/) === 0) {
       // Don't use htmlpreview.github.io here; displays markdown, not HTML.
