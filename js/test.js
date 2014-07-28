@@ -16,8 +16,8 @@
     
     // Different settings if running locally or on web.
     currentURL = window.location.href;
-    console.log(currentURL);
-    alert(currentURL);
+//    console.log(currentURL);
+//    alert(currentURL);
     if (currentURL.search(/http/) === 0) {
       // Don't use htmlpreview.github.io here; displays markdown, not HTML.
       urlPrefix = "https://github.com/brannerchinese/notes/blob/master/";
@@ -32,7 +32,8 @@
         whereWeAre + "<br/><br/>Enter your search term below:" + 
         "<form>" + 
         "<input type='text' id='searchTerm' />" + 
-        "<input type='button' onclick='getSought()' value='Enter search term'>" +
+        "<input type='button' onclick='getSought(" + urlPrefix + 
+        ")' value='Enter search term'>" +
         "</form>";
 
     // Set focus.
@@ -48,7 +49,7 @@
   });
 })(window, document);
 
-function getSought() {
+function getSought(urlPrefix) {
   sought = document.getElementById("searchTerm").value.toLowerCase();
   if (sought === null || typeof IndexEntries[sought] === "undefined") {
     alert("Nothing found.");
