@@ -31,8 +31,8 @@
         whereWeAre + "<br/><br/>Enter your search term below:" + 
         "<form>" + 
         "<input type='text' id='searchTerm' />" + 
-        "<input type='button' onclick='getSought('" + urlPrefix + 
-        "')' value='Enter search term'>" +
+        "<input type='button' onclick='getSought(\"" + urlPrefix + 
+        "\")' value='Enter search term'>" +
         "</form>";
 
     // Set focus.
