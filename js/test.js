@@ -46,7 +46,7 @@ function getSought() {
   sought = document.getElementById("searchTerm").value.toLowerCase();
   if (sought === null || typeof IndexEntries[sought] === "undefined") {
     alert("Nothing found.");
-    location.reload()
+    location.reload();
   }
   else {
     document.close();
@@ -58,7 +58,7 @@ function getSought() {
         "<input type=\"button\" onclick=\"getSought()\" " +
           "value=\"Submit search term\"></form>";
     document.getElementById("searchTerm").focus();
-    output = "<p>Results for: "+sought+"</p><ul>"
+    output = "<p>Results for: "+sought+"</p><ul>";
     for (var i = 0; i < tupleIndexes.length; i++) {
       pathHash = tupleIndexes[indexNum++];
       pathTuple = TupleStorage[String(pathHash)];
@@ -67,6 +67,6 @@ function getSought() {
         pathTuple[0] + "</strong>: " + pathTuple[1] + ")</li>";
     }
     output += "</ul>";
-    document.getElementById("results").innerHTML=output
+    document.getElementById("results").innerHTML=output;
   }
 }
