@@ -4,7 +4,7 @@
 
 A simple indexer for Markdown files stored in a GitHub repository. No server-side support or database is needed, although an index must be generated using Python (not on GitHub).
 
-V. 0.3, 20140728.
+V. 0.4, 20140728.
 
 ## To Use
 Index markdown files are indexed in your local repo using `index_git.py`, which runs under Python v. 2.7 (in order to make use of the NLTK library). There is no database or server-side support. The index is stored as two large JavaScript objects in the `js/` directory.
@@ -30,12 +30,15 @@ Works on
  1. Ought also to be searching for individual words in pages.
 
 ## New this version
+ 1. Whole project moved to subdirectory `notes` and link to `gh-pages` placed (alone) in README for `master` branch..
+
+## Previous versions
+V. 0.3, 20140728.
+
  1. JS revised after GitHub changes made `searchPage.html` non-functional in 2014 Spring. Errors fixed and IIFE and main loop added.
  1. Link revised from original [http://htmlpreview.github.io/?](http://htmlpreview.github.io/?) form, which no longer works. Now using `gh-pages`.
  1. Now works on Chrome.
- 1. Whole project also moved to subdirectory `notes`.
 
-## Previous versions
 V. 0.2, 20130528
 
  1. Second search now works on Firefox.
