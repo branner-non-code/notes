@@ -128,4 +128,40 @@
 
      is encountered)
 
+ * 1.4.1.Q1: What's the difference between CSS transitions and keyframe animations?
+
+   * Keyframe animations are a kind of transition, but also allow for checkpoints (where special CSS can be applied for short durations), and for reversals and looping.
+
+ * 1.4.1.Q2: What is the transition property shorthand for?
+
+   * Long lists of parallel properties (` transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`).
+
+ * 1.4.1.Q3: What do the following transition parameters control? property, duration, timing-function, and delay
+
+   * (as named)
+
+ * 1.4.1.Q4: How can you detect when a transition has completed?
+
+   * `transitionend` event fires.
+
+ * 1.4.1.Q5: How do you use @keyframes at rules?
+
+   * "They all link some type of condition, which at any time evaluates to either true or false. If the condition evaluates to true, then all of the statements within the group will be applied." (https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
+
+ * 1.4.1.Q6: How do you make an animation loop?
+
+   * Use a keyframe.
+
+ * 1.4.1.Q7: How could you implement a loading image animation?
+
+   * Spinner?
+
+ * 1.4.1.Q8: What is GreenSock?
+
+   * Animation library dedicated to JavaScript animations and offers a variety of specialized features like animation paths, staggered animations, and timelines
+
+ * 1.4.1.Q9: How would you animate an element using jQuery?
+
+   * Use `.animate()`.
+
 [end]
