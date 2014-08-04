@@ -165,41 +165,63 @@
    * Use `.animate()`.
 
 
- * 1.4.2.Q1: What file do you need to inlcude in a script tag in your templates to use ngAnimate?
+ * 1.4.2.Q1: What file do you need to include in a script tag in your templates to use ngAnimate?
 
-   * 
+   * `src="angular-1.2/angular-animate.js"`
+   * See "Remastered Animation in AngularJS."
 
  * 1.4.2.Q2: What are the 'ng-' prefixed CSS classes you write rules for to achieve animations?
 
-   * 
+   * `.ng-enter`
+   * `.ng-leave`
+   * `.ng-move`
+   * `.ng-enter-active`
+   * `.ng-leave-active`
+   * `.ng-move-active`
+   * See "Remastered Animation in AngularJS."
 
  * 1.4.2.Q3: How could you animate an ng-hide call?
 
-   * 
+   * `$animate.addClass('ng-hide')`
+   * `$animate.removeClass('ng-hide')`
+   * See "Remastered Animation in AngularJS."
 
- * 1.4.2.Q4: How do you attach multiple animation events to a CSS class using JavaScipt animations?
+ * 1.4.2.Q4: How do you attach multiple animation events to a CSS class using JavaScript animations?
 
-   * 
+   * "Multiple animation events can be attached to a single CSS class (since animations are class based)."
+   * See "Remastered Animation in AngularJS."
 
  * 1.4.2.Q5: How do you include ngAnimate as a dependency for your module?
 
-   * 
+   * "Include the `angular-animate.js` file (which is apart of the downloadable zip file present on the angularjs.org website or within the code.angularjs.org listing page) into your webpage and reference the ngAnimate module inside of your application module."
+
+        `var myApp = angular.module('MyApp', ['ngAnimate']);`
+
+     See "Remastered Animation in AngularJS."
 
  * 1.4.2.Q6: Give the starting and ending CSS classes for each of the following events: enter, leave, move.
 
-   * 
+   * `.ng-enter`
+   * `.ng-leave`
+   * `.ng-move`
+   * `.ng-enter-active`
+   * `.ng-leave-active`
+   * `.ng-move-active`
+   * See "Remastered Animation in AngularJS."
 
  * 1.4.2.Q7: How do animations work with ng-repeat?
 
-   * 
+   * "The ngRepeat directive fires off the enter, leave and move events when items are inserted into, removed from, and moved around within the repeated list of items. All that you have to do is have a CSS class present and apply the matching Transition, Keyframe or JavaScript animation code to handle the animation on that CSS class value."
+   * See "Remastered Animation in AngularJS."
 
  * 1.4.2.Q8: What is a staggered animation?
 
-   * 
+   * "A stagger is an animation that occurs that contains a delay between each successive animation which causes a "curtain-like" effect to occur."
+   * See "Staggering Animations in AngularJS."
 
  * 1.4.2.Q9: Give a code example that uses staggered animation.
 
-   * 
+   * See "Staggering Animations in AngularJS."
 
 
 [end]
