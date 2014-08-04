@@ -164,4 +164,42 @@
 
    * Use `.animate()`.
 
+
+ * 1.4.2.Q1: What file do you need to inlcude in a script tag in your templates to use ngAnimate?
+
+   * 
+
+ * 1.4.2.Q2: What are the 'ng-' prefixed CSS classes you write rules for to achieve animations?
+
+   * 
+
+ * 1.4.2.Q3: How could you animate an ng-hide call?
+
+   * 
+
+ * 1.4.2.Q4: How do you attach multiple animation events to a CSS class using JavaScipt animations?
+
+   * 
+
+ * 1.4.2.Q5: How do you include ngAnimate as a dependency for your module?
+
+   * 
+
+ * 1.4.2.Q6: Give the starting and ending CSS classes for each of the following events: enter, leave, move.
+
+   * 
+
+ * 1.4.2.Q7: How do animations work with ng-repeat?
+
+   * 
+
+ * 1.4.2.Q8: What is a staggered animation?
+
+   * 
+
+ * 1.4.2.Q9: Give a code example that uses staggered animation.
+
+   * 
+
+
 [end]
