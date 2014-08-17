@@ -224,4 +224,31 @@
    * See "Staggering Animations in AngularJS."
 
 
+ * 1.5.1.HTTP.Q1: What is CORS?
+ * 1.5.1.HTTP.Q2: What are the three phases of an HTTP session?
+ * 1.5.1.HTTP.Q3: What are the three components of an HTTP request?
+ * 1.5.1.HTTP.Q4: What is an HTTP status code?
+ * 1.5.1.HTTP.Q5: What is the schema for an HTTP response object?
+ * 1.5.1.HTTP.Q6: What are the different HTTP methods?
+ * 1.5.1.HTTP.Q7: What is an idempotent method? Which HTTP methods are idempotent?
+ * 1.5.1.HTTP.Q8: What are headers?
+ * 1.5.1.XHR.Q1: What is an XHR object?
+ * 1.5.1.XHR.Q2: Is XHR only for getting XML data?
+ * 1.5.1.ReST.Q1: What does REST stand for and mean?
+ * 1.5.1.ReST.Q2: What are the six constraints for REST resources?
+ * 1.5.1.ReST.Q3: Give an example of a "sensible" resource name.
+ * 1.5.1.ReST.Q4: How do the GET, POST, PUT, and DELETE HTTP methods relate to REST resources?
+ * 1.5.2.Q1: What is the purpose of the $http service?
+ * 1.5.2.Q2: What must you include in your query parameters if you want to make a JSONP request using Angular?
+ * 1.5.2.Q3: If you want to make CORS requests, what do you need to do?
+ * 1.5.3.Q1: What is a promise? Give an example.
+ * 1.5.3.Q2: What is the purpose of the .then() method?
+ * 1.5.3.Q3: What is the advantage of a promise interface?
+ * 1.5.4.Q1: What is "callback hell" and how do promises help you avoid it?
+ * 1.5.4.Q2: Give an example of using the $q service.
+ * 1.5.4.Q3: Give an example of chained promises.
+
+ 
+
+
 [end]
