@@ -17,6 +17,7 @@
  1. 20140513: **classical**: common in discussion of JavaScript in the sense _class-based_ (e.g. Douglas Crockford's ["Classical Inheritance in JavaScript"](Classical Inheritance in JavaScript)); confusing because _classical_ seems to impute authority and antiquity to class-based paradigms, whereas authors using _classical_ in this sense are generally arguing for the superiority of a class-free paradigm.
  1. 20140513: **dogfood**: (v) to consume [one's own products] (said of a company). 
  1. 20140727: **Pascal case**: Camel case but beginning with a capital letter. Perhaps named after the Pascal programming language.
+ 1. 20140820: **performant**: performing well, high- or better-performance-(something).
 
 
 ### Words to talk about later
