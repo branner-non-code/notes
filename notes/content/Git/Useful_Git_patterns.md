@@ -102,6 +102,10 @@
 	'git rm --cached --ignore-unmatch <local_path_and_name>' \
 	--prune-empty --tag-name-filter cat -- --all
 
+   Then push using
+
+        git push origin --force --all
+
 ### Terms
 
  1. **detached HEAD**: HEAD refers to a specific commit that is not necessarily the same as **master**.
