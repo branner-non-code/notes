@@ -7,14 +7,15 @@
 
         ```
 pip3 install -U virtualenv
-```
+        ```
 
      to be sure of getting a version fully compatible with Python3.
 
  1. To ensure Python3 support, use
+
         ```
 virtualenv v_env3 --python=python3
-```
+        ```
 
  or 
 
