@@ -94,6 +94,14 @@
 
         git push origin :<branch_name>
 
+### Removing files
+
+ 1. Removing a file `<path_and_name>` from commit history:
+
+        git filter-branch --force --index-filter \
+	'git rm --cached --ignore-unmatch <path_and_name>' \
+	--prune-empty --tag-name-filter cat -- --all
+
 ### Terms
 
  1. **detached HEAD**: HEAD refers to a specific commit that is not necessarily the same as **master**.
