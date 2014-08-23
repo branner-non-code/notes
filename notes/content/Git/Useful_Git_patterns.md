@@ -96,10 +96,10 @@
 
 ### Removing files
 
- 1. Removing a file `<path_and_name>` from commit history:
+ 1. Removing a file `<local_path_and_name>` from commit history:
 
         git filter-branch --force --index-filter \
-	'git rm --cached --ignore-unmatch <path_and_name>' \
+	'git rm --cached --ignore-unmatch <local_path_and_name>' \
 	--prune-empty --tag-name-filter cat -- --all
 
 ### Terms
