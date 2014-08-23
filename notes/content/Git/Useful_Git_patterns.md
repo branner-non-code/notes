@@ -99,8 +99,8 @@
  1. Removing a file `<local_path_and_name>` from commit history:
 
         git filter-branch --force --index-filter \
-	'git rm --cached --ignore-unmatch <local_path_and_name>' \
-	--prune-empty --tag-name-filter cat -- --all
+        'git rm --cached --ignore-unmatch <local_path_and_name>' \
+        --prune-empty --tag-name-filter cat -- --all
 
    Then push using
 
