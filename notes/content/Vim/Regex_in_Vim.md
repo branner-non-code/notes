@@ -16,4 +16,7 @@ Major differences from Python/Perl usage in matching
 
 Good reference documents
 ------------------------
- * http://vimregex.com.
+ * http://vimdoc.sourceforge.net/htmldoc/pattern.html
+ * http://vimregex.com
+
+[end]
