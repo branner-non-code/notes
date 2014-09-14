@@ -1,4 +1,4 @@
-## Chinese Tone Marks on Macintosh
+## Chinese (Pinyin) Tone Marks on Macintosh
 
 ### Installation (Mac OS 10.9, but other recent systems are the same)
 
