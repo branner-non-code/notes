@@ -1,6 +1,6 @@
 ## Chinese Tone Marks on Macintosh
 
-### Installation (OS 10.9, but other recent systems are the same)
+### Installation (Mac OS 10.9, but other recent systems are the same)
 
  1. System Preferences => Keyboard (**not** Languages) => Input Sources. (Keyboard controls how you enter text; Languages controls how text is spell-checked, hyphenated, etc.)
  1. Click `+` and in the window that opens add U.S. Extended. After clicking "Add", make sure U.S. Extended shows up in the list of input sources now available to your system.
