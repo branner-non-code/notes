@@ -17,7 +17,7 @@ This works with capitals and n, too: `option-a I`: **Ī**, `option-e U`: **Ú**,
 
 Note that to get **ü** (u-umlaut) with a tone-mark, use v. So `option-v v`: **ǚ**, `option-a v`: **ǖ**, `option-a V`: **Ǖ**, etc.
 
-And note that some combining Unicode forms will not display correctly everywhere — a case in point is **ü̆**, above, which appears as two discrete characters on this pages in Firefox (v. 31.0) but not in Chrome (v. 37.0.2062.120).
+And note that some combining Unicode forms will not display correctly everywhere — a case in point is **ü̆**, above, which appears as two discrete characters on this page in Firefox (v. 31.0) but not in Chrome (v. 37.0.2062.120).
 
 ### More information
 
