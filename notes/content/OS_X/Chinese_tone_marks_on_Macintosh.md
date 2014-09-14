@@ -8,14 +8,24 @@
 
 ### How to generate from the keyboard
 
- * “macron” (tone 1): `option-a` followed by vowel. `option-a a`: **ā**, `option-a e`: **ē**, etc. 
- * “acute” (tone 2): `option-e` followed by vowel. `option-e i`: **í**, `option-e o`: **ó**, etc.
- * “caron” (tone 3): `option-v` followed by vowel. `option-v u`: **ǔ**, `option-v a`: **ǎ**, etc. Note: do not use a breve, which looks like this: **ŭ**, **ă**, **ü̆**, etc. (See comment below on **ü̆**.)
- * “grave” (tone 4): `option-backtick` followed by vowel. `option-backtick e`: **è**, `option-backtick i`: **ì**, etc.
+ * “macron” (tone 1): `option-a` followed by vowel. 
+   * `option-a a`: **ā**, `option-a e`: **ē**, etc. 
+ * “acute” (tone 2): `option-e` followed by vowel. 
+   * `option-e i`: **í**, `option-e o`: **ó**, etc.
+ * “caron” (tone 3): `option-v` followed by vowel. 
+   * `option-v u`: **ǔ**, `option-v a`: **ǎ**, etc. 
+   * Note: do not use a breve, which looks like this: **ŭ**, **ă**, **ü̆**, etc. (See comment below on **ü̆**.)
+ * “grave” (tone 4): `option-backtick` followed by vowel. 
+   * `option-backtick e`: **è**, `option-backtick i`: **ì**, etc.
 
-This works with capitals and n, too: `option-a I`: **Ī**, `option-e U`: **Ú**, `option-backtick n`: **ǹ**, etc. 
+This works with capitals and n, too: 
+   * `option-a I`: **Ī**, `option-e U`: **Ú**, 
+   * `option-backtick n`: **ǹ**, etc. 
 
-Note that to get **ü** (u-umlaut) with a tone-mark, use v. So `option-v v`: **ǚ**, `option-a v`: **ǖ**, `option-a V`: **Ǖ**, etc.
+Note that to get **ü** (u-umlaut) with a tone-mark, use v. So 
+   * `option-v v`: **ǚ**, 
+   * `option-a v`: **ǖ**, 
+   * `option-a V`: **Ǖ**, etc.
 
 And note that some combining Unicode forms will not display correctly everywhere — a case in point is **ü̆**, above, which appears as two discrete characters on some pages in Firefox (v. 31.0) but not in Chrome (v. 37.0.2062.120).
 
