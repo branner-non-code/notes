@@ -5,7 +5,9 @@
    2. Make sure there is a current version of Python3 available on the computer.
    2. That version will supply `pip3`. Use regular `pip` to uninstall any previous versions of `virtualenv`, then use
 
-        pip3 install -U virtualenv
+        ```
+pip3 install -U virtualenv
+        ```
 
      to be sure of getting a version fully compatible with Python3.
 
