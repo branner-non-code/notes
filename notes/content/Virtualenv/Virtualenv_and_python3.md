@@ -1,5 +1,7 @@
 ## Virtualenv and Python3
 
+[20140926: There is useful information at http://hackercodex.com/guide/python-development-environment-on-mac-osx/.]
+
  1. To install for use with Python3:
  
    2. Make sure there is a current version of Python3 available on the computer. If this is being done after OS re-installation, Python3 may not be available; use `brew install python3` in that case.
@@ -17,6 +19,6 @@ pip3 install -U virtualenv
 
    or 
 
-        virtualenv v_env3 --python=python3.3
+        virtualenv v_env3 --python=python3.4
 
 [end]
