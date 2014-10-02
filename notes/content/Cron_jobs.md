@@ -1,6 +1,6 @@
 ## Cron Jobs
 
- 1. Use `crontab -l` to write cron jobs
+ 1. Use `crontab -l` to show cron jobs; use `crontab -e` to edit them.
  1. Include full statements of the `SHELL` and `PATH` variables:
 
         SHELL=/bin/bash
