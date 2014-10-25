@@ -5,6 +5,6 @@
    2. Accepts globbed names of files to be encrypted in `.gitattributes`. Remember that each must be followed by `filter=git-blur diff=git-blur`.
    2. Encrypt/decrypt functionality appears *not* to require reboot before it begins; as soon as `git status` is called, encryption within the local repository appears to take place.
 
- 1. See also [`git crypt`](https://github.com/AGWA/git-crypt), which is more straitforwardly GPG based. (See docs at https://www.agwa.name/projects/git-crypt/.)
+ 1. See also [`git crypt`](https://github.com/AGWA/git-crypt), which is more straightforwardly GPG based. (See docs at https://www.agwa.name/projects/git-crypt/.)
 
 [end]
