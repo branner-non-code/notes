@@ -2,6 +2,8 @@
 
 ### Working in general
 
+ 1. [Useful explanation of `git diff`](http://stackoverflow.com/a/1587952).
+
  1. To find out what has been staged:
 
         git diff --cached
