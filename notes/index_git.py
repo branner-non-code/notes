@@ -76,7 +76,12 @@ def normalize_words(strings, wnl_obj):
         the_string = the_string.lower()
         the_string = re.sub('"|^\.', '', the_string)
         tokenized_words = nltk.word_tokenize(the_string)
-        tagged_words = nltk.pos_tag(tokenized_words)
+        try:
+            tagged_words = nltk.pos_tag(tokenized_words)
+        except UnicodeDecodeError:
+            print ("""UnicodeDecodeError at string\n    {}\n """
+                    """with tokenized words\n   {}""".
+                    format(the_string, tokenized_words))
         for word, treebank_POS in tagged_words:
             if (word[0] == '`' == word[-1]) or (word in not_unwanted_words):
                 word = word.replace('`', '')
