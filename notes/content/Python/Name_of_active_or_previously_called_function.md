@@ -1,4 +1,4 @@
-## Name of active function
+## Name of active or previously called function
 
 ### Most recently called function
 
