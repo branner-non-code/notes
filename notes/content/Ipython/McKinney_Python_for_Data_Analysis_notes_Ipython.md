@@ -1,4 +1,4 @@
-## McKinney, Python for Data Analysis — notes on Ipython
+## McKinney, Python for Data Analysis: notes on Ipython
 
  1. object introspection with `?` and `??` (p. 48)
  1. `%run -i` to run with access to REPL variables (p. 50)
