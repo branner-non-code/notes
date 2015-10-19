@@ -28,7 +28,7 @@
  
      In the case of POP, add `mail.pobox.com:995/ssl/user=name@pobox.com`, where `name` is your login-name.
 
-   Entering control-g will bring up help messages for whatever 
+   Entering control-g will bring up help messages for whatever field the cursor is now in.
 
    To save and exit, enter control-x. If you've made changes to the pobox.com collection, you'll be asked to commit them — do so by entering Y. 
 
