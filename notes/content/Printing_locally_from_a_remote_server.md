@@ -13,4 +13,8 @@ Resources
  * https://help.ubuntu.com/stable/ubuntu-help/printing-setup.html
  * https://it.uib.no/en/Mac_OS_X:_Printing_from_Terminal/command_line
 
+For Alpine:
+
+ * https://wiki.archlinux.org/index.php/Alpine#Printing_from_alpine
+
 [end]
