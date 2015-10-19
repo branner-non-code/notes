@@ -8,13 +8,13 @@
 
    * Find the "User Domain" key and add your domain name as the corresponding value.
 
-   * Find the "SMTP Server (for sending)" key and add  smtp.pobox.com:587/tls/user=name@pobox.com as the corresponding value, replacing "name" with your login-name.
+   * Find the "SMTP Server (for sending)" key and add `smtp.pobox.com:587/tls/user=name@pobox.com` as the corresponding value, replacing `name` with your login-name.
 
-   * Find the "Alternate Addresses" key and add name@pobox.com and any other email addresses of your own as the corresponding values.
+   * Find the "Alternate Addresses" key and add `name@pobox.com` (replacing `name` with your login-name) and any other email addresses of your own as the corresponding values.
 
    When you are done making any changes, enter E to exit the set-up menu. If you've made changes, you'll be asked to commit them — do so by entering Y.
 
-   Note that everything entered in the Setup=>Config interface can also be seen and edited in the .pinerc file, usually saved to your home directory.
+   Note that everything entered in the Setup=>Config interface can also be seen and edited in the `.pinerc` file, usually saved to your home directory.
 
 2. Set up IMAP (or POP) for incoming mail. Enter SL to go to Setup => collectionLists.
 
@@ -24,9 +24,9 @@
 
    * For "Nickname" choose a value such as "pobox" or what have you.
  
-   * For "Server", in the case of IMAP, add mail.pobox.com:993/ssl/user=name@pobox.com, where "name" is your login-name.
+   * For "Server", in the case of IMAP, add `mail.pobox.com:993/ssl/user=name@pobox.com`, where `name` is your login-name.
  
-   In the case of POP, add mail.pobox.com:995/ssl/user=name@pobox.com, where "name" is your login-name.
+   In the case of POP, add `mail.pobox.com:995/ssl/user=name@pobox.com`, where `name` is your login-name.
 
    Entering control-g will bring up help messages for whatever 
 
