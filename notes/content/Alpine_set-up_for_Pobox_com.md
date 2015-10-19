@@ -26,7 +26,7 @@
  
    * For "Server", in the case of IMAP, add `mail.pobox.com:993/ssl/user=name@pobox.com`, where `name` is your login-name.
  
-   In the case of POP, add `mail.pobox.com:995/ssl/user=name@pobox.com`, where `name` is your login-name.
+     In the case of POP, add `mail.pobox.com:995/ssl/user=name@pobox.com`, where `name` is your login-name.
 
    Entering control-g will bring up help messages for whatever 
 
