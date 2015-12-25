@@ -61,11 +61,13 @@ I installed on Ubuntu 14.04.2 LTS (Trusty).
     patch -p 1 < outgoing.patch
     patch -p 1 < rules.patch
     ```
+    
+    Read about each patch at http://patches.freeiz.com/pine/info/.
 
  1. Follow instructions in `alpine-2.20/README`. Configure and make.
 
     ```bash
-    ./configure --enable-quotas --with-passfile=<passfile>
+    ./configure --without-ipv6 --enable-quotas --with-passfile=<passfile>
     sudo make install
     ```
 
