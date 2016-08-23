@@ -16,7 +16,7 @@
 ### Other searching tricks
 
  * Enclose item in `\<` and `\>` to search for "whole word".
- * Use `^f` to edit Vim command line in new Vim sub-buffer.
+ * Use `^f` to "open command-line window" (edit Vim command line in new Vim sub-buffer).
 
 ### Good reference documents
 
