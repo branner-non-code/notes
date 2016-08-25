@@ -1,0 +1,10 @@
+Convert "Ruby Todos" challenge to ActiveRecord or show how DPB would code it.
+
+Why not have attr_accessors in a module, since they replace methods not actual state
+
+When do you not need to require something that is used in a particular file?
+
+[end]
+
+
+
