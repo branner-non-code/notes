@@ -12,7 +12,7 @@ Handles bits.
 
 ## Data Link Layer (Layer 2)
 
-Defines the boundaries of what is considered a network. Deals with local networks.
+Defines the boundaries of what is considered a network. Deals with local networks and low-level messages between them.
 
  * A.k.a. DLL or "link layer"
  * often divided into two sublayers: logical link control (LLC) and media access control (MAC) following IEEE 802.
@@ -38,7 +38,7 @@ Defines how internetworks (interconnected networks) function. Handles routing be
 
 ## Transport Layer (Layer 4)
 
-A.k.a. "middle layer". Relies on the lower layers to move data between devices. Responsible for end-to-end or host-to- host transport.
+A.k.a. "middle layer". Relies on the lower layers to move data between devices. Responsible for end-to-end or host-to-host transport. Communication between software processes.
 
  * Tracks data from each application and combines it into a single flow of data to send to lower layers; also performs the reverse operations.
  * Protocols here tend to be connection-oriented.
@@ -70,5 +70,10 @@ Data translation. "Syntax layer".
 ## Application Layer (Layer 7)
 
 Informally, often includes session and presentation layers.
+
+ * HTTP
+ * FTP
+ * SMTP
+ * etc.
 
 [end]
