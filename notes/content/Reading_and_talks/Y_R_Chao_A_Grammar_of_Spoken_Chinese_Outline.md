@@ -4,11 +4,39 @@
 
 ### 1.1 Grammar
 
-zzz
+#### 1.1.1 Scope of Present Work
+
+#### 1.1.2 Grammar and Form
+
+#### 1.1.3 Further Methodological Considerations
 
 ### 1.2 Spoken Chinese
 
+#### 1.2.1 Dialects and Styles Studied
+
+#### 1.2.2 Sources of Citations
+
+#### 1.2.3 Types of Discourse
+
 ### 1.3 Phonology
+
+#### 1.3.1 Syllabic Structure
+
+#### 1.3.2 Initials and Consonants
+
+#### 1.3.3 Finals and Vowels
+
+#### 1.3.4 Tones
+
+#### 1.3.5 Syllabic Types
+
+#### 1.3.6 Stress
+
+#### 1.3.7 Intonation
+
+#### 1.3.8 Morphophonemics
+
+#### 1.3.9 Marginal Phonemes
 
 ## Ch. 2. The Sentence
 
@@ -114,7 +142,7 @@ zzz
 
 #### 2.10.7 Time, Place, Condition in Main Subject
 
-#### 2.10.8 Subject or INverted Object?
+#### 2.10.8 Subject or Inverted Object?
 
 ### 2.11 Compound Sentences
 
@@ -286,7 +314,7 @@ zzz
 
 #### 4.1.1 Morphology and Syntax
 
-#### 4.1.2 Item-and-Process (IP) and Item-and-Arrangment (IA) Grammars
+#### 4.1.2 Item-and-Process (IP) and Item-and-Arrangement (IA) Grammars
 
 #### 4.1.3 Full and Empty Morphemes
 
@@ -338,7 +366,7 @@ zzz
 
 #### 4.4.5 Verbal Suffixes
 
-#### 4.4.6 Subordinative Suffixes: Varieties of de
+#### 4.4.6 Subordinative Suffixes: Varieties of _de_
 
 #### 4.4.7 Miscellaneous Suffixes
 
@@ -392,17 +420,17 @@ zzz
 
 #### 5.3.5 Class Meaning of Modification
 
-#### 5.3.6 The Particle de
+#### 5.3.6 The Particle _de_
 
 ##### 5.3.6.1 The Particle de as a Marker of Explicit Modification
 
-##### 5.3.6.2 Restrictive and Descriptive Uses of de
+##### 5.3.6.2 Restrictive and Descriptive Uses of _de_
 
-##### 5.3.6.3 de as a marker of Nonlexical Phrases
+##### 5.3.6.3 _de_ as a marker of Nonlexical Phrases
 
-##### 5.3.6.4 Zero and de as Markers of ICs
+##### 5.3.6.4 Zero and _de_ as Markers of ICs
 
-##### 5.3.6.5 Types of Constructions with de
+##### 5.3.6.5 Types of Constructions with _de_
 
 #### 5.3.7 Displaced Modifiers
 
@@ -528,7 +556,7 @@ zzz
 
 #### 6.5.1 F or B Status of the Constituents
 
-#### 6.5.2 Neutral Tone in the OBject
+#### 6.5.2 Neutral Tone in the Object
 
 #### 6.5.3 Exocentric V-O Compounds
 
@@ -634,7 +662,7 @@ zzz
 
 #### 7.6.2 Some Syntactical Properties of D-M Compounds
 
-### 7.7 N-L CO pounds
+### 7.7 N-L Compounds
 
 ### 7.8 Determinatives
 
@@ -774,7 +802,7 @@ zzz
 
 #### 8.6.1 Interjections as Ever-Free Forms
 
-#### 8.6.2 PHonological Features of Interjections
+#### 8.6.2 Phonological Features of Interjections
 
 #### 8.6.3 Variations and Uniformity Amopng dialects and Languages
 
@@ -782,6 +810,32 @@ zzz
 
 ---
 
-Terminology
+## Terminology
+
+
+
+---
+
+## Abbreviations
+
+ * **B**: bound
+ * **D-M**: determinative-measure compound
+ * **F**: free
+ * **H**: adverb
+ * **I!**: interjection
+ * **IA**: item-and-arrangement order
+ * **IC**: immediate constituent
+ * **IP**: item-and-process order
+ * **K**: preposition
+ * **L**: literary (wenyan); localizer
+ * **Np**: place word
+ * **S-P**: subject-predicate
+ * **V-O**: verb-object construction
+ * **V-R**: verb-complement construction
+ * **VA**: transitive qualtiy verb
+ * **Vc**: classificatory verb
+ * **Vi**: intransitive verb of action
+ * **Vt**: transitive verb of action
+ * **Vx**: auxiliary verb
 
 [end]
