@@ -49,7 +49,7 @@ Again, this is to get it working first.
 
 Once you get things working, you'll configure your guest with two network interfaces:
 
- *  Host only (an IP assigned by your host, Macbook, that doesn't change)
+ * Host only (an IP assigned by your host, Macbook, that doesn't change)
  * NAT (to enable your guest to reach the internet)
 
 But two network interfaces are harder to debug than one. So be sure to get bridged networking first.
@@ -63,6 +63,14 @@ But two network interfaces are harder to debug than one. So be sure to get bridg
 
 http://askubuntu.com/questions/293816/in-virtualbox-how-do-i-set-up-host-only-
 virtual-machines-that-can-access-the-in
+
+---
+
+At some point, the guest OS needs to be informed about its static ip:
+
+http://coding4streetcred.com/blog/post/VirtualBox-Configuring-Static-IPs-for-VMs
+
+But Virtualbox only presents a raw x86 interface so I'm not sure how it could be completely done on the Virtualbox side. But maybe they had a hack in the earlier version...
 
 
 [end]

@@ -5,6 +5,10 @@
         git clean -df
         git checkout -- .
 
+ 1. To remove any staged file:
+ 
+        git reset <file>
+
  1. Rename Git branches with `git branch -m`.
 
  1. Git Submodule Discussion with Prasanna Swaminathan, 20150219.
