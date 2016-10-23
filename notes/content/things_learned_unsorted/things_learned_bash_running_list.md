@@ -1,5 +1,7 @@
 ## Things Learned, Bash (running list)
 
+There is Bash scripting detail at http://linuxsig.org/files/bash_scripting.html.
+
  1. Install `trash-put` to avoid risk of unintended deletions with `rm`. Following [trash-cli](https://github.com/andreafrancia/trash-cli) instructions:
 
         git clone https://github.com/andreafrancia/trash-cli.git
@@ -65,6 +67,12 @@
  
     2. `-n`: suppress final newline
     2. alternative: `printf`
+
+ 1. `sudo -i`: starts a root subshell
+
+ 1. `!$`: Run the last word of the previous command. (see http://ss64.com/bash/bang.html)
+ 
+ 1. `ifconfig -a`: Optionally, the `-a` flag may be used instead of an interface name. This flag instructs ifconfig to display information about all interfaces in the system.  The `-d` flag limits this to interfaces that are down, and `-u` limits this to interfaces that are up.  When no arguments are given, `-a` is implied. (from man page)
 
 ### Already moved to Notes on line.
 

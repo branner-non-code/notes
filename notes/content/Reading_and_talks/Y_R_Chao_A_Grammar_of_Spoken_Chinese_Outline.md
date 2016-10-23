@@ -46,13 +46,48 @@
 
 #### 2.1.2 Sentence Identity
 
+ * "utterance": "an instance of the occurrence of a sentence" (author's special usage)
+ * "In the language of communication theory, a sentence is a 'type', while and utterance is a 'token' of the type."
+ * "Since most systems of writing omit indication of significant prosodic elements, one should always remember that the same sequence of words may not represent the same sentence." Example:
+ 
+   * _ta tzoou [,] bu hao_
+   * _ta tzoou.bu-hao_
+
+ * "Exceptionally, two or more different sentences can still have exactly the same phonemic make up and thus are homophonous sentences." Example:
+ 
+   * _woo yaw chie-gau_: dpb: S Aux VO
+   * _woo yaw chie-gau_: dpb: S Aux (Attr)-O
+
 #### 2.1.3 Sentence Values
 
+ 1. **declarative sentence**: "is true or false and thus has truth value"
+ 1. **command**: "is either complied with or refused and has compliance value". [Two sentences] do not have the same compliance value if they are not satisfied by quite the same action. Examples:
+ 
+    * _Sonq ta jeh san-been shu!_ `==` _Bae jeh san-been shu sonq geei ta!_
+    * " `!=` _Sonq ta san-been shu_
+ 
+ 1. **question**: "has information value". "Two questions which will be satisfied by the same information have the same information value." Example:
+ 
+    * _Nii jii-suey_ `!=` _Nii shyrjii-suey_. "The ranges of information for them are different."
+    
+    "A question may be regarded as a species of command and can usually be so reworded as such formally": _Gaw.sonq woo…_
+
+ 1. **vocative expression**: "has attention value"
+ 1. **exclamation**: "has expressive value: … giving the same degree and kind of affective reaction in both spekaer and hearer". ("This is usually hard to determine.")
+
 #### 2.1.4 Sentence and Use of a Sentence
+
+ * "The sentence value is not so much tied up with a sentence as a type, but rather with its use.
 
 ### 2.2 Minor Sentences
 
 #### [No heading, start of section 2.2]
+
+ * "A full sentence consists of two parts, a subject and a predicate."
+ * "A minor sentence is not in the subject-predicate form."
+ * "Most minor sentences are either verbal expressions or nominal expressions."
+ * "Interjections, though forming only a small proportion of minor sentences, are … minor sentences par excellence."
+ * Example: _shiah-yeu le_: minor declarative sentence.
 
 #### 2.2.1 Verbal Expressions as Declarative Sentences
 
@@ -81,6 +116,8 @@
 ### 2.4 Grammatical Meaning of Subject and Predicate
 
 #### 2.4.1 Subject and Predicate as Topic and Comment
+
+ * " 'Topic' and 'comment' as semantic terms and not as grammatical terms as used by many writers."
 
 #### 2.4.2 Direction of Action in Predicates
 
@@ -812,7 +849,7 @@
 
 ## Terminology
 
-
+ * **utterance**: "an instance of the occurrence of a sentence" (author's special usage, 2.3.1)
 
 ---
 
