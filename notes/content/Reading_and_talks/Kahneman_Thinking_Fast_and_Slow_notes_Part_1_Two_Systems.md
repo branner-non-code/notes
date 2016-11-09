@@ -186,13 +186,13 @@
 
 ### 2 The marvels of priming
 
- * P. 52: Measurement of **priming effects** is better than self-reported word-association tests.
+ * p. 52: Measurement of **priming effects** is better than self-reported word-association tests.
 
- * P. 53: "Priming is not restricted to concepts and words."
+ * p. 53: "Priming is not restricted to concepts and words."
 
  * John Bargh. "**Florida effect**": "words with an elderly theme" => walking slowly.
 
- * Pp. 53-54: "**Ideomotor** effect": Two stages of priming: 1) words prime thoughts; 2) thoughts prime behavior.
+ * pp. 53-54: "**Ideomotor** effect": Two stages of priming: 1) words prime thoughts; 2) thoughts prime behavior.
 
  * Reverse "**Florida effect**" also observe: walking slowly => "words with an elderly theme"
 
@@ -204,27 +204,27 @@
 
 ### 3 Primes that guide us
 
- * P. 56: Priming by having referendum polled in school => greater support for school funding
+ * p. 56: Priming by having referendum polled in school => greater support for school funding
 
  * Priming with images of classrooms and school lockers => greater support for school funding
 
- * Pp. 55-56: Kathleen Vohs. Money-priming => individualism (independence, selfishness, preference for being alone)
+ * pp. 55-56: Kathleen Vohs. Money-priming => individualism (independence, selfishness, preference for being alone)
 
  * Reminding people of their mortality => appeal of authoritarian ideas
 
- * P. 56: "Lady Macbeth effect": Thinking of being ashamed => words wash, soap; thinking of stabbing a coworker => buying detergent, soap, disinfectant
+ * p. 56: "Lady Macbeth effect": Thinking of being ashamed => words wash, soap; thinking of stabbing a coworker => buying detergent, soap, disinfectant
 
- * P. 57: "Disbelief is not an option. ... Priming phenomena arise in System 1."
+ * p. 57: "Disbelief is not an option. ... Priming phenomena arise in System 1."
 
- * Pp. 57-58: Effect of image if eyes on "honesty box" for coffee and tea money
+ * pp. 57-58: Effect of image if eyes on "honesty box" for coffee and tea money
 
- * P. 58: "System 1 provides the impressions that often turn into your beliefs, and it is the source of the impulses that often become your choices and your actions. It offers a tacit interpretation of what happens to you and around you. ... It contains the model of the world that instantly evaluates events as normal or surprising. It is the source of your rapid and often precise intuitive judgments. ... System 1 is also ... The origin of many of the systematic errors in your intuitions."
+ * p. 58: "System 1 provides the impressions that often turn into your beliefs, and it is the source of the impulses that often become your choices and your actions. It offers a tacit interpretation of what happens to you and around you. ... It contains the model of the world that instantly evaluates events as normal or surprising. It is the source of your rapid and often precise intuitive judgments. ... System 1 is also ... The origin of many of the systematic errors in your intuitions."
 
 ## Ch. 5 Cognitive Ease
 
 ### 1 [no subtitle]
 
- * P. 59: Assessments are "carried out automatically by System 1, and one of their functions is to determine whether extra effort is required from System 2."
+ * p. 59: Assessments are "carried out automatically by System 1, and one of their functions is to determine whether extra effort is required from System 2."
 
  * **cognitive ease**:
 
@@ -232,7 +232,7 @@
 
    * "connected to a large network of diverse inputs and outputs"
 
- * P. 59-60: **cognitive strain**:
+ * p. 59-60: **cognitive strain**:
 
    * "affected by both the current level of effort and the presence of unmet demands"
 
@@ -248,9 +248,9 @@ p. 62: "Predictable illusions inevitably occur if a judgment is based on an impr
 
 ### 3 How to write a persuasive message
 
- * P. 62-63: "Anything you can do to reduce cognitive strain will help, so you should first maximize legibility."
+ * p. 62-63: "Anything you can do to reduce cognitive strain will help, so you should first maximize legibility."
 
- * P. 63: "If your message is to be printed, use high-quality paper to maximize the contrast between characters and their background."
+ * p. 63: "If your message is to be printed, use high-quality paper to maximize the contrast between characters and their background."
 
  * "If you use color, you are more likely to be believed if your text is printed in bright blue or red than in middling shades of green, yellow, or pale blue."
 
@@ -258,7 +258,7 @@ p. 62: "Predictable illusions inevitably occur if a judgment is based on an impr
 
  * "In addition to making your message simple, try to make it memorable. Put your ideas in verse if you can; they will be more likely to be taken as truth."
 
- * P. 64: "If you quote a source, choose one with a name that is easy to pronounce."
+ * p. 64: "If you quote a source, choose one with a name that is easy to pronounce."
 
  * "Remember that System 2 is lazy and that mental effort is aversive."
 
@@ -266,7 +266,7 @@ p. 62: "Predictable illusions inevitably occur if a judgment is based on an impr
 
 ### 4 Strain and effort
 
- * P. 64-65: "Self-reinforcing reciprocity is found in studies of cognitive ease. … Cognitive strain is experienced when the effortful operations of System 2 are engaged. … The experience of cognitive strain … tends to mobilize System 2."
+ * p. 64-65: "Self-reinforcing reciprocity is found in studies of cognitive ease. … Cognitive strain is experienced when the effortful operations of System 2 are engaged. … The experience of cognitive strain … tends to mobilize System 2."
 
  * Shane Frederick's Cognitive Reflection Test (CRT): 1) bat-and-ball problem; 2) machines making widgets; 3) lily pad patch doubling in size.
 
@@ -274,19 +274,19 @@ p. 62: "Predictable illusions inevitably occur if a judgment is based on an impr
 
 ### 5 The pleasure of cognitive ease
 
- * P. 66: "Easily pronounced words evoke a favorable attitude."
+ * p. 66: "Easily pronounced words evoke a favorable attitude."
 
  * Robert Zajonc. **Mere exposure effect**: "link between the repetition of an arbitrary stimulus and the mild affection that people eventually have for it." Turkish words presented without explanation in a series of ads — those seen more favorably were felt to "mean something good".
 
- * P. 67: "The mere exposure effect is actually stronger for stimuli that the individual never consciously sees."
+ * p. 67: "The mere exposure effect is actually stronger for stimuli that the individual never consciously sees."
 
  * Zajonc argues that the mere exposure effect is "a profoundly important biological fact" extending to all animals. If "the repeated exposure of a stimulus is followed by nothing bad," then "such a stimulus will eventually become a safety signal, and safety is good."
 
 ### 6 Ease, mood, and intuition
 
- * P. 67: Sarnoff Mednick. Creativity as associative memory.
+ * p. 67: Sarnoff Mednick. Creativity as associative memory.
 
- * P. 68-69: Remote Association Test (RAT): deciding whether a triad of words are related
+ * p. 68-69: Remote Association Test (RAT): deciding whether a triad of words are related
 
    * accurate guesses are much faster than getting the actual answer
 
@@ -300,7 +300,7 @@ p. 62: "Predictable illusions inevitably occur if a judgment is based on an impr
 
  * "Good feelings actually lead to intuitions of coherence."
  
- * P. 70: Experiment attributing good feelings to music while RAT was conducted — eliminated the intuition of coherence. "The brief emotional response that follows the presentation of a triad of words (pleasant if the triad is coherent, unpleasant otherwise) is actually the basis of judgments of coherence."
+ * p. 70: Experiment attributing good feelings to music while RAT was conducted — eliminated the intuition of coherence. "The brief emotional response that follows the presentation of a triad of words (pleasant if the triad is coherent, unpleasant otherwise) is actually the basis of judgments of coherence."
 
 ## Ch. 6 Norms, Surprises, and Causes
 
@@ -310,23 +310,23 @@ P. 71: The spreading of activation in the associative machine is automatic, but 
 
 ### 2 Assessing normality
 
- * P. 71-72: "The main function of System 1 is to maintain and update a model of your personal world, which represents what is normal in it. … Surprise … is the most sensitive indication of how we understand our world and what we expect from it."
+ * p. 71-72: "The main function of System 1 is to maintain and update a model of your personal world, which represents what is normal in it. … Surprise … is the most sensitive indication of how we understand our world and what we expect from it."
  
- * P. 72: "There are two main varieties of surprise. Some expectations are active and conscious. … But there is a much larger category of events that you expect passively; you don't wait for them, but you are not surprised when they happen."
+ * p. 72: "There are two main varieties of surprise. Some expectations are active and conscious. … But there is a much larger category of events that you expect passively; you don't wait for them, but you are not surprised when they happen."
  
- * P. 73: "[Reoccurences of a surprising event] appear normal because they recruit the original episode, retrieve it from memory, and are interpreted in conjunction with it."
+ * p. 73: "[Reoccurences of a surprising event] appear normal because they recruit the original episode, retrieve it from memory, and are interpreted in conjunction with it."
  
  * **The Moses illusion**: "How many animals of each kind did Moses take into the ark?" … "As with the triads that produce cognitive ease, you unconsciously detect associative coherence between 'Moses" and 'ark" and so quickly accept the question."
  
- * P. 74: "Studies of brain responses have shown that violations of normality are detected with astonishing speed and subtlety."
+ * p. 74: "Studies of brain responses have shown that violations of normality are detected with astonishing speed and subtlety."
  
  * "System 1, which understands language, has access to norms of categories, which specifiy the range of plausible values as well as the most typical cases."
 
 ### 3 Seeing causes and intentions
 
- * P. 75: "Finding … causal connections is part of understanding a story and is an automatic operation of System 1. System 2, your conscious self, was offered the causal interpretation and accepted it. … We have limited information about what happened on a day, and System 1 is adept at finding a coherent causal story that links the fragments of knowledge at its disposal."
+ * p. 75: "Finding … causal connections is part of understanding a story and is an automatic operation of System 1. System 2, your conscious self, was offered the causal interpretation and accepted it. … We have limited information about what happened on a day, and System 1 is adept at finding a coherent causal story that links the fragments of knowledge at its disposal."
  
- * P. 76: Albert Michotte. "We _see_ causality, just as directly as we see color." Experiment with black squares on paper — "illusion of causality."
+ * p. 76: Albert Michotte. "We _see_ causality, just as directly as we see color." Experiment with black squares on paper — "illusion of causality."
  
  * "We are evidently ready from birth to have _impressions_ of causality, which do not depend on reasoning about patterns of causation. They are products of System 1.
 
@@ -334,7 +334,7 @@ P. 71: The spreading of activation in the associative machine is automatic, but 
 
  * "Your mind is ready and even eager to identify agents, assign them personality traits and specific intentions, and view the actions as expressing individual propensities."
 
- * P. 77: "The experience of freely willed action is quite separate from physical causality."
+ * p. 77: "The experience of freely willed action is quite separate from physical causality."
 
  * Paul Bloom. "our inborn readiness to separate physical and intentional causality explains the near universality of religious beliefs."
 
@@ -348,7 +348,7 @@ P. 79-80: figure confusing B and 13 and an ambiguous sentence. "System 1 does no
 
 ### 2 A bias to believe and confirm
 
- * Pp. 80-81: Daniel Gilbert. "Understanding a statement must begin with an attempt to believe it: you must first know what the idea would mean if it were true. Only then can you decide whether or not to _unbelieve_ it. The initial attempt to believe is an automatic operation of System 1, which involves the construction of the best possible interpretation of the situation. "
+ * pp. 80-81: Daniel Gilbert. "Understanding a statement must begin with an attempt to believe it: you must first know what the idea would mean if it were true. Only then can you decide whether or not to _unbelieve_ it. The initial attempt to believe is an automatic operation of System 1, which involves the construction of the best possible interpretation of the situation. "
 
  * "Gilbert sees unbelieving as an operation of System 2." Experiment: nonsense assertions, to be labelled true or false, and memory of these labellings was later tested. Disruption by requiring digits to be memorized "made it difficult for people to 'unbelieve' false sentences."
 
@@ -362,43 +362,43 @@ P. 79-80: figure confusing B and 13 and an ambiguous sentence. "System 1 does no
 
 ### 3 Exaggerated e!optional coherence (halo effect)
 
- * P. 82: "The tendency to like (or dislike) everything about a person - including things you have not observed - is known as the **"halo effect**. ... It is one of the ways the representation of the world that System 1 generates is simpler and more coherent than the real thing."
+ * p. 82: "The tendency to like (or dislike) everything about a person - including things you have not observed - is known as the **"halo effect**. ... It is one of the ways the representation of the world that System 1 generates is simpler and more coherent than the real thing."
 
  * Solomon Asch. two people described by the same traits but in reverse order; earlier it!s have a greater effect on our view of each person. "Evidence accumulates gradually and the interpretation is shaped by the emotion attached to the first impression."
 
  * "The halo effect is also an example of **suppressed ambiguity**."
 
- * P. 83: "Sequence matters ... because the halo effect increases the weight of first impressions, sometimes to the point that subsequent information is mostly wasted."
+ * p. 83: "Sequence matters ... because the halo effect increases the weight of first impressions, sometimes to the point that subsequent information is mostly wasted."
 
- * Pp. 83-84: Grading student exams - changed from reading all of each student's in sequence, to reading each essay for all students and trading with your reference to other grades.
+ * pp. 83-84: Grading student exams - changed from reading all of each student's in sequence, to reading each essay for all students and trading with your reference to other grades.
 
- * P. 84: "The consistency i had enjoyed earlier was spurious; it produced a feeling of cognitive ease, and my System 2 was happy to lazily accept the final grade."
+ * p. 84: "The consistency i had enjoyed earlier was spurious; it produced a feeling of cognitive ease, and my System 2 was happy to lazily accept the final grade."
 
- * Pp 84-85: "The procedure I adopted to take the halo effect conforms to a general principle: **decorrelate error**! ... To derive the most useful information from multiple sources of evidence, you should always try to make these sources independent of each other. ... Eliminating redundancy from your sources of information is always a good idea." 
+ * pp 84-85: "The procedure I adopted to take the halo effect conforms to a general principle: **decorrelate error**! ... To derive the most useful information from multiple sources of evidence, you should always try to make these sources independent of each other. ... Eliminating redundancy from your sources of information is always a good idea." 
 
  * "Before an issue is discussed, all members of the committee should be asked to write a very brief summary of their position. ... The standard practice of open discussion gives too much weight to the opinions of those who speak early and assertively, causing others to line up behind them."
 
 ### 4 What you see is all there is (WYSIATS)
 
- * P. 85: "An essential design feature of the associative machine is that it represents only activated ideas. Information that is not retrieved (even unconsciously) from memory might as well not exist."
+ * p. 85: "An essential design feature of the associative machine is that it represents only activated ideas. Information that is not retrieved (even unconsciously) from memory might as well not exist."
 
  * "The measure of success for System 1 is the coherence of the story it manages to create. The amount and quality of the data on which the story is based are largely irrelevant."
 
- * P. 86: System is expected to influence even the more careful decisions. It's input never ceases."
+ * p. 86: System is expected to influence even the more careful decisions. It's input never ceases."
 
  * **WYSIATS**: Jumping to conclusions on the basis of limited evidence is ... important to an understanding of intuitive thinking."
 
- * Pp. 86-87: Amos Tversky. "The presentation of one-sided evidence had a very pronounced effect on judgments. ... it is the consistency of the information that matters for a good story, not its completeness. Indeed, you will often find that knowing little makes it easier to fit everything you know into a coherent pattern."
+ * pp. 86-87: Amos Tversky. "The presentation of one-sided evidence had a very pronounced effect on judgments. ... it is the consistency of the information that matters for a good story, not its completeness. Indeed, you will often find that knowing little makes it easier to fit everything you know into a coherent pattern."
 
  * "WYSIATI facilitates the achievement of coherence and of the cognitive ease that causes us to accept a statement as true. It explains why we can think fast, and how we are able to make sense of partial information in a complex world."
  
- * Pp. 87-88: "It also helps explain: a long and diverse list of biases of judgment and choice, including:" overconfidence, **framing effects** (alternative and equivalent formulations), **base-rate neglect** (ignoring differences in sample size).
+ * pp. 87-88: "It also helps explain: a long and diverse list of biases of judgment and choice, including:" overconfidence, **framing effects** (alternative and equivalent formulations), **base-rate neglect** (ignoring differences in sample size).
 
 ## Ch. 8 How Judgments Happen
 
 ### 1 [no subtitle]
 
- * P. 89: **basic assessments**: "System 1 continuously monitors what is going on outside and inside the mind, and continuously generates assessments of various aspects of the situation without specific intention and with little or no effort"
+ * p. 89: **basic assessments**: "System 1 continuously monitors what is going on outside and inside the mind, and continuously generates assessments of various aspects of the situation without specific intention and with little or no effort"
  
  * System 1 has "the ability to translate values across dimensions."
  
@@ -406,7 +406,7 @@ P. 79-80: figure confusing B and 13 and an ambiguous sentence. "System 1 does no
 
 ### 2 Basic assessments
 
- * P. 90: "System 1 has been shaped by evolution to provide a continuous assessment of the main problems that an organism must solve to survive."
+ * p. 90: "System 1 has been shaped by evolution to provide a continuous assessment of the main problems that an organism must solve to survive."
  
  * Alex Todorov. "We are endowed with an ability, in a single glance at a stranger's face, two potentially crucial facts about that person: how dominant ;;; his is, and how trustworthy he is."
  
@@ -414,9 +414,9 @@ P. 79-80: figure confusing B and 13 and an ambiguous sentence. "System 1 does no
  
  * "Facial expression ... provides the cues for assessing the stranger's intentions.
  
- * Pp. 90-91: Alex Todorov. Ratings of competence (based on brief exposure to photographs and without any political context) were far more predictive of voting outcomes ... than ratings of likability. "Todorov has found that people judge competence by combining the two dimensions of strength and trustworthiness." 
+ * pp. 90-91: Alex Todorov. Ratings of competence (based on brief exposure to photographs and without any political context) were far more predictive of voting outcomes ... than ratings of likability. "Todorov has found that people judge competence by combining the two dimensions of strength and trustworthiness." 
  
- * P. 91: **Judgment heuristic**: voters "fall back on a simpler assessment that is made quickly and automatically and is available when System 2 must make its decision."
+ * p. 91: **Judgment heuristic**: voters "fall back on a simpler assessment that is made quickly and automatically and is available when System 2 must make its decision."
  
  * "The effect of facial competence on voting is about three times larger for information-poor and TV-prone voters than for others who are better informed and watch less television. Evidently, the relatively importance of System 1 in dtermining voting choices is not the same for all people."
  
@@ -428,11 +428,11 @@ P. 79-80: figure confusing B and 13 and an ambiguous sentence. "System 1 does no
 
  * Assessments "are performed even in the absence of a specified ask set, although the results are used to meet task demands as they arise.
  
- * Pp. 91-92: example of two towers of blocks and a pile of unstacked blocks — you can't tell how tall a tower you could build of the unstacked blocks, and only System can figure it out.
+ * pp. 91-92: example of two towers of blocks and a pile of unstacked blocks — you can't tell how tall a tower you could build of the unstacked blocks, and only System can figure it out.
 
 ### 3 Sets and prototypes
 
- * Pp. 92-93: figuring average length of some lines (System 1, impressionistic) vs. total length of some lines (System 2, computation)
+ * pp. 92-93: figuring average length of some lines (System 1, impressionistic) vs. total length of some lines (System 2, computation)
  
  * "Because System 1 represents categories by a prototype or a set of typical exemplars, it deals well with averages but poorly with sums. The size of the category, the number of instances it contains, tends to be ignored in judgments of what I will call **sum-like variables**."
  
@@ -440,15 +440,15 @@ P. 79-80: figure confusing B and 13 and an ambiguous sentence. "System 1 does no
 
 ### 4 Intensity matching
 
- * Pp 93-94: "**Underlying dimension** of intensity or amount, which permits the use of the word _more_. System 1: "An underlying scale of intensity allows matching across diverse dimensions."
+ * pp 93-94: "**Underlying dimension** of intensity or amount, which permits the use of the word _more_. System 1: "An underlying scale of intensity allows matching across diverse dimensions."
  
- * P. 94: "In classic experiments, people adjusted the loudness of a sound to the severity of crimes."
+ * p. 94: "In classic experiments, people adjusted the loudness of a sound to the severity of crimes."
  
  * "This mode of prediction by matching is statistically wrong — although it is perfectly natural to System 1, and for most people except statisticians it is also acceptable to System 2.
 
 ### 5 The mental shotgun
 
- * P. 95: "System 1 carries out many computations at any one time. Some of these are routine assessments that go on continuously." Example of 3D representation of what is in the field of vision.
+ * p. 95: "System 1 carries out many computations at any one time. Some of these are routine assessments that go on continuously." Example of 3D representation of what is in the field of vision.
  
  * "No intention is needed to trigger this operation or the continuous monitoring for violated expectations. ... Other computations are undertaken only when needed"
  
@@ -462,22 +462,22 @@ P. 79-80: figure confusing B and 13 and an ambiguous sentence. "System 1 does no
 
 ### 1 [No subtitle]
 
- * P. 97: "A remarkable aspect of your mental life is that you are rarely stumped. ... Whether you state them or not, you often have answers to questions that you do not completely understand, relying on evidence that you can neither explain nor defend."
+ * p. 97: "A remarkable aspect of your mental life is that you are rarely stumped. ... Whether you state them or not, you often have answers to questions that you do not completely understand, relying on evidence that you can neither explain nor defend."
 
 ### 2 Substituting questions
 
- * P. 97: "If a satisfactory answer to a hard question is not found quickly, System 1 will find a related question that is easier and will answer it." "**Substitution**."
+ * p. 97: "If a satisfactory answer to a hard question is not found quickly, System 1 will find a related question that is easier and will answer it." "**Substitution**."
  
  * **target question**: the assessment you intend to produce
  * **heuristic question**: the simpler question that you answer instead
  
- * P. 98: Idea of substitution came up in asking "how people manage to make judgments of probability without knowing precisely what probability is. ... When called upon to judge probability, people actually judge something else and believe they have judged probability."
+ * p. 98: Idea of substitution came up in asking "how people manage to make judgments of probability without knowing precisely what probability is. ... When called upon to judge probability, people actually judge something else and believe they have judged probability."
  
  * George Pólya advised substituting an easier question for a harder question (as a System 2 tactic). System 1 uses the same tactic as part of the mental shotgun.
  
  * "You are not limited to perfectly reasons answers to questions. There is a heuristic alternative to careful reasoning, which sometimes works fairly well and sometimes leads to serious errors."
 
- * P. 99: "The mental shotgun makes it easy to generate quick answers to difficult questions without imposing much hard work on your lazy System 2."
+ * p. 99: "The mental shotgun makes it easy to generate quick answers to difficult questions without imposing much hard work on your lazy System 2."
  
  * Heuristic "answers need to be fitted to the original questions." "Another capability of system 1, **intensity matching**, is available to solve that problem.
  
@@ -487,17 +487,17 @@ P. 79-80: figure confusing B and 13 and an ambiguous sentence. "System 1 does no
 
 ### 3 The 3-D heuristic
 
- * P. 100-101: Perspective illusion: which figure is larger? "For most of us, this impression of 3-D size is overwhelming. Only visual artists and experienced photographers have developed the skill of seeing the drawing as an object on the page. For the rest of us, substitution occurs: the dominant impression of 3-D size dictates the judgment of 2-D size. The illusion is due to a 3-D heuristic."
+ * p. 100-101: Perspective illusion: which figure is larger? "For most of us, this impression of 3-D size is overwhelming. Only visual artists and experienced photographers have developed the skill of seeing the drawing as an object on the page. For the rest of us, substitution occurs: the dominant impression of 3-D size dictates the judgment of 2-D size. The illusion is due to a 3-D heuristic."
 
- * P. 101: "A judgment that is based on substitution will inevitably be biased in predictable ways. In this case, it happens so deep in the perceptual system that you simply cannot help it."
+ * p. 101: "A judgment that is based on substitution will inevitably be biased in predictable ways. In this case, it happens so deep in the perceptual system that you simply cannot help it."
 
 ### 4 The mood heuristic for happiness.
 
- * Pp. 101-102: Experiment: different correlations found between answers to two questions, depending on the other in which they are asked. When the first question produces an emotional reaction, the answer to the second question is affected. Participants "substituted the question to which they had a ready-made answer for the question they were asked."
+ * pp. 101-102: Experiment: different correlations found between answers to two questions, depending on the other in which they are asked. When the first question produces an emotional reaction, the answer to the second question is affected. Participants "substituted the question to which they had a ready-made answer for the question they were asked."
 
 ### 5 The affect heuristic
 
- * P. 103: The dominance of conclusions over arguments is most pronounced where emotions are involved. 
+ * p. 103: The dominance of conclusions over arguments is most pronounced where emotions are involved. 
  
  * Paul Slovic. **Affect heuristic**: people letting their likes and dislikes determine their beliefs about the world. "Your emotional attitude to ... things ... drives your beliefs about their benefits and their risks."
  
@@ -505,7 +505,7 @@ P. 79-80: figure confusing B and 13 and an ambiguous sentence. "System 1 does no
  
  * "System 2 [is] a more or less acquiescent monitor, which allows considerable leeway to System 1. ... Active in deliberate memory search, cpmlex computations, comparisons, planning, and choice. ... It appear[s] that System 2 is ultimately in charge, with the ability to resist the suggestions of System 1, slow things down, and impose logical analysis. Self-criticism is one of the functions of System 2."
 
- * Pp. 103-104: "We see here a new side of the 'personality' of System 2. ... In the context of attitudes, System 2 is more of an apologist for the emotions of system1 than a critic of those emotions — an endorser rather than an enforcer. Its search for information and arguments is mostly constrained to information that is consistent with existing beliefs, not with an intention to examine them. An active, coherence-seeing System 1 suggests solutions to an undemanding System 2."
+ * pp. 103-104: "We see here a new side of the 'personality' of System 2. ... In the context of attitudes, System 2 is more of an apologist for the emotions of system1 than a critic of those emotions — an endorser rather than an enforcer. Its search for information and arguments is mostly constrained to information that is consistent with existing beliefs, not with an intention to examine them. An active, coherence-seeing System 1 suggests solutions to an undemanding System 2."
  
 ## Table: Characteristics of System 1
 

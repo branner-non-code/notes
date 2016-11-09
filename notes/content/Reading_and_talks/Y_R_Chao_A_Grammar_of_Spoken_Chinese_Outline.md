@@ -117,49 +117,197 @@
 
 #### 2.4.1 Subject and Predicate as Topic and Comment
 
- * " 'Topic' and 'comment' as semantic terms and not as grammatical terms as used by many writers."
+ 1. " 'Topic' and 'comment' as semantic terms and not as grammatical terms as used by many writers." (p. 69n9)
+ 1. Actor-action as "semantic characterization of the full sentence"
+ 
+    * "Good enough" in many languages, especially if the subject-predicate relation includes "is …-ed by" and "suffers …-ing".
+    * But applicability is "perhaps not much higher than 50%" in Chinese.
+
+ 1. "Some general relationship of topic and comment between subject and predicate." (2 examples)
+     
+    * "All such renderings in English … are limited by the exigencies of English grammar requiring a clear actor-action relation, at least in the grammatical sense."
+   
+    * "Sometimes, ellipse results in a looseness of subject-predicate relation which would be ungrammatical in another language." (7 examples)
+
+    * "There are times … when the relation between subject and predicate is so general that there is no specific word or words that can be considered omitted or understood." (1 example)
+   
+ 1. "The topical meaning of the subject is very often met with in poetry." (2 examples)
 
 #### 2.4.2 Direction of Action in Predicates
 
+ 1. Direction is ambiguous
+
+    * Corollary to **topic-comment nature of predication**: "the direction of action in an action verb in the predicate need not go outward from subject to object." (13 examples) "In all these the direction of action is not clear except that the translation one way or the other makes it seem so."
+ 
+    * subject can also represent:
+ 
+      * place at
+      * place to
+      * object for
+      * etc. (5 examples)
+
+    * "With many verbs there is =even no clear and definite direction from the nature of the action." Li Jiinshi: "_bann beyshinq_ 半被性 [**semi-passive**]".
+    * Compare with **Greek middle voice** or "**English verbs with neutral direction** like 'looks, sounds, feels, tastes, smells'."
+ 
+    * Ambiguities. (example) "The interesting thing here is that the ambiguity is not removed by giving the direction of the transitive verb _jydaw_, but by expanding the context so that the direction of action can be inferred from it."
+ 
+ 1. Specification
+ 
+    * with _bae_ (!) 把 "for direction outward" and _bey_ 被 "for direction inward". (examples)
+
+      * _bae_ and _bey_ are "not exclusively markers of direction of action. Like _geei_, other uses are "definite reference, implications of interest or harm".
+      * "Even the use of _bae_ does not guarantee that the direction is outward." (example)
+
+    * "The ambivalence of verbs as to direction of action is usually resolved either by the linguistic context or the situation context and thus does not necessarily lead to ambiguity." (example)
+    
+ 1. "It is only to the linguist, who works mostly with isolated sentences out of context, that those sentences seem to be poorly constructed. There is, on the whole, probably no more and no less ambiguity in spoken Chinese than in most other languages spoken."
+
 #### 2.4.3 Definite and Indefinite Reference
+
+ 1. subject: known; predicate: unknown (feature being brought out)
+ 1. subject: definite reference; object: indefinite reference
+
+    * "The subject is likely to represent the known while the predicate introduces something unknown: _the_ thing we are already familiar with has a feature which the speaker wants to bring out in his comment. **Thus there is a very strong tendency for the subject to have a definite reference and the object to have an indefinite reference**." (examples)
+ 
+    * Use of demonstrative pronouns for definite reference and _ig_ etc. for indefinite reference, but word order is still more common for these purposes.
+ 
+    * "It is … not so much the subject or object function that goes with definite or indefinite reference as position in an earlier or later part of the sentence that makes the difference. Thus, **by the use of the pretransitive, an object is moved farther ahead and is made more suggestive of a definite reference**." (examples)
+ 
+ 1. Members of classes:
+
+    * Use of _yeou_ 有 here. "The way in which 'particular propositions' involving the idea of 'come' are expressed in Chinese turns out to agree with the post-Aristotelian position that such propositions always entail existence."
+
+    * "Reference to every member of a class … is considered definite reference and must be in forward position." (examples)
+ 
+    * "Reference to any arbitrary member of a whole class in the form of a stressed interrogative word, followed by _dou_ or _yee_ in a later part of the sentence, also occurs in a forward position." (examples)
+ 
+ 1. Other details: While _jeyg_, _neyg_, and so on _can_ come last, and _ig_ and so on _can_ come first, the two types of forms: (1) the reduplicated distributive and (2) the stressed interrogative plus _dou_ (~_yee_) never comes last.
 
 ### 2.5 The Logical Predicate
 
 #### 2.5.1 Logical and Grammatical Predicates
 
+ 1. "The point of the message in a sentence is normally located in the predicate."
+ 
+    * "The logical predicate is located in any part of the sentence, in the subject, or part of the predicate, as well as the whole predicate."
+ 
+    * "In general, if in a sentence of the form S-V-O the subject O is the logical predicate, it is often recast in the form S-V de sh O …, thus putting O in the center of the predicate."
+ 
+    * "Adjective and adverbs in attributive position often serve as logical predicates."
+ 
+ 1. [**DPB**: Chao seems to be hinting that Chinese normally puts the logical predicate into the grammatical predicate, but he doesn't say so. He only says that putting it elsewhere may be done "for stylistic reasons, or merely from ineptitude of expression".]
+ 
+ 1. Dropping a hint "into an obscure corner" by placing the logical predicate elsewhere than the grammatical predicate.
+
 #### 2.5.2 Stress as a Marker of the Logical Predicate
+
+ 1. Contrastive stress as a means of bringing "the point of the message into a prominent place" — alternative to placing it "in the position of the grammatical predicate".
+ 
+    * "magnified length and pitch range and, less importantly for Chinese, increased loudness."
+    
+    * "In general, pone can make almost any full word in a sentence the logical predicate by giving it a contrasting stress."
+
+    * Aside: "One can test whether a morpheme or group of morphemes is free or not by its capability of receiving a contrasting stress."
+ 
+ 1. "It is not usual to find two or more points of prominence in the same sentence."
+ 
+ 1. Distinguish contrastive stress from emotional stress: "actualized by greater loudness, of the _sforzando_ type, sometimes accompanied by raising of the pitch, but with little magnification in time value or pitch range."
 
 ### 2.6 Subject and Predicate as Question and Answer
 
 #### 2.6.1 Pause Particles and Interrogative Particles
 
+Miscellaneous remarks on the "four pause particles _a_, _ne_, _me_, and _ba_ which can occur after a subject."
+
 #### 2.6.2 Subject as Question and Predicate as Answer
+
+ 1. "The close parallel between the pause particles and the interrogative particles is no mere accident, but derives from the nature of the **subject as a question and the predicate as an answer**."
+ 
+ 1. "Thus, we have the following degrees of integration between questions and answers:
+ 
+    2. two-way conversation
+    2. posing a question in the subject and answering it oneself in the predicate
+    2. combining question and answer into cone continuous full sentence without pause
+    
+    **DPB**: this seems somewhat contrived to me.
 
 ### 2.7 The Full Sentence as Made Up of Minor Sentences
 
 #### 2.7.1 Subject and Predicate as Minor Sentences
 
+ 1. Some minor sentences "serve to present or to call attention to things"; some "are more in the nature of comments, although the thing commented upon is in the situation and not expressed in words."
+ 
+ 1. "If you put the two minor sentences together, then you get exactly the makeup of a full sentence: topic and comment, expressed as subject and predicate." "**A full sentence is a complex sentence consisting of two minor ones**."
+
 #### 2.7.2 Primacy of Minor Sentences
+
+ 1. "The full sentence is the favorite sentence type only in deliberate connected discourse."
+ 
+ 1. "Minor sentences are more primary than full sentences."
+ 
+ 1. "**It does help the understanding of sentence structure to analyze a full sentence as made up of minor sentences**."
 
 ### 2.8 Types of Subjects
 
 #### 2.8.1 Nominal Expressions
 
+Nouns, pronouns, other nominal expressions.
+
 #### 2.8.2 Verbal Expressions
+
+Verbs and phrases with verbal centers
+
+ * "Sometimes a verbal subject may specify a time, place, or condition." One could supply a specifying noun, with the verb phrase as modifier, "but since what could be supplied is indeterminate, these should be analyzed as verbal subjects, and **subjects in general do introduce time, place, and condition, anyway**."
+ 
+ * "Adjectives being a species of verb, they can also be subjects."
 
 #### 2.8.3 Time, Place, and Condition Expressions
 
+ 1. Examples of sentences in which the subject as actor is understood and has to be added in translation, while the actual Chinese subject "only serves to introduce the topic of the discourse."
+ 
+    * Example involving _de₀huah_ "in the case of" to make a noun phrase of the preceding.
+ 
+ 1. Northern dialect usage, where "actor word" behaves like a "time word" (with _de₀ shyr.how_).
+
 #### 2.8.4 Actor Subject Introduced by a Preposition
+
+ 1. As a minor sentence, a subject can take the form of preposition plus object. 
+ 
+    * "This occurs when an actor is made explicit by being preceded by _you_ 'though' or _guei_ 'up to, for … to'.
+    
+    * "Similarly, _lian_ 'including, even' can be used to introduce an actor in the subject." (**DPB**: _Lian_ as preposition, <= VT.)
+    
+    * "Even the marker of passive action _bey_ can introduce as its object a subject-actor." (**DPB**: _Bey_ as preposition, <= VT.)
 
 #### 2.8.5 Other Prepositional Phrases
 
+ 1. "By 'subject' we simply means whatever starts the topic, what some grammarians call 起詞 _chiitsyr_ 'starting expression'."
+
+ 1. "Other prepositional phrases starting a sentences, which are commonly regarded as adverbial phrases, are also subjects in this broad sense. (examples) "The prepositions can be omitted and the resulting sentences will have ordinary substantive subjects." (Chao here considers other ways of analyzing such cases.)
+
 #### 2.8.6 S-P Subjects
+
+"A full sentence with subject and predicate can be the subject of another predicate, thus forming an S-P clause subject."
 
 ### 2.9 Types of Predicates
 
 #### 2.9.1 Verbal Predicates
 
+Predicate with a verb at its center. Distinguish three "functions":
+
+ 1. **contrastive function**: the verb is contrasted with other things the actor might be doing
+ 1. **assertive function**: the contrast is with the opposite ("total contradictory") or negative of the verb
+ 1. **narrative function**: "verb narrates some progress in the sorty, when something is happening" — sentence _le_ is used here. (Note that this function can overlap with the other two.)
+
 #### 2.9.2 Adjectival Predicates
+
+Adjective can be used a sfull predicates and can have three "modes of predication":
+
+ 1. **contrastive mode**: "the adjective can take _₀sh_ followed by the subordinate suffix _de_ as a nominalizer"
+ 1. **assertive mode**: "does not contrast one adjective with another, but with its total contradictory"
+ 1. **narrative mode**: "The force of the particle _le_ is to imply that the quality in question was increasing and now it is excessive."
+ 
+    Discussion of the use of _sh_ here.
 
 #### 2.9.3 Nominal Predicates
 
