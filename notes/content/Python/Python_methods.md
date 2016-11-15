@@ -95,23 +95,20 @@ AttributeError: 'C' object has no attribute '__attr'
 >>> f.attr                            # No. By doing that we have created a
 'Presto'                              #   new and different attribute.
 >>> f.__attr                          #   The dunder is a part of that 
-'Tricky?'                             #   attribute's name
+'Tricky?'                             #   attribute's name.
 
 >>> del f.__attr                      # Not directly delible.
 ...
 AttributeError: __attr
 
 >>> del f.attr                        # Delete f.attr
->>> f.attr
+>>> f.attr                            # Now it's gone.
 ...
 AttributeError: 'C' object has no attribute '_C__attr'
 ```
 
 (Actually, there is a way to access a protected property while circumventing the `@property` functionality. Let's use `i` to represent the instance name, `cls`  the class name, and `a` the protected attribute name. The protected property can be read and assigned directly using `i._cls__a`.)
 
-
-
-f._C__attr
 
 ### Static vs. class vs. abstract methods
 
