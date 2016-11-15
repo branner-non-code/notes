@@ -116,7 +116,7 @@ AttributeError: 'C' object has no attribute '_C__attr'
 
 Examples here are for Python 3; Python 2 behaves somewhat differently.
 
-Methods are "bound" by default in Python 3: they can only be called on an instance of the class in which they are defined. That instance may be assigned to a variable:
+Methods are functions that are "bound" by default in Python 3: they are normally called on an instance of the class in which they are defined. That instance may be assigned to a variable:
 
 ```python
 class Example:
@@ -153,7 +153,7 @@ But it can't be called on the uninstantiated class itself — here, `Example` wi
 TypeError: default() missing 1 required positional argument: 'self'
 ```
 
-Here, when the interpreter says it requires the argument `self` it means it needs a particular instance of `Example` in order to call `default` on. There is no such instance:
+Here, when the interpreter says it requires the argument `self` it means it needs a particular instance of `Example` in order to call `default` on. It needs an instance because `default` was defined with `self` as its first parameter. But there is no such instance:
 
 ```python
 >>> Example.default.__self__
@@ -182,7 +182,7 @@ class Example:
 AttributeError: type object 'Example' has no attribute 'default'
 ```
 
-In Python 3, a static method can be called on the class itself or on an instance. If you simply omit `self`, the method can be called on the class but not on an instance — `self` represents that instance itself.
+In Python 3, a static method can be called on the class itself or on an instance. If you simply omit `self`, the method can be called on the class. Though, it can not be called on an instance — `self` represents that instance itself.
 
 ```python
 class Example:
