@@ -95,34 +95,34 @@ class Example:
     def default3():
         return 'can be called on class or instance'
 
->>> Example.default()
+>>> Example.default()      # called on class
 'can be called on class but not on instance'
 
->>> Example().default()
+>>> Example().default()    # called on instance
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: default() takes 0 positional arguments but 1 was given
 
->>> Example().default2()
+>>> Example().default2()   # called on instance
 'can be called on instance but not on class'
 
->>> Example.default2()
+>>> Example.default2()     # called on class
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: default2() missing 1 required positional argument: 'self'
 
->>> Example().default3()
+>>> Example().default3()   # called on instance
 'can be called on class or instance'
 
->>> Example.default3()
+>>> Example.default3()     # called on class
 'can be called on class or instance'
 ```
 
-(In Python 2, `Example.default()` and `Example.default2()` are not allowed — an instance method must receive that instance. `Example.default()` has no `self` parameter at all,and `Example.default2()` has `self` but no instance is being passed to it.)
+(In Python 2, `Example.default()` and `Example.default2()` are not allowed — an instance method must receive that instance. `Example.default()` has no `self` parameter at all, and `Example.default2()` has `self` but no instance is being passed to it.)
 
 #### Class method: method called on a class itself, without instances
 
-This differs from a regular method that has no `self` parameter: it must have a `cls` parameter, which can refers to the class itself, not the method.
+This differs from a regular method that has no `self` parameter: it must have a `cls` parameter, which refers to the class itself, not the method.
 
 This parameter can be used to access attributes of the class and modify them for all future instantiations:
 
@@ -161,6 +161,7 @@ class Example:
     @classmethod
     def class_method(cls):
         return 'cls: {}'.format(cls)
+
     @classmethod
     def uncallable():
         return 'cannot be called'
@@ -205,10 +206,12 @@ class C(metaclass=abc.ABCMeta):
 
 Even with the `@abc.abstractmethod` decorator, some sort of nominal body seems to be needed in the method: a docstring or `pass`, for instance:
 
+```python
 class C(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def an_abstract_method(self):
         """(dummy docstring)"""
+```
 
 The decorators `@classmethod` and `@abc.abstractmethod` can be composed, in order to create an abstract class method. `@classmethod` is applied after `@abc.abstractmethod` — in other words, `@classmethod` appears _before_ `@abc.abstractmethod`:
 
