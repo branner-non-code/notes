@@ -72,16 +72,14 @@ Some examples:
 >>> f = C()
 
 >>> f.__attr                          # Not directly accessible.
-Traceback (most recent call last):
-  File "<input>", line 1, in <module>
+...
 AttributeError: 'C' object has no attribute '__attr'
 
 >>> '__attr' in f.__dir__()           # Not listed by __dir__()
 False
 
 >>> f.__getattribute__('__attr')      # Not listed by __getattribute__()
-Traceback (most recent call last):
-  File "<input>", line 1, in <module>
+...
 AttributeError: 'C' object has no attribute '__attr'
 
 >>> f.attr                            # Accessible by the implemented getter.
@@ -154,8 +152,7 @@ But it can't be called on the uninstantiated class itself — here, `Example` wi
 
 ```python
 >>> Example.default()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
+...
 TypeError: default() missing 1 required positional argument: 'self'
 ```
 
@@ -210,8 +207,7 @@ Here are examples called on an uninstantiated class `Example` itself:
 'can be called on class but not on instance'
 
 >>> Example.default2()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
+...
 TypeError: default2() missing 1 required positional argument: 'self'
 
 >>> Example.default3()
@@ -222,8 +218,7 @@ And here are examples called on an instance of the class, created non-persistent
 
 ```python
 >>> Example().default()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
+...
 TypeError: default() takes 0 positional arguments but 1 was given
 
 >>> Example().default2()
