@@ -69,19 +69,19 @@ def make_filename_into_string(the_path):
 
 def normalize_words(strings, wnl_obj):
     words_to_report = []
-    for the_string in strings:
+    for the_str in strings:
         words_to_divide = []
         words_not_to_divide = []
-        hash_of_whole_string = str(the_string.__hash__())
-        the_string = the_string.lower()
-        the_string = re.sub('"|^\.', '', the_string)
-        tokenized_words = nltk.word_tokenize(the_string)
+        hash_of_whole_string = str(the_str.__hash__())
+        the_str = the_str.lower()
+        the_str = re.sub('"|^\.', '', the_str)
+        tokenized_words = nltk.word_tokenize(the_str)
         try:
             tagged_words = nltk.pos_tag(tokenized_words)
         except UnicodeDecodeError:
             print ("""UnicodeDecodeError at string\n    {}\n """
                     """with tokenized words\n   {}""".
-                    format(the_string, tokenized_words))
+                    format(the_str, tokenized_words))
         for word, treebank_POS in tagged_words:
             if (word[0] == '`' == word[-1]) or (word in not_unwanted_words):
                 word = word.replace('`', '')
@@ -130,11 +130,11 @@ def find_headers(list_of_lines):
             header_lines.append(line)
     return header_lines
 
-def prepare_tuple_storage(tuple_storage, all_strings, path_type, the_path, the_string):
-    tuple_storage[str(the_string.__hash__())] = (
-            path_type, the_path, the_string)
-    all_strings.append(the_string)
-    return tuple_storage, all_strings
+def prepare_tuple_storage(tuple_storage, all_strs, path_type, the_path, the_str):
+    tuple_storage[str(the_str.__hash__())] = (
+            path_type, the_path, the_str)
+    all_strs.append(the_str)
+    return tuple_storage, all_strs
 
 def remove_dups(list_of_lists):
     list_of_lists = tuple(tuple(a_list) for a_list in list_of_lists)
@@ -144,7 +144,7 @@ def remove_dups(list_of_lists):
 
 def main():
     index_entries = {} 
-    all_strings = []
+    all_strs = []
     tuple_storage = {}
     list_of_paths = add_f_to_list()
     wnl_obj = nltk.stem.WordNetLemmatizer()
@@ -158,10 +158,10 @@ def main():
             path_type = 'dir'
         else: path_type = 'file'
         # Process file name
-        the_string = make_filename_into_string(the_path)
-        if the_string:
-            tuple_storage, all_strings = prepare_tuple_storage(tuple_storage,
-                    all_strings, path_type, the_path, the_string)
+        the_str = make_filename_into_string(the_path)
+        if the_str:
+            tuple_storage, all_strs = prepare_tuple_storage(tuple_storage,
+                    all_strs, path_type, the_path, the_str)
         # Process headers
         if os.path.isfile(the_path):
             header_lines = find_headers(list_lines(the_path))
@@ -169,11 +169,11 @@ def main():
                 continue
             else:
                 path_type = 'header'
-            for the_string in header_lines:
-                tuple_storage, all_strings = prepare_tuple_storage(
-                        tuple_storage, all_strings, path_type, the_path, 
-                        the_string)
-    words_and_their_string_hashes = normalize_words(all_strings, wnl_obj)
+            for the_str in header_lines:
+                tuple_storage, all_strs = prepare_tuple_storage(
+                        tuple_storage, all_strs, path_type, the_path, 
+                        the_str)
+    words_and_their_string_hashes = normalize_words(all_strs, wnl_obj)
     # Index words and path
     # Remove duplicate entries
     words_and_their_string_hashes = remove_dups(words_and_their_string_hashes)
