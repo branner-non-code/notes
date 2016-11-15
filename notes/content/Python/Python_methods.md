@@ -1,4 +1,119 @@
-## Python methods
+## Python decorators for object-oriented method behaviors
+
+Python supplies special decorators for a number of tools common in object-oriented programming. Their functionality is implemented as ordinary built-in functions, but they are made available as decorators for easier application.
+
+**Functionality for restricting access to a property (attribute) of a class**:
+
+ * as function: `property(fget=None, fset=None, fdel=None, doc=None)`
+ * as decorators: `@property`, `@x.getter`, `@x.setter`, `@x.deleter` for some attribute `__x`.
+ 
+**Functionality for methods of a class**:
+
+ 1. Making a method "static" — available whether its class has been instantiated or not:
+ 
+    * as function: `staticmethod(function)`
+    * as decorator: `@staticmethod`
+
+ 1. Making a method "abstract" — available only for subclassing.
+ 
+    * as function: `abc.abstractmethod(funcobj)`
+    * as decorator: `@abc.abstractmethod`
+
+**Functionality to modify attributes of a class, to take effect in all future instantiations**:
+
+ * as function: `classmethod(function)`
+ * as decorators: `@classmethod`
+
+(A decorator appears on the line before before a function definition, as seen in the examples below. It seems at first to modify that function. In reality, the decorator incorporates the function into some other piece of code, built-in or otherwise, behind the scenes.)
+
+### Python public and private methods
+
+The "dunder" (double underscore, `__`) prefix prevents access to attributes, except through the accessors `@property`, `@attr.setter`, and `@attr.deleter`.
+
+```python
+class C():
+    def __init__(self):
+        self.__attr = 0
+
+    @property              # This is a "getter", though not so named explicitly.
+    def attr(self):
+        """The doc-string for the whole property goes here."""
+        return self.__attr
+
+    @attr.setter
+    def attr(self, value):
+        self.__attr = value
+
+    @attr.deleter
+    def attr(self):
+        del self.__attr
+```
+
+The `@property` decorator is always required here, even if some of the others are omitted. It allows a docstring to be associated with the whole property `attr`. Technically, `@property` subsumes the function of `@attr.getter`, although the two can be used separately:
+
+```python
+class C():
+    def __init__(self):
+        self.__attr = 0
+
+    @property
+    def attr(self):
+        """Supply getter functionally for property "attr"."""
+        return None
+
+    @attr.getter
+    def attr(self):
+        return self.__attr
+```
+
+Some examples:
+
+```python
+>>> f = C()
+
+>>> f.__attr                          # Not directly accessible.
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+AttributeError: 'C' object has no attribute '__attr'
+
+>>> '__attr' in f.__dir__()           # Not listed by __dir__()
+False
+
+>>> f.__getattribute__('__attr')      # Not listed by __getattribute__()
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+AttributeError: 'C' object has no attribute '__attr'
+
+>>> f.attr                            # Accessible by the implemented getter.
+0
+
+>>> f.attr = 'Presto'                 # Can be set by the implemented setter.
+
+>>> f.attr
+'Presto'
+
+>>> f.__attr = 'Tricky?'              # Can we set it explicitly?
+
+>>> f.attr                            # No. By doing that we have created a
+'Presto'                              #   new and different attribute.
+>>> f.__attr                          #   The dunder is a part of that 
+'Tricky?'                             #   attribute's name
+
+>>> del f.__attr                      # Not directly delible.
+...
+AttributeError: __attr
+
+>>> del f.attr                        # Delete f.attr
+>>> f.attr
+...
+AttributeError: 'C' object has no attribute '_C__attr'
+```
+
+(Actually, there is a way to access a protected property while circumventing the `@property` functionality. Let's use `i` to represent the instance name, `cls`  the class name, and `a` the protected attribute name. The protected property can be read and assigned directly using `i._cls__a`.)
+
+
+
+f._C__attr
 
 ### Static vs. class vs. abstract methods
 
@@ -18,7 +133,7 @@ class Example:
 '子程式'
 ```
 
-Or it may be instantiated on the fly
+Or the class may be instantiated on the fly, by instantiating `Example` (as `Example()`) but not assigning it to a persistent variable.
 
 ```python
 >>> Example().default()
@@ -35,7 +150,7 @@ We can show that `default` is bound to a _particular_ instance in either case, b
 <__main__.Example at 0x10c073780>
 ```
 
-But it can't be called on the uninstantiated class itself:
+But it can't be called on the uninstantiated class itself — here, `Example` without `()`:
 
 ```python
 >>> Example.default()
@@ -48,11 +163,7 @@ Here, when the interpreter says it requires the argument `self` it means it need
 
 ```python
 >>> Example.default.__self__
----------------------------------------------------------------------------
-AttributeError                            Traceback (most recent call last)
-<ipython-input-265-288eb236fab6> in <module>()
-----> 1 Example.default.__self__
-
+...
 AttributeError: 'function' object has no attribute '__self__'
 ```
 
@@ -63,21 +174,17 @@ To call a method without having to have an instance, use the `@staticmethod` dec
 ```python
 class Example:
     @staticmethod
-    def static():
+    def static():                       # Note: no "self" argument
         return 'no instance required'
 
-    def default(self):
+    def default(self):                  # Note: "self" argument present
         return 'instance definitely required'
 
 >>> Example.static()
 'no instance required'
 
 >>> Example.default()
----------------------------------------------------------------------------
-AttributeError                            Traceback (most recent call last)
-<ipython-input-81-0ee562c33c8c> in <module>()
-----> 1 Example.default()
-
+...
 AttributeError: type object 'Example' has no attribute 'default'
 ```
 
@@ -85,40 +192,48 @@ In Python 3, a static method can be called on the class itself or on an instance
 
 ```python
 class Example:
-    def default():
+    def default():                      # Note: no "self" argument
         return 'can be called on class but not on instance'
 
-    def default2(self):
+    def default2(self):                 # Note: "self" argument present
         return 'can be called on instance but not on class'
 
     @staticmethod
-    def default3():
+    def default3():                     # Note: no "self" argument
         return 'can be called on class or instance'
+```
 
->>> Example.default()      # called on class
+Here are examples called on an uninstantiated class `Example` itself:
+
+```python
+>>> Example.default()
 'can be called on class but not on instance'
 
->>> Example().default()    # called on instance
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: default() takes 0 positional arguments but 1 was given
-
->>> Example().default2()   # called on instance
-'can be called on instance but not on class'
-
->>> Example.default2()     # called on class
+>>> Example.default2()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: default2() missing 1 required positional argument: 'self'
 
->>> Example().default3()   # called on instance
-'can be called on class or instance'
-
->>> Example.default3()     # called on class
+>>> Example.default3()
 'can be called on class or instance'
 ```
 
-(In Python 2, `Example.default()` and `Example.default2()` are not allowed — an instance method must receive that instance. `Example.default()` has no `self` parameter at all, and `Example.default2()` has `self` but no instance is being passed to it.)
+And here are examples called on an instance of the class, created non-persistently with `Example()`:
+
+```python
+>>> Example().default()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: default() takes 0 positional arguments but 1 was given
+
+>>> Example().default2()
+'can be called on instance but not on class'
+
+>>> Example().default3()
+'can be called on class or instance'
+```
+
+(**Note**: In Python 2, `Example.default()` and `Example.default2()` are not allowed — an instance method _must_ have that instance passed to it. `Example.default()` can't receive the instance because has no `self` parameter at all, and `Example.default2()` has `self` but no instance is being passed to it.)
 
 #### Class method: method called on a class itself, without instances
 
@@ -131,12 +246,14 @@ class Example:
     x = 'original'
 
     def sample(self):
-        return 'instance: {}, x: {}'. format(self, self.x)
+        """Output the instance and the attribute x, as found."""
+        print('instance: {}, x: {}'. format(self, self.x))
 
     @classmethod
     def class_method(cls, x=None):
+        """Modify the class attribute x."""
         cls.x = x
-        return 'x: {}'.format(cls.x)
+        print('x: {}'.format(cls.x))
 
 >>> Example().sample()    # first instantiation
 'instance: <__main__.Example object at 0x10c1605f8>, x: original'
@@ -173,23 +290,15 @@ class Example:
 "cls: <class '__main__.Example'>"
 
 >>> Example.uncallable()
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-<ipython-input-215-24d82097b8f7> in <module>()
-----> 1 Example.uncallable()
-
+...
 TypeError: uncallable() takes 0 positional arguments but 1 was given
 
 >>> Example().uncallable()
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-<ipython-input-216-633d8ae56478> in <module>()
-----> 1 Example().uncallable()
-
+...
 TypeError: uncallable() takes 0 positional arguments but 1 was given
 ```
 
-#### Abstract method: leave future implementation completely free, for modification by inheritance
+#### Abstract method: leave implementation for creation or modification only by inheritance
 
 A method can be prepared for future implementation implicitly using `pass` or `return` as the dummy body, or explicitly using `@abc.abstractmethod`. Explicitly declaring a method to be abstract means that it cannot be called directly, and a class that contains only abstract methods cannot be instantiated at all, although it can be subclassed.
 
@@ -225,63 +334,6 @@ class C(metaclass=abc.ABCMeta):
         """(dummy docstring)"""
 ```
 
-(TODO: Examples would be useful here.)
-
-
-### Python public and private methods
-
-(Following my own post: http://stackoverflow.com/a/38864561/621762)
-
-The "dunder" (double underscore, `__`) prefix prevents access to attributes, except through the accessors `@property`, `@attr.setter`, and `@attr.deleter`.
-
-```python
-class C():
-    def __init__(self):
-        self.__attr = 0
-
-    @property
-    def attr(self):
-        return self.__attr
-
-    @attr.setter
-    def attr(self, value):
-        self.__attr = value
-
-    @attr.deleter
-    def attr(self):
-        del self.__attr
-```
-
-Some examples:
-
-```python
->>> f = C()
-
->>> f.__attr                          # Not directly accessible.
-Traceback (most recent call last):
-  File "<input>", line 1, in <module>
-AttributeError: 'C' object has no attribute '__attr'
-
->>> '__attr' in f.__dir__()           # Not listed by __dir__()
-False
-
->>> f.__getattribute__('__attr')      # Not listed by __getattribute__()
-Traceback (most recent call last):
-  File "<input>", line 1, in <module>
-AttributeError: 'C' object has no attribute '__attr'
-
->>> f.attr                            # Accessible by the implemented getter.
-0
-
->>> f.attr = 'Presto'                 # Can be set by the implemented setter.
-
->>> f.attr
-'Presto'
-
->>> f.__attr = 'Tricky?'              # Can we set it explicitly?
-
->>> f.attr                            # No. By doing that we have created a
-'Presto'                              # new but unrelated attribute, same name.
-```
+(TODO: Examples of subclassing would be useful here.)
 
 [end]
