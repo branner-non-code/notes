@@ -69,7 +69,7 @@ class C():
 Some examples:
 
 ```python
->>> f = C()
+>>> f = C()                           # Instantiate the object, to begin.
 
 >>> f.__attr                          # Not directly accessible.
 ...
