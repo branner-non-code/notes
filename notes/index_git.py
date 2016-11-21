@@ -1,5 +1,5 @@
 # index_git.py
-# 20130510, works
+# 20161121, works
 # David Prager Branner
 '''Creates simple index of .md file-names and headers within those files, in a
 Git repository. Exports two .js files to be read by JS look-up script.'''
@@ -107,9 +107,20 @@ def normalize_words(strings, wnl_obj):
             words_to_report.append(word_and_string_hash)
     return words_to_report
 
+def validate_path(path):
+    if path[-4:] == '.pyc':
+        return False
+    else:
+        return True
+
 def list_lines(path):
     with open(path) as f:
-        return f.read().split('\n')
+        try:
+            content = f.read()
+        except Exception as e:
+            print('\nERROR {}\n\nin path: {}\n\n'.format(e, path))
+            content = ''
+        return content.split('\n')
 
 def find_headers(list_of_lines):
     header_lines = []
@@ -163,7 +174,7 @@ def main():
             tuple_storage, all_strs = prepare_tuple_storage(tuple_storage,
                     all_strs, path_type, the_path, the_str)
         # Process headers
-        if os.path.isfile(the_path):
+        if os.path.isfile(the_path) and validate_path(the_path):
             header_lines = find_headers(list_lines(the_path))
             if not header_lines:
                 continue

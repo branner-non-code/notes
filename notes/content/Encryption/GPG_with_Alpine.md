@@ -72,4 +72,10 @@ Most of this material follows http://moser-isi.ethz.ch/gpg.html#howtosetuppinefo
 
         > pgpenvelope is an interface to meld using Pine with GnuPG, the GNU Privacy Guard. It allows one to sign/encrypt/decrypt/verify one's mail messages using GnuPG from within Pine. Ease of installation and use, and a nice interface are primary goals during development. In addition to being just a Pine filter, pgpenvelope tries to maximize the use of procmail so that signed messages only need to be verified only once. 
 
+
+### Signing
+
+ * Publishing public key?
+
+
 [end]

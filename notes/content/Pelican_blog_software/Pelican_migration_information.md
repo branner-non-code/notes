@@ -1,4 +1,4 @@
-can migration information
+## Pelican migration information
 
   1. http://kevin.deldycke.com/2013/02/wordpress-to-pelican/
   1. http://jamesmurty.com/2013/05/23/migrate-wordpress-blog-to-static-site/
