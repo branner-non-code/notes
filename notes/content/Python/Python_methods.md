@@ -97,6 +97,8 @@ AttributeError: 'C' object has no attribute '__attr'
 >>> f.__attr                          #   The dunder is a part of that 
 'Tricky?'                             #   attribute's name.
 
+>>> f = C()                           # Let's start again.
+
 >>> del f.__attr                      # Not directly delible.
 ...
 AttributeError: __attr
