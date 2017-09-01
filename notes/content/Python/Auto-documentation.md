@@ -1,8 +1,8 @@
 ## Auto-documentation
 
  * [Overview of tools at python.org](https://wiki.python.org/moin/DocumentationTools)
- * `[pydoc](https://docs.python.org/3.6/library/pydoc.html)`
- * `[epydoc](https://epydoc.sourceforge.net)`
+ * [`pydoc`](https://docs.python.org/3.6/library/pydoc.html)
+ * [`epydoc`](https://epydoc.sourceforge.net)`
 
 ### Sphinx auto-documentation
 
