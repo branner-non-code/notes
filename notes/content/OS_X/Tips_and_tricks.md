@@ -7,3 +7,9 @@
 ### Index of OS X command line
 
  [An A-Z Index of the Apple OS X command line] (http://ss64.com/osx/), accessed 20130513.
+
+### Settings useful in BBEdit
+
+ See https://www.barebones.com/support/bbedit/ExpertPreferences.html.
+
+[end]
